@@ -1597,6 +1597,72 @@
       </categories>
   </entry>
   <entry>
+    <title>天若OCR文字识别</title>
+    <url>/posts/33021.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>快速识别，在线翻译</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+<p><img src="https://ocr.tianruo.net/images/1573471333.png" alt="天若OCR"></p>
+<table>
+<thead>
+<tr>
+<th align="left">功能</th>
+<th align="left">介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">文本识别</td>
+<td align="left">将图片中的文本转换成可编辑文本</td>
+</tr>
+<tr>
+<td align="left">表格识别</td>
+<td align="left">将图片中的表格转换成可编辑表格</td>
+</tr>
+<tr>
+<td align="left">竖排识别</td>
+<td align="left">将图片竖排文字识别成可编辑文本</td>
+</tr>
+<tr>
+<td align="left">公式识别</td>
+<td align="left">将图片公式识别出latex代码</td>
+</tr>
+<tr>
+<td align="left">矫正识别</td>
+<td align="left">可以将图片进行倾斜透视矫正</td>
+</tr>
+<tr>
+<td align="left">高级识别</td>
+<td align="left">调整识别对比度，自动绘制表格线</td>
+</tr>
+<tr>
+<td align="left">识别翻译</td>
+<td align="left">识别图片后自动翻译</td>
+</tr>
+<tr>
+<td align="left">识别搜索</td>
+<td align="left">识别图片后自动搜索</td>
+</tr>
+<tr>
+<td align="left">截图功能</td>
+<td align="left">丰富的截图标注功能</td>
+</tr>
+</tbody></table>
+<p><a href="https://ocr.tianruo.net/" title="官网">天若OCR</a><br><a href="https://tianruo.lanzoux.com/b0mn2zif" title="蓝奏云下载">下载地址</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>电脑软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>收集图床网站</title>
     <url>/posts/43892.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -1670,72 +1736,6 @@
       </categories>
       <tags>
         <tag>图床</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>天若OCR文字识别</title>
-    <url>/posts/33021.html</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>快速识别，在线翻译</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-
-<span id="more"></span>
-<p><img src="https://ocr.tianruo.net/images/1573471333.png" alt="天若OCR"></p>
-<table>
-<thead>
-<tr>
-<th align="left">功能</th>
-<th align="left">介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">文本识别</td>
-<td align="left">将图片中的文本转换成可编辑文本</td>
-</tr>
-<tr>
-<td align="left">表格识别</td>
-<td align="left">将图片中的表格转换成可编辑表格</td>
-</tr>
-<tr>
-<td align="left">竖排识别</td>
-<td align="left">将图片竖排文字识别成可编辑文本</td>
-</tr>
-<tr>
-<td align="left">公式识别</td>
-<td align="left">将图片公式识别出latex代码</td>
-</tr>
-<tr>
-<td align="left">矫正识别</td>
-<td align="left">可以将图片进行倾斜透视矫正</td>
-</tr>
-<tr>
-<td align="left">高级识别</td>
-<td align="left">调整识别对比度，自动绘制表格线</td>
-</tr>
-<tr>
-<td align="left">识别翻译</td>
-<td align="left">识别图片后自动翻译</td>
-</tr>
-<tr>
-<td align="left">识别搜索</td>
-<td align="left">识别图片后自动搜索</td>
-</tr>
-<tr>
-<td align="left">截图功能</td>
-<td align="left">丰富的截图标注功能</td>
-</tr>
-</tbody></table>
-<p><a href="https://ocr.tianruo.net/" title="官网">天若OCR</a><br><a href="https://tianruo.lanzoux.com/b0mn2zif" title="蓝奏云下载">下载地址</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>电脑软件</tag>
       </tags>
   </entry>
   <entry>
@@ -1988,6 +1988,32 @@
       </tags>
   </entry>
   <entry>
+    <title>站点运行时间计算js</title>
+    <url>/posts/53614.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>站点运行时间计算js</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+
+
+<p>html代码</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">&quot;span_dt_dt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: #2F889A;&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:#C40000&quot;</span>&gt;</span>187<span class="tag">&lt;/<span class="name">font</span>&gt;</span> 天 <span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:#C40000&quot;</span>&gt;</span>0<span class="tag">&lt;/<span class="name">font</span>&gt;</span> 时 <span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:#C40000&quot;</span>&gt;</span>4<span class="tag">&lt;/<span class="name">font</span>&gt;</span> 分 <span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:#C40000&quot;</span>&gt;</span>39<span class="tag">&lt;/<span class="name">font</span>&gt;</span> 秒<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>js代码</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;script language=<span class="string">&quot;javascript&quot;</span>&gt;<span class="keyword">function</span> <span class="title function_">show_date_time</span>(<span class="params"></span>)&#123;</span><br><span class="line">	<span class="variable language_">window</span>.<span class="built_in">setTimeout</span>(<span class="string">&quot;show_date_time()&quot;</span>, <span class="number">1000</span>);</span><br><span class="line">	<span class="title class_">BirthDay</span>=<span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&quot;12/23/2020 21:07:13 &quot;</span>);</span><br><span class="line">	today=<span class="keyword">new</span> <span class="title class_">Date</span>();</span><br><span class="line">	timeold=(today.<span class="title function_">getTime</span>()-<span class="title class_">BirthDay</span>.<span class="title function_">getTime</span>());</span><br><span class="line">	sectimeold=timeold/<span class="number">1000</span></span><br><span class="line">	secondsold=<span class="title class_">Math</span>.<span class="title function_">floor</span>(sectimeold);</span><br><span class="line">	msPerDay=<span class="number">24</span>*<span class="number">60</span>*<span class="number">60</span>*<span class="number">1000</span></span><br><span class="line">	e_daysold=timeold/msPerDay</span><br><span class="line">	daysold=<span class="title class_">Math</span>.<span class="title function_">floor</span>(e_daysold);</span><br><span class="line">	e_hrsold=(e_daysold-daysold)*<span class="number">24</span>;</span><br><span class="line">	hrsold=<span class="title class_">Math</span>.<span class="title function_">floor</span>(e_hrsold);</span><br><span class="line">	e_minsold=(e_hrsold-hrsold)*<span class="number">60</span>;</span><br><span class="line">	minsold=<span class="title class_">Math</span>.<span class="title function_">floor</span>((e_hrsold-hrsold)*<span class="number">60</span>);</span><br><span class="line">	seconds=<span class="title class_">Math</span>.<span class="title function_">floor</span>((e_minsold-minsold)*<span class="number">60</span>);</span><br><span class="line">	span_dt_dt.<span class="property">innerHTML</span>=<span class="string">&#x27;&lt;font style=color:#C40000&gt;&#x27;</span>+daysold+<span class="string">&#x27;&lt;/font&gt; 天 &lt;font style=color:#C40000&gt;&#x27;</span>+hrsold+<span class="string">&#x27;&lt;/font&gt; 时 &lt;font style=color:#C40000&gt;&#x27;</span>+minsold+<span class="string">&#x27;&lt;/font&gt; 分 &lt;font style=color:#C40000&gt;&#x27;</span>+seconds+<span class="string">&#x27;&lt;/font&gt; 秒&#x27;</span>;</span><br><span class="line">&#125;<span class="title function_">show_date_time</span>();&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>代码</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>破解压缩文件</title>
     <url>/posts/18751.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -2028,32 +2054,6 @@
       </tags>
   </entry>
   <entry>
-    <title>站点运行时间计算js</title>
-    <url>/posts/53614.html</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>站点运行时间计算js</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-
-<span id="more"></span>
-
-
-<p>html代码</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">&quot;span_dt_dt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: #2F889A;&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:#C40000&quot;</span>&gt;</span>187<span class="tag">&lt;/<span class="name">font</span>&gt;</span> 天 <span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:#C40000&quot;</span>&gt;</span>0<span class="tag">&lt;/<span class="name">font</span>&gt;</span> 时 <span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:#C40000&quot;</span>&gt;</span>4<span class="tag">&lt;/<span class="name">font</span>&gt;</span> 分 <span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:#C40000&quot;</span>&gt;</span>39<span class="tag">&lt;/<span class="name">font</span>&gt;</span> 秒<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>js代码</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;script language=<span class="string">&quot;javascript&quot;</span>&gt;<span class="keyword">function</span> <span class="title function_">show_date_time</span>(<span class="params"></span>)&#123;</span><br><span class="line">	<span class="variable language_">window</span>.<span class="built_in">setTimeout</span>(<span class="string">&quot;show_date_time()&quot;</span>, <span class="number">1000</span>);</span><br><span class="line">	<span class="title class_">BirthDay</span>=<span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&quot;12/23/2020 21:07:13 &quot;</span>);</span><br><span class="line">	today=<span class="keyword">new</span> <span class="title class_">Date</span>();</span><br><span class="line">	timeold=(today.<span class="title function_">getTime</span>()-<span class="title class_">BirthDay</span>.<span class="title function_">getTime</span>());</span><br><span class="line">	sectimeold=timeold/<span class="number">1000</span></span><br><span class="line">	secondsold=<span class="title class_">Math</span>.<span class="title function_">floor</span>(sectimeold);</span><br><span class="line">	msPerDay=<span class="number">24</span>*<span class="number">60</span>*<span class="number">60</span>*<span class="number">1000</span></span><br><span class="line">	e_daysold=timeold/msPerDay</span><br><span class="line">	daysold=<span class="title class_">Math</span>.<span class="title function_">floor</span>(e_daysold);</span><br><span class="line">	e_hrsold=(e_daysold-daysold)*<span class="number">24</span>;</span><br><span class="line">	hrsold=<span class="title class_">Math</span>.<span class="title function_">floor</span>(e_hrsold);</span><br><span class="line">	e_minsold=(e_hrsold-hrsold)*<span class="number">60</span>;</span><br><span class="line">	minsold=<span class="title class_">Math</span>.<span class="title function_">floor</span>((e_hrsold-hrsold)*<span class="number">60</span>);</span><br><span class="line">	seconds=<span class="title class_">Math</span>.<span class="title function_">floor</span>((e_minsold-minsold)*<span class="number">60</span>);</span><br><span class="line">	span_dt_dt.<span class="property">innerHTML</span>=<span class="string">&#x27;&lt;font style=color:#C40000&gt;&#x27;</span>+daysold+<span class="string">&#x27;&lt;/font&gt; 天 &lt;font style=color:#C40000&gt;&#x27;</span>+hrsold+<span class="string">&#x27;&lt;/font&gt; 时 &lt;font style=color:#C40000&gt;&#x27;</span>+minsold+<span class="string">&#x27;&lt;/font&gt; 分 &lt;font style=color:#C40000&gt;&#x27;</span>+seconds+<span class="string">&#x27;&lt;/font&gt; 秒&#x27;</span>;</span><br><span class="line">&#125;<span class="title function_">show_date_time</span>();&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>代码</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-        <tag>代码</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>css代码记录</title>
     <url>/posts/20241.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -2091,7 +2091,7 @@
   </entry>
   <entry>
     <title>css滚动栏美化</title>
-    <url>/posts/20241.html</url>
+    <url>/posts/20242.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>滚动栏美化</p>
