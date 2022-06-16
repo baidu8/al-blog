@@ -6,32 +6,397 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-06-16T06:03:42.898Z</updated>
+  <updated>2022-06-08T17:01:37.767Z</updated>
   <id>http://example.com/</id>
   
   <author>
-    <name>江达业</name>
+    <name>Ganbi</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>使用到的插件</title>
-    <link href="http://example.com/posts/56218.html"/>
-    <id>http://example.com/posts/56218.html</id>
-    <published>2022-06-15T17:14:02.000Z</published>
-    <updated>2022-06-16T06:03:42.898Z</updated>
+    <title>py读取返回链接并保存</title>
+    <link href="http://example.com/posts/16525.html"/>
+    <id>http://example.com/posts/16525.html</id>
+    <published>2022-06-08T16:25:18.000Z</published>
+    <updated>2022-06-08T17:01:37.767Z</updated>
     
     
-    <summary type="html">&lt;p&gt;说句话&lt;/p&gt;</summary>
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;py读取返回链接并保存&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
     
     
     
-    <category term="分类" scheme="http://example.com/categories/%E5%88%86%E7%B1%BB/"/>
+    <category term="代码" scheme="http://example.com/categories/%E4%BB%A3%E7%A0%81/"/>
     
     
-    <category term="标签1" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BE1/"/>
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>py读取每行链接并下载</title>
+    <link href="http://example.com/posts/58370.html"/>
+    <id>http://example.com/posts/58370.html</id>
+    <published>2022-06-08T16:24:38.000Z</published>
+    <updated>2022-06-08T17:02:04.284Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;py读取每行链接并下载&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="代码" scheme="http://example.com/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css滚动栏美化</title>
+    <link href="http://example.com/posts/20241.html"/>
+    <id>http://example.com/posts/20241.html</id>
+    <published>2022-06-04T08:36:34.000Z</published>
+    <updated>2022-06-04T10:24:23.876Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;滚动栏美化&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="代码" scheme="http://example.com/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+    
+    <category term="css" scheme="http://example.com/tags/css/"/>
+    
+    <category term="滚动栏美化" scheme="http://example.com/tags/%E6%BB%9A%E5%8A%A8%E6%A0%8F%E7%BE%8E%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css代码记录</title>
+    <link href="http://example.com/posts/20241.html"/>
+    <id>http://example.com/posts/20241.html</id>
+    <published>2022-06-04T08:36:33.000Z</published>
+    <updated>2022-06-04T17:53:44.637Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;记录css使用&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="代码" scheme="http://example.com/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+    
+    <category term="css" scheme="http://example.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>收集图床网站</title>
+    <link href="http://example.com/posts/43892.html"/>
+    <id>http://example.com/posts/43892.html</id>
+    <published>2022-06-01T08:36:33.000Z</published>
+    <updated>2022-06-01T11:57:22.783Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;免费又好用的图床网站在这里&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="网站" scheme="http://example.com/categories/%E7%BD%91%E7%AB%99/"/>
+    
+    
+    <category term="图床" scheme="http://example.com/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>恒星播放插件合集</title>
+    <link href="http://example.com/posts/41063.html"/>
+    <id>http://example.com/posts/41063.html</id>
+    <published>2022-05-29T15:46:33.000Z</published>
+    <updated>2022-06-04T10:28:38.792Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;恒星播放插件合集&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="插件" scheme="http://example.com/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器插件</title>
+    <link href="http://example.com/posts/60430.html"/>
+    <id>http://example.com/posts/60430.html</id>
+    <published>2022-05-29T15:42:17.000Z</published>
+    <updated>2022-06-16T16:05:59.624Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;自用浏览器插件收藏&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="浏览器插件" scheme="http://example.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>天若OCR文字识别</title>
+    <link href="http://example.com/posts/33021.html"/>
+    <id>http://example.com/posts/33021.html</id>
+    <published>2022-05-29T15:34:25.000Z</published>
+    <updated>2022-06-16T16:05:59.622Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;快速识别，在线翻译&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="电脑软件" scheme="http://example.com/tags/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>站点运行时间计算js</title>
+    <link href="http://example.com/posts/53614.html"/>
+    <id>http://example.com/posts/53614.html</id>
+    <published>2022-05-29T15:31:36.000Z</published>
+    <updated>2022-06-16T17:18:10.316Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;站点运行时间计算js&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="代码" scheme="http://example.com/categories/%E4%BB%A3%E7%A0%81/"/>
+    
+    
+    <category term="js" scheme="http://example.com/tags/js/"/>
+    
+    <category term="代码" scheme="http://example.com/tags/%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>破解压缩文件</title>
+    <link href="http://example.com/posts/18751.html"/>
+    <id>http://example.com/posts/18751.html</id>
+    <published>2022-03-30T02:52:56.000Z</published>
+    <updated>2022-06-16T16:05:59.626Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;破解 RAR、Zip压缩包密码！Hashcat +john the ripper&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="软件" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+    <category term="破解" scheme="http://example.com/tags/%E7%A0%B4%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fluid主题常用</title>
+    <link href="http://example.com/posts/26793.html"/>
+    <id>http://example.com/posts/26793.html</id>
+    <published>2021-11-15T08:42:57.000Z</published>
+    <updated>2022-06-16T16:05:59.605Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;记录一下，容易忘事没办法🤔&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="主题" scheme="http://example.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    
+    <category term="Fluid" scheme="http://example.com/tags/Fluid/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>next主题使用</title>
+    <link href="http://example.com/posts/21513.html"/>
+    <id>http://example.com/posts/21513.html</id>
+    <published>2021-11-15T08:42:56.000Z</published>
+    <updated>2022-06-16T16:05:59.611Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;记录一下，容易忘事没办法🤔&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="主题" scheme="http://example.com/tags/%E4%B8%BB%E9%A2%98/"/>
+    
+    <category term="next" scheme="http://example.com/tags/next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建hexo教程</title>
+    <link href="http://example.com/posts/9571.html"/>
+    <id>http://example.com/posts/9571.html</id>
+    <published>2021-11-15T08:32:56.000Z</published>
+    <updated>2022-06-16T16:05:59.628Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;记录一下，容易忘事没办法🤔&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="git" scheme="http://example.com/tags/git/"/>
+    
+    <category term="npm" scheme="http://example.com/tags/npm/"/>
+    
+    <category term="nodejs" scheme="http://example.com/tags/nodejs/"/>
+    
+    <category term="github" scheme="http://example.com/tags/github/"/>
+    
+    <category term="gitee" scheme="http://example.com/tags/gitee/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git代码记录</title>
+    <link href="http://example.com/posts/53509.html"/>
+    <id>http://example.com/posts/53509.html</id>
+    <published>2021-11-15T05:42:56.000Z</published>
+    <updated>2022-06-16T16:05:59.616Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;it代码以及一些使用记录&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="git代码" scheme="http://example.com/tags/git%E4%BB%A3%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>主题内置图标</title>
+    <link href="http://example.com/posts/37672.html"/>
+    <id>http://example.com/posts/37672.html</id>
+    <published>2021-11-13T16:00:00.000Z</published>
+    <updated>2022-06-16T16:18:53.583Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;主题所有内置图标&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="默认" scheme="http://example.com/categories/%E9%BB%98%E8%AE%A4/"/>
+    
     
   </entry>
   

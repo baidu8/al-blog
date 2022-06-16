@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://q1.qlogo.cn/g?b=qq&nk=726817119&s=640">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://q1.qlogo.cn/g?b=qq&nk=726817119&s=640">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://q1.qlogo.cn/g?b=qq&nk=726817119&s=640">
+  <link rel="mask-icon" href="https://q1.qlogo.cn/g?b=qq&nk=726817119&s=640" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Pacifico:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","Muse | Mist":320,"Pisces | Gemini":240,"width":300,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="自用浏览器插件收藏">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浏览器插件">
+<meta property="og:url" content="http://example.com/posts/60430.html">
+<meta property="og:site_name" content="Ganbi">
+<meta property="og:description" content="自用浏览器插件收藏">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-29T15:42:17.000Z">
+<meta property="article:modified_time" content="2022-06-16T16:05:59.624Z">
+<meta property="article:author" content="Ganbi">
+<meta property="article:tag" content="浏览器插件">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/posts/60430.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>浏览器插件 | Ganbi</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Ganbi" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Ganbi</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Ganbi love you</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section">首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section">关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section">标签<span class="badge">21</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section">分类<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section">归档<span class="badge">15</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/posts/60430.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://q1.qlogo.cn/g?b=qq&nk=726817119&s=640">
+      <meta itemprop="name" content="Ganbi">
+      <meta itemprop="description" content="<img alt="今日诗词" src="https://v2.jinrishici.com/one.svg?font-size=18&spacing=2&color=Orchid" style="max-width:100%; display: block; margin: 0 auto;">">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ganbi">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          浏览器插件
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-05-29 23:42:17" itemprop="dateCreated datePublished" datetime="2022-05-29T23:42:17+08:00">2022-05-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-06-17 00:05:59" itemprop="dateModified" datetime="2022-06-17T00:05:59+08:00">2022-06-17</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">软件</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>自用浏览器插件收藏</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+
+<h2 id="FeHelper"><a href="#FeHelper" class="headerlink" title="FeHelper"></a>FeHelper</h2><p><strong>FeHelperWeb开发者助手</strong><br>插件支持Chrome、Firefox、MS-Edge浏览器，内部工具集持续增加，目前包括 JSON自动&#x2F;手动格式化、JSON内容比对、代码美化与压缩、信息编解码转换、二维码生成与解码、图片Base64编解码转换、Markdown、 网页油猴、网页取色器、脑图(Xmind)等贴心工具，甚至在目前新版本的FeHelper中，还集成了FH开发者工具， 如果你也想自己搞一个工具集成到FeHelper中，那这一定能满足到你<br><a target="_blank" rel="noopener" href="https://www.baidufe.com/" title="软件官网">FeHelper</a>↔️<a target="_blank" rel="noopener" href="https://github.com/zxlie/FeHelper" title="GitHub项目">GitHub项目</a></p>
+<h2 id="沙拉查词"><a href="#沙拉查词" class="headerlink" title="沙拉查词"></a>沙拉查词</h2><p><strong>聚合词典划词翻译</strong><br>精选大量词典，手工打磨排版，涵盖几乎所有领域，自动发音，可选不同词典、英美音，各个词典支持个性化调整，整个网页翻译，谷歌和有道分级网页翻译，右键支持更多词典页面直达</p>
+<h2 id="SuperCopy"><a href="#SuperCopy" class="headerlink" title="SuperCopy"></a>SuperCopy</h2><p><strong>超级复制</strong><br>一键破解禁止右键、破解禁止选择、破解禁止复制、破解禁止粘贴，启用复制，启用右键，启用选择，启用粘贴。<br>特性：</p>
+<ol>
+<li>一键破解js方式的禁止复制网站。</li>
+<li>一键破解css方式的禁止复制网站。</li>
+<li>具有记忆功能，下次打开相同页面自动破解禁止复制。</li>
+<li>具有联想功能，打开同站点其他页面自动破解禁止复制。</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://www.crxfun.com/detail?id=onepmapfbjohnegdmfhndpefjkppbjkm" title="扩展派">下载地址</a></p>
+<h2 id="草料二维码"><a href="#草料二维码" class="headerlink" title="草料二维码"></a>草料二维码</h2><p><strong>二维码编码与解码</strong><br>草料二维码官方开发的免费浏览器插件，提供简单、专业、快捷的二维码生成和解码功能，支持在各个浏览器上快速安装。<br><a target="_blank" rel="noopener" href="https://cli.im/help/53255" title="官网下载地址">下载地址</a></p>
+<h2 id="ColorZilla"><a href="#ColorZilla" class="headerlink" title="ColorZilla"></a>ColorZilla</h2><p><strong>取色工具</strong><br>官网还有生成css渐变的工具</p>
+<h2 id="书签侧边栏"><a href="#书签侧边栏" class="headerlink" title="书签侧边栏"></a>书签侧边栏</h2><p>在浏览器视图区左侧添加可调节的侧边栏管理您的书签</p>
+<h2 id="Adblock-Plus"><a href="#Adblock-Plus" class="headerlink" title="Adblock Plus"></a>Adblock Plus</h2><p><strong>免费的广告拦截器</strong><br>高达四颗半的评分，目前用过最好用的广告拦截器了😁<br>官网有Firefox . Microsoft Edge . Opera版下载链接<br>拦截：横幅，YouTube 视频广告，Facebook 广告，弹出窗口，所有其他显眼的广告。</p>
+<h2 id="infinity"><a href="#infinity" class="headerlink" title="infinity"></a>infinity</h2><p><strong>浏览器新标签页</strong><br>轻松管理常用网站<br>快速添加常用网站图标，颜色、大小、布局均可自由定制，让新标签页一目了然</p>
+<h2 id="ImageAssistant"><a href="#ImageAssistant" class="headerlink" title="ImageAssistant"></a>ImageAssistant</h2><p><strong>提取网站内图片，批量下载</strong><br>用于从网页嗅探、分析和批量下载图像的图像提取器，可多页提取</p>
+<h2 id="云端硬盘应用启动器"><a href="#云端硬盘应用启动器" class="headerlink" title="云端硬盘应用启动器"></a>云端硬盘应用启动器</h2><p><strong>快速保存文件到云盘</strong></p>
+<h2 id="PostWoman"><a href="#PostWoman" class="headerlink" title="PostWoman"></a>PostWoman</h2><p><strong>Http接口调试插件</strong><br>不知道为啥安装的。。。不会用<br>PostWoman是一个完全开源免费的接口调试插件，该插件可独立使用，数据支持本地存储也可同步至云端。支持post、get、xml、josn等测试</p>
+<h2 id="Recent-History"><a href="#Recent-History" class="headerlink" title="Recent History"></a>Recent History</h2><p><strong>右上角显示最近访问历史</strong><br>本扩展可以在一个弹窗中显示你的最近访问历史、最近关闭的标签页、最常访问的页面和最近添加的书签。</p>
+<h2 id="sps"><a href="#sps" class="headerlink" title="sps"></a>sps</h2><p><strong>歌曲搜索试听 &amp; 在线广播</strong><br>支持网易，QQ，咪咕，油管，，，</p>
+<h2 id="Imagus"><a href="#Imagus" class="headerlink" title="Imagus"></a>Imagus</h2><p>鼠标指针悬停在链接或缩略图上时直接在当前页面的弹出视图上显示这些图片、HTML5 视频&#x2F;音频和内容专辑。</p>
+<h2 id="Tampermonkey-油猴"><a href="#Tampermonkey-油猴" class="headerlink" title="Tampermonkey 油猴"></a>Tampermonkey 油猴</h2><p>Tampermonkey用于在网站上运行所谓的用户脚本（有时也称为Greasemonkey脚本）。<br>用户脚本是小型计算机程序，可以更改页面的布局，添加或删除新功能和内容或自动执行操作。</p>
+<hr>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><p>三个扩展下载地址<br><a class="el-tag el-tag--success el-tag--small" target="_blank" rel="noopener" href="https://www.extfans.com/" title="title">Extfans</a> <a class="el-tag el-tag--success el-tag--small" target="_blank" rel="noopener" href="https://www.crxsoso.com/" title="title">crx扩展</a> <a class="el-tag el-tag--success el-tag--small" target="_blank" rel="noopener" href="https://www.crxfun.com/" title="title">扩展派</a></p>
+
+    </div>
+
+    
+    
+    
+      
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" rel="tag"># 浏览器插件</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/33021.html" rel="prev" title="天若OCR文字识别">
+      <i class="fa fa-chevron-left"></i> 天若OCR文字识别
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/41063.html" rel="next" title="恒星播放插件合集">
+      恒星播放插件合集 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#FeHelper"><span class="nav-number">1.</span> <span class="nav-text">FeHelper</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B2%99%E6%8B%89%E6%9F%A5%E8%AF%8D"><span class="nav-number">2.</span> <span class="nav-text">沙拉查词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SuperCopy"><span class="nav-number">3.</span> <span class="nav-text">SuperCopy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%8D%89%E6%96%99%E4%BA%8C%E7%BB%B4%E7%A0%81"><span class="nav-number">4.</span> <span class="nav-text">草料二维码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ColorZilla"><span class="nav-number">5.</span> <span class="nav-text">ColorZilla</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B9%A6%E7%AD%BE%E4%BE%A7%E8%BE%B9%E6%A0%8F"><span class="nav-number">6.</span> <span class="nav-text">书签侧边栏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Adblock-Plus"><span class="nav-number">7.</span> <span class="nav-text">Adblock Plus</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#infinity"><span class="nav-number">8.</span> <span class="nav-text">infinity</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ImageAssistant"><span class="nav-number">9.</span> <span class="nav-text">ImageAssistant</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98%E5%BA%94%E7%94%A8%E5%90%AF%E5%8A%A8%E5%99%A8"><span class="nav-number">10.</span> <span class="nav-text">云端硬盘应用启动器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PostWoman"><span class="nav-number">11.</span> <span class="nav-text">PostWoman</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Recent-History"><span class="nav-number">12.</span> <span class="nav-text">Recent History</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sps"><span class="nav-number">13.</span> <span class="nav-text">sps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Imagus"><span class="nav-number">14.</span> <span class="nav-text">Imagus</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tampermonkey-%E6%B2%B9%E7%8C%B4"><span class="nav-number">15.</span> <span class="nav-text">Tampermonkey 油猴</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E5%AE%83"><span class="nav-number">16.</span> <span class="nav-text">其它</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Ganbi"
+      src="https://q1.qlogo.cn/g?b=qq&nk=726817119&s=640">
+  <p class="site-author-name" itemprop="name">Ganbi</p>
+  <div class="site-description" itemprop="description"><img alt="今日诗词" src="https://v2.jinrishici.com/one.svg?font-size=18&spacing=2&color=Orchid" style="max-width:100%; display: block; margin: 0 auto;"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://www.aliyundrive.com/u/61e800e59c5b4b3db0ab077902c9039e" title="alyun → https:&#x2F;&#x2F;www.aliyundrive.com&#x2F;u&#x2F;61e800e59c5b4b3db0ab077902c9039e" rel="noopener" target="_blank">alyun</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.douban.com/people/n726817119/" title="DouBan → https:&#x2F;&#x2F;www.douban.com&#x2F;people&#x2F;n726817119&#x2F;" rel="noopener" target="_blank">DouBan</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:726817119@qq.com" title="E-Mail → mailto:726817119@qq.com" rel="noopener" target="_blank">E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="rss → &#x2F;atom.xml">rss</a>
+      </span>
+  </div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; Ganbi博客网 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-hand-holding-heart fa-fw"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Ganbi</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+
+
+  
+
+  
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'http://example.com/posts/60430.html',]
+      });
+      });
+  </script>
+
+</body>
+</html>

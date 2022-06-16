@@ -1,31 +1,2155 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>使用到的插件</title>
-    <url>/posts/56218.html</url>
-    <content><![CDATA[<p>说句话</p>
+    <title>Fluid主题常用</title>
+    <url>/posts/26793.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>记录一下，容易忘事没办法🤔</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<span id="more"></span>
+
+<p>排序<code>sticky: 100</code>数值越大越靠前<br>隐藏文章，不显示却存在<code>hide: true</code></p>
+<h2 id="组图"><a href="#组图" class="headerlink" title="组图"></a>组图</h2><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% gi total n1-n2-... %&#125;</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">&#123;% endgi %&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<a class="btn" href="https://hexo.fluid-dev.com/docs/start/">
+            <i class="fa fa-"></i>官方文档
+          </a>]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>主题</tag>
+        <tag>Fluid</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git代码记录</title>
+    <url>/posts/53509.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>it代码以及一些使用记录</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<span id="more"></span>
+
+<p><img src="https://s2.51cto.com/wyfs02/M01/7F/C5/wKioL1csFvzgRl0BAAfkZ-RH-sw296.png" alt="git常用命令表"></p>
+<p><code>git add .</code> 添加文件<br><code>git commit -m &#39;注释&#39;</code> 提交<br><code>git push -u origin 分支</code> 推送</p>
+<p>从github拉取代码到‘链接’文件夹<code>git clone https://github.com/reruin/‘链接’.git</code><br>偶尔会出现这个错误<br><code>fatal: unable to access &#39;https://github.com/.......&#39;: OpenSSL SSL_read: Connection was reset, errno 10054</code><br><strong>产生原因：一般是这是因为服务器的SSL证书没有经过第三方机构的签署，所以才报错</strong><br>用这行代码解除验证<code>git config --global http.sslVerify &quot;false&quot;</code><br>安装命令	<code>bash install.sh</code></p>
+<h2 id="网上教程"><a href="#网上教程" class="headerlink" title="网上教程"></a>网上教程</h2><a class="btn" href="https://www.jianshu.com/p/ea8196ea2713?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation">
+            <i class="fa fa-"></i>简书
+          </a>
+<a class="btn" href="https://blog.csdn.net/weixin_43641850/article/details/105284634">
+            <i class="fa fa-"></i>安装utteranc教程
+          </a>
+
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>git代码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>next主题使用</title>
+    <url>/posts/21513.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>记录一下，容易忘事没办法🤔</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<span id="more"></span>
+<h1 id="文本居中引用"><a href="#文本居中引用" class="headerlink" title="文本居中引用"></a>文本居中引用</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% cq %&#125;</span><br><span class="line">人类的本质是复读机。</span><br><span class="line"></span><br><span class="line">——**复读机**</span><br><span class="line">&#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
+<p>效果</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>人类的本质是复读机。</p>
+<p>——<strong>复读机</strong></p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<p>完整标签名</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% centerquote %&#125;</span><br><span class="line">人类的本质是复读机。</span><br><span class="line"></span><br><span class="line">——**复读机**</span><br><span class="line">&#123;% endcenterquote %&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="按钮标签样式"><a href="#按钮标签样式" class="headerlink" title="按钮标签样式"></a>按钮标签样式</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% btn https://www.baidu.com, 点击前往百度, download fa-lg fa-fw %&#125;</span><br></pre></td></tr></table></figure>
+<p>效果</p>
+<a class="btn" href="http://www.fontawesome.com.cn/faicons/">
+            <i class="fa fa-link fa-fw"></i>faicons图标
+          </a>
+
+
+<hr>
+<h1 id="Note标签"><a href="#Note标签" class="headerlink" title="Note标签"></a>Note标签</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;default&#123;% endnote %&#125;</span><br><span class="line">&#123;% note primary %&#125;primary&#123;% endnote %&#125;</span><br><span class="line">&#123;% note success %&#125;success&#123;% endnote %&#125;</span><br><span class="line">&#123;% note info %&#125;info&#123;% endnote %&#125;</span><br><span class="line">&#123;% note warning %&#125;warning&#123;% endnote %&#125;</span><br><span class="line">&#123;% note danger %&#125;danger&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+<p>效果</p>
+<div class="note default">
+            <p>default</p>
+          </div>
+<div class="note primary">
+            <p>primary</p>
+          </div>
+<div class="note success">
+            <p>success</p>
+          </div>
+<div class="note info">
+            <p>info</p>
+          </div>
+<div class="note warning">
+            <p>warning</p>
+          </div>
+<div class="note danger">
+            <p>danger</p>
+          </div>
+<hr>
+<h1 id="tab标签"><a href="#tab标签" class="headerlink" title="tab标签"></a>tab标签</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% tabs 贴吧, 1 %&#125;</span><br><span class="line">&lt;!-- tab android开发吧@home --&gt;</span><br><span class="line">有问题为什么不先问问隔壁Java吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab java吧 --&gt;</span><br><span class="line">有问题为什么不先问问隔壁C++吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab c++吧 --&gt;</span><br><span class="line">有问题为什么不先问问隔壁C语言吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab c语言 --&gt;</span><br><span class="line">有问题为什么不先问问神奇海螺吧呢？</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&lt;!-- tab 神奇海螺 --&gt;</span><br><span class="line">有问必答不知道</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+<p>效果</p>
+<div class="tabs" id="贴吧"><ul class="nav-tabs"><li class="tab active"><a href="#贴吧-1"><i class="fa fa-home"></i>android开发吧</a></li><li class="tab"><a href="#贴吧-2">java吧</a></li><li class="tab"><a href="#贴吧-3">c++吧</a></li><li class="tab"><a href="#贴吧-4">c语言</a></li><li class="tab"><a href="#贴吧-5">神奇海螺</a></li></ul><div class="tab-content"><div class="tab-pane active" id="贴吧-1"><p>有问题为什么不先问问隔壁Java吧呢？</p></div><div class="tab-pane" id="贴吧-2"><p>有问题为什么不先问问隔壁C++吧呢？</p></div><div class="tab-pane" id="贴吧-3"><p>有问题为什么不先问问隔壁C语言吧呢？</p></div><div class="tab-pane" id="贴吧-4"><p>有问题为什么不先问问神奇海螺吧呢？</p></div><div class="tab-pane" id="贴吧-5"><p>有问必答不知道</p></div></div></div>
+<p>图标使用方法，@加上图标名字<a class="btn" href="http://www.fontawesome.com.cn/faicons/">
+            <i class="fa fa-link fa-fw"></i>fontawesome图标库
+          </a></p>
+<hr>
+<h1 id="修改默认的post和draft的模板"><a href="#修改默认的post和draft的模板" class="headerlink" title="修改默认的post和draft的模板"></a>修改默认的post和draft的模板</h1><p>通过hexo n post XXX或者hexo n draft XXX所生成的文章或草稿是根据默认的模板来生成的，我们可以自己来定制想要的模板。<br>在站点根目录下的 scaffolds 文件夹下，存放着 draft.md， page.md 和 post.md这三个文件夹，一般我们只需要修改draft和post这两个模板就行了。<br>我们可以在模板的文件头里添加自己想要的格式，如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>这样使用命令生成的draft或post都会默认带有上边的文件头了。</p>
+<blockquote>
+<p>也可以新建一个自己喜欢的文件名字，写上自己喜欢的模板<br>使用就是 <code>hexo n 你自建的名字 你要创建的文章名字</code> </p>
+</blockquote>
+<hr>
+<h1 id="如何使用上标、下标"><a href="#如何使用上标、下标" class="headerlink" title="如何使用上标、下标"></a>如何使用上标、下标</h1><p>Markdown可以和HTML的语法兼容，可以通过HTML的上标和下标标签来实现效果：<br>上标<code>2&lt;sup&gt;10&lt;/sup&gt;</code><br>下标<code>H&lt;sub&gt;2&lt;/sub&gt;O</code><br>效果<br>2<sup>10</sup><br>H<sub>2</sub>O<br>这里解释下，sup指的是superscript上标，sub指的是subscript下标</p>
+<hr>
+<h1 id="如何给文本加下划线"><a href="#如何给文本加下划线" class="headerlink" title="如何给文本加下划线"></a>如何给文本加下划线</h1><p>Markdown可以和HTML的语法兼容，可以通过HTML的<code>&lt;u&gt;</code>标签来实现效果：<br><u>下划线</u></p>
+<hr>
+<h1 id="网上教程"><a href="#网上教程" class="headerlink" title="网上教程"></a>网上教程</h1><a class="btn" href="https://blog.csdn.net/lewky_liu/article/details/89932214">
+            <i class="fa fa-fire fa-fw"></i>点击前往
+          </a>
+<a class="btn" href="https://theme-next.iissnan.com/tag-plugins.html">
+            <i class="fa fa-fire fa-fw"></i>官方文档
+          </a>]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>主题</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>主题内置图标</title>
+    <url>/posts/37672.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>主题所有内置图标</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+
+<div><i class="fa fa-500px fa-fw"></i>
+<i class="fa fa-accessible-icon fa-fw"></i>
+<i class="fa fa-accusoft fa-fw"></i>
+<i class="fa fa-acquisitions-incorporated fa-fw"></i>
+<i class="fa fa-ad fa-fw"></i>
+<i class="fa fa-address-book fa-fw"></i>
+<i class="fa fa-address-card fa-fw"></i>
+<i class="fa fa-adjust fa-fw"></i>
+<i class="fa fa-adn fa-fw"></i>
+<i class="fa fa-adobe fa-fw"></i>
+<i class="fa fa-adversal fa-fw"></i>
+<i class="fa fa-affiliatetheme fa-fw"></i>
+<i class="fa fa-air-freshener fa-fw"></i>
+<i class="fa fa-airbnb fa-fw"></i>
+<i class="fa fa-algolia fa-fw"></i>
+<i class="fa fa-align-center fa-fw"></i>
+<i class="fa fa-align-justify fa-fw"></i>
+<i class="fa fa-align-left fa-fw"></i>
+<i class="fa fa-align-right fa-fw"></i>
+<i class="fa fa-alipay fa-fw"></i>
+<i class="fa fa-allergies fa-fw"></i>
+<i class="fa fa-amazon fa-fw"></i>
+<i class="fa fa-amazon-pay fa-fw"></i>
+<i class="fa fa-ambulance fa-fw"></i>
+<i class="fa fa-american-sign-language-interpreting fa-fw"></i>
+<i class="fa fa-amilia fa-fw"></i>
+<i class="fa fa-anchor fa-fw"></i>
+<i class="fa fa-android fa-fw"></i>
+<i class="fa fa-angellist fa-fw"></i>
+<i class="fa fa-angle-double-down fa-fw"></i>
+<i class="fa fa-angle-double-left fa-fw"></i>
+<i class="fa fa-angle-double-right fa-fw"></i>
+<i class="fa fa-angle-double-up fa-fw"></i>
+<i class="fa fa-angle-down fa-fw"></i>
+<i class="fa fa-angle-left fa-fw"></i>
+<i class="fa fa-angle-right fa-fw"></i>
+<i class="fa fa-angle-up fa-fw"></i>
+<i class="fa fa-angry fa-fw"></i>
+<i class="fa fa-angrycreative fa-fw"></i>
+<i class="fa fa-angular fa-fw"></i>
+<i class="fa fa-ankh fa-fw"></i>
+<i class="fa fa-app-store fa-fw"></i>
+<i class="fa fa-app-store-ios fa-fw"></i>
+<i class="fa fa-apper fa-fw"></i>
+<i class="fa fa-apple fa-fw"></i>
+<i class="fa fa-apple-alt fa-fw"></i>
+<i class="fa fa-apple-pay fa-fw"></i>
+<i class="fa fa-archive fa-fw"></i>
+<i class="fa fa-archway fa-fw"></i>
+<i class="fa fa-arrow-alt-circle-down fa-fw"></i>
+<i class="fa fa-arrow-alt-circle-left fa-fw"></i>
+<i class="fa fa-arrow-alt-circle-right fa-fw"></i>
+<i class="fa fa-arrow-alt-circle-up fa-fw"></i>
+<i class="fa fa-arrow-circle-down fa-fw"></i>
+<i class="fa fa-arrow-circle-left fa-fw"></i>
+<i class="fa fa-arrow-circle-right fa-fw"></i>
+<i class="fa fa-arrow-circle-up fa-fw"></i>
+<i class="fa fa-arrow-down fa-fw"></i>
+<i class="fa fa-arrow-left fa-fw"></i>
+<i class="fa fa-arrow-right fa-fw"></i>
+<i class="fa fa-arrow-up fa-fw"></i>
+<i class="fa fa-arrows-alt fa-fw"></i>
+<i class="fa fa-arrows-alt-h fa-fw"></i>
+<i class="fa fa-arrows-alt-v fa-fw"></i>
+<i class="fa fa-artstation fa-fw"></i>
+<i class="fa fa-assistive-listening-systems fa-fw"></i>
+<i class="fa fa-asterisk fa-fw"></i>
+<i class="fa fa-asymmetrik fa-fw"></i>
+<i class="fa fa-at fa-fw"></i>
+<i class="fa fa-atlas fa-fw"></i>
+<i class="fa fa-atlassian fa-fw"></i>
+<i class="fa fa-atom fa-fw"></i>
+<i class="fa fa-audible fa-fw"></i>
+<i class="fa fa-audio-description fa-fw"></i>
+<i class="fa fa-autoprefixer fa-fw"></i>
+<i class="fa fa-avianex fa-fw"></i>
+<i class="fa fa-aviato fa-fw"></i>
+<i class="fa fa-award fa-fw"></i>
+<i class="fa fa-aws fa-fw"></i>
+<i class="fa fa-baby fa-fw"></i>
+<i class="fa fa-baby-carriage fa-fw"></i>
+<i class="fa fa-backspace fa-fw"></i>
+<i class="fa fa-backward fa-fw"></i>
+<i class="fa fa-bacon fa-fw"></i>
+<i class="fa fa-bahai fa-fw"></i>
+<i class="fa fa-balance-scale fa-fw"></i>
+<i class="fa fa-balance-scale-left fa-fw"></i>
+<i class="fa fa-balance-scale-right fa-fw"></i>
+<i class="fa fa-ban fa-fw"></i>
+<i class="fa fa-band-aid fa-fw"></i>
+<i class="fa fa-bandcamp fa-fw"></i>
+<i class="fa fa-barcode fa-fw"></i>
+<i class="fa fa-bars fa-fw"></i>
+<i class="fa fa-baseball-ball fa-fw"></i>
+<i class="fa fa-basketball-ball fa-fw"></i>
+<i class="fa fa-bath fa-fw"></i>
+<i class="fa fa-battery-empty fa-fw"></i>
+<i class="fa fa-battery-full fa-fw"></i>
+<i class="fa fa-battery-half fa-fw"></i>
+<i class="fa fa-battery-quarter fa-fw"></i>
+<i class="fa fa-battery-three-quarters fa-fw"></i>
+<i class="fa fa-battle-net fa-fw"></i>
+<i class="fa fa-bed fa-fw"></i>
+<i class="fa fa-beer fa-fw"></i>
+<i class="fa fa-behance fa-fw"></i>
+<i class="fa fa-behance-square fa-fw"></i>
+<i class="fa fa-bell fa-fw"></i>
+<i class="fa fa-bell-slash fa-fw"></i>
+<i class="fa fa-bezier-curve fa-fw"></i>
+<i class="fa fa-bible fa-fw"></i>
+<i class="fa fa-bicycle fa-fw"></i>
+<i class="fa fa-biking fa-fw"></i>
+<i class="fa fa-bimobject fa-fw"></i>
+<i class="fa fa-binoculars fa-fw"></i>
+<i class="fa fa-biohazard fa-fw"></i>
+<i class="fa fa-birthday-cake fa-fw"></i>
+<i class="fa fa-bitbucket fa-fw"></i>
+<i class="fa fa-bitcoin fa-fw"></i>
+<i class="fa fa-bity fa-fw"></i>
+<i class="fa fa-black-tie fa-fw"></i>
+<i class="fa fa-blackberry fa-fw"></i>
+<i class="fa fa-blender fa-fw"></i>
+<i class="fa fa-blender-phone fa-fw"></i>
+<i class="fa fa-blind fa-fw"></i>
+<i class="fa fa-blog fa-fw"></i>
+<i class="fa fa-blogger fa-fw"></i>
+<i class="fa fa-blogger-b fa-fw"></i>
+<i class="fa fa-bluetooth fa-fw"></i>
+<i class="fa fa-bluetooth-b fa-fw"></i>
+<i class="fa fa-bold fa-fw"></i>
+<i class="fa fa-bolt fa-fw"></i>
+<i class="fa fa-bomb fa-fw"></i>
+<i class="fa fa-bone fa-fw"></i>
+<i class="fa fa-bong fa-fw"></i>
+<i class="fa fa-book fa-fw"></i>
+<i class="fa fa-book-dead fa-fw"></i>
+<i class="fa fa-book-medical fa-fw"></i>
+<i class="fa fa-book-open fa-fw"></i>
+<i class="fa fa-book-reader fa-fw"></i>
+<i class="fa fa-bookmark fa-fw"></i>
+<i class="fa fa-bootstrap fa-fw"></i>
+<i class="fa fa-border-all fa-fw"></i>
+<i class="fa fa-border-none fa-fw"></i>
+<i class="fa fa-border-style fa-fw"></i>
+<i class="fa fa-bowling-ball fa-fw"></i>
+<i class="fa fa-box fa-fw"></i>
+<i class="fa fa-box-open fa-fw"></i>
+<i class="fa fa-box-tissue fa-fw"></i>
+<i class="fa fa-boxes fa-fw"></i>
+<i class="fa fa-braille fa-fw"></i>
+<i class="fa fa-brain fa-fw"></i>
+<i class="fa fa-bread-slice fa-fw"></i>
+<i class="fa fa-briefcase fa-fw"></i>
+<i class="fa fa-briefcase-medical fa-fw"></i>
+<i class="fa fa-broadcast-tower fa-fw"></i>
+<i class="fa fa-broom fa-fw"></i>
+<i class="fa fa-brush fa-fw"></i>
+<i class="fa fa-btc fa-fw"></i>
+<i class="fa fa-buffer fa-fw"></i>
+<i class="fa fa-bug fa-fw"></i>
+<i class="fa fa-building fa-fw"></i>
+<i class="fa fa-bullhorn fa-fw"></i>
+<i class="fa fa-bullseye fa-fw"></i>
+<i class="fa fa-burn fa-fw"></i>
+<i class="fa fa-buromobelexperte fa-fw"></i>
+<i class="fa fa-bus fa-fw"></i>
+<i class="fa fa-bus-alt fa-fw"></i>
+<i class="fa fa-business-time fa-fw"></i>
+<i class="fa fa-buy-n-large fa-fw"></i>
+<i class="fa fa-buysellads fa-fw"></i>
+<i class="fa fa-calculator fa-fw"></i>
+<i class="fa fa-calendar fa-fw"></i>
+<i class="fa fa-calendar-alt fa-fw"></i>
+<i class="fa fa-calendar-check fa-fw"></i>
+<i class="fa fa-calendar-day fa-fw"></i>
+<i class="fa fa-calendar-minus fa-fw"></i>
+<i class="fa fa-calendar-plus fa-fw"></i>
+<i class="fa fa-calendar-times fa-fw"></i>
+<i class="fa fa-calendar-week fa-fw"></i>
+<i class="fa fa-camera fa-fw"></i>
+<i class="fa fa-camera-retro fa-fw"></i>
+<i class="fa fa-campground fa-fw"></i>
+<i class="fa fa-canadian-maple-leaf fa-fw"></i>
+<i class="fa fa-candy-cane fa-fw"></i>
+<i class="fa fa-cannabis fa-fw"></i>
+<i class="fa fa-capsules fa-fw"></i>
+<i class="fa fa-car fa-fw"></i>
+<i class="fa fa-car-alt fa-fw"></i>
+<i class="fa fa-car-battery fa-fw"></i>
+<i class="fa fa-car-crash fa-fw"></i>
+<i class="fa fa-car-side fa-fw"></i>
+<i class="fa fa-caravan fa-fw"></i>
+<i class="fa fa-caret-down fa-fw"></i>
+<i class="fa fa-caret-left fa-fw"></i>
+<i class="fa fa-caret-right fa-fw"></i>
+<i class="fa fa-caret-square-down fa-fw"></i>
+<i class="fa fa-caret-square-left fa-fw"></i>
+<i class="fa fa-caret-square-right fa-fw"></i>
+<i class="fa fa-caret-square-up fa-fw"></i>
+<i class="fa fa-caret-up fa-fw"></i>
+<i class="fa fa-carrot fa-fw"></i>
+<i class="fa fa-cart-arrow-down fa-fw"></i>
+<i class="fa fa-cart-plus fa-fw"></i>
+<i class="fa fa-cash-register fa-fw"></i>
+<i class="fa fa-cat fa-fw"></i>
+<i class="fa fa-cc-amazon-pay fa-fw"></i>
+<i class="fa fa-cc-amex fa-fw"></i>
+<i class="fa fa-cc-apple-pay fa-fw"></i>
+<i class="fa fa-cc-diners-club fa-fw"></i>
+<i class="fa fa-cc-discover fa-fw"></i>
+<i class="fa fa-cc-jcb fa-fw"></i>
+<i class="fa fa-cc-mastercard fa-fw"></i>
+<i class="fa fa-cc-paypal fa-fw"></i>
+<i class="fa fa-cc-stripe fa-fw"></i>
+<i class="fa fa-cc-visa fa-fw"></i>
+<i class="fa fa-centercode fa-fw"></i>
+<i class="fa fa-centos fa-fw"></i>
+<i class="fa fa-certificate fa-fw"></i>
+<i class="fa fa-chair fa-fw"></i>
+<i class="fa fa-chalkboard fa-fw"></i>
+<i class="fa fa-chalkboard-teacher fa-fw"></i>
+<i class="fa fa-charging-station fa-fw"></i>
+<i class="fa fa-chart-area fa-fw"></i>
+<i class="fa fa-chart-bar fa-fw"></i>
+<i class="fa fa-chart-line fa-fw"></i>
+<i class="fa fa-chart-pie fa-fw"></i>
+<i class="fa fa-check fa-fw"></i>
+<i class="fa fa-check-circle fa-fw"></i>
+<i class="fa fa-check-double fa-fw"></i>
+<i class="fa fa-check-square fa-fw"></i>
+<i class="fa fa-cheese fa-fw"></i>
+<i class="fa fa-chess fa-fw"></i>
+<i class="fa fa-chess-bishop fa-fw"></i>
+<i class="fa fa-chess-board fa-fw"></i>
+<i class="fa fa-chess-king fa-fw"></i>
+<i class="fa fa-chess-knight fa-fw"></i>
+<i class="fa fa-chess-pawn fa-fw"></i>
+<i class="fa fa-chess-queen fa-fw"></i>
+<i class="fa fa-chess-rook fa-fw"></i>
+<i class="fa fa-chevron-circle-down fa-fw"></i>
+<i class="fa fa-chevron-circle-left fa-fw"></i>
+<i class="fa fa-chevron-circle-right fa-fw"></i>
+<i class="fa fa-chevron-circle-up fa-fw"></i>
+<i class="fa fa-chevron-down fa-fw"></i>
+<i class="fa fa-chevron-left fa-fw"></i>
+<i class="fa fa-chevron-right fa-fw"></i>
+<i class="fa fa-chevron-up fa-fw"></i>
+<i class="fa fa-child fa-fw"></i>
+<i class="fa fa-chrome fa-fw"></i>
+<i class="fa fa-chromecast fa-fw"></i>
+<i class="fa fa-church fa-fw"></i>
+<i class="fa fa-circle fa-fw"></i>
+<i class="fa fa-circle-notch fa-fw"></i>
+<i class="fa fa-city fa-fw"></i>
+<i class="fa fa-clinic-medical fa-fw"></i>
+<i class="fa fa-clipboard fa-fw"></i>
+<i class="fa fa-clipboard-check fa-fw"></i>
+<i class="fa fa-clipboard-list fa-fw"></i>
+<i class="fa fa-clock fa-fw"></i>
+<i class="fa fa-clone fa-fw"></i>
+<i class="fa fa-closed-captioning fa-fw"></i>
+<i class="fa fa-cloud fa-fw"></i>
+<i class="fa fa-cloud-download-alt fa-fw"></i>
+<i class="fa fa-cloud-meatball fa-fw"></i>
+<i class="fa fa-cloud-moon fa-fw"></i>
+<i class="fa fa-cloud-moon-rain fa-fw"></i>
+<i class="fa fa-cloud-rain fa-fw"></i>
+<i class="fa fa-cloud-showers-heavy fa-fw"></i>
+<i class="fa fa-cloud-sun fa-fw"></i>
+<i class="fa fa-cloud-sun-rain fa-fw"></i>
+<i class="fa fa-cloud-upload-alt fa-fw"></i>
+<i class="fa fa-cloudscale fa-fw"></i>
+<i class="fa fa-cloudsmith fa-fw"></i>
+<i class="fa fa-cloudversify fa-fw"></i>
+<i class="fa fa-cocktail fa-fw"></i>
+<i class="fa fa-code fa-fw"></i>
+<i class="fa fa-code-branch fa-fw"></i>
+<i class="fa fa-codepen fa-fw"></i>
+<i class="fa fa-codiepie fa-fw"></i>
+<i class="fa fa-coffee fa-fw"></i>
+<i class="fa fa-cog fa-fw"></i>
+<i class="fa fa-cogs fa-fw"></i>
+<i class="fa fa-coins fa-fw"></i>
+<i class="fa fa-columns fa-fw"></i>
+<i class="fa fa-comment fa-fw"></i>
+<i class="fa fa-comment-alt fa-fw"></i>
+<i class="fa fa-comment-dollar fa-fw"></i>
+<i class="fa fa-comment-dots fa-fw"></i>
+<i class="fa fa-comment-medical fa-fw"></i>
+<i class="fa fa-comment-slash fa-fw"></i>
+<i class="fa fa-comments fa-fw"></i>
+<i class="fa fa-comments-dollar fa-fw"></i>
+<i class="fa fa-compact-disc fa-fw"></i>
+<i class="fa fa-compass fa-fw"></i>
+<i class="fa fa-compress fa-fw"></i>
+<i class="fa fa-compress-alt fa-fw"></i>
+<i class="fa fa-compress-arrows-alt fa-fw"></i>
+<i class="fa fa-concierge-bell fa-fw"></i>
+<i class="fa fa-confluence fa-fw"></i>
+<i class="fa fa-connectdevelop fa-fw"></i>
+<i class="fa fa-contao fa-fw"></i>
+<i class="fa fa-cookie fa-fw"></i>
+<i class="fa fa-cookie-bite fa-fw"></i>
+<i class="fa fa-copy fa-fw"></i>
+<i class="fa fa-copyright fa-fw"></i>
+<i class="fa fa-cotton-bureau fa-fw"></i>
+<i class="fa fa-couch fa-fw"></i>
+<i class="fa fa-cpanel fa-fw"></i>
+<i class="fa fa-creative-commons fa-fw"></i>
+<i class="fa fa-creative-commons-by fa-fw"></i>
+<i class="fa fa-creative-commons-nc fa-fw"></i>
+<i class="fa fa-creative-commons-nc-eu fa-fw"></i>
+<i class="fa fa-creative-commons-nc-jp fa-fw"></i>
+<i class="fa fa-creative-commons-nd fa-fw"></i>
+<i class="fa fa-creative-commons-pd fa-fw"></i>
+<i class="fa fa-creative-commons-pd-alt fa-fw"></i>
+<i class="fa fa-creative-commons-remix fa-fw"></i>
+<i class="fa fa-creative-commons-sa fa-fw"></i>
+<i class="fa fa-creative-commons-sampling fa-fw"></i>
+<i class="fa fa-creative-commons-sampling-plus fa-fw"></i>
+<i class="fa fa-creative-commons-share fa-fw"></i>
+<i class="fa fa-creative-commons-zero fa-fw"></i>
+<i class="fa fa-credit-card fa-fw"></i>
+<i class="fa fa-critical-role fa-fw"></i>
+<i class="fa fa-crop fa-fw"></i>
+<i class="fa fa-crop-alt fa-fw"></i>
+<i class="fa fa-cross fa-fw"></i>
+<i class="fa fa-crosshairs fa-fw"></i>
+<i class="fa fa-crow fa-fw"></i>
+<i class="fa fa-crown fa-fw"></i>
+<i class="fa fa-crutch fa-fw"></i>
+<i class="fa fa-css3 fa-fw"></i>
+<i class="fa fa-css3-alt fa-fw"></i>
+<i class="fa fa-cube fa-fw"></i>
+<i class="fa fa-cubes fa-fw"></i>
+<i class="fa fa-cut fa-fw"></i>
+<i class="fa fa-cuttlefish fa-fw"></i>
+<i class="fa fa-d-and-d fa-fw"></i>
+<i class="fa fa-d-and-d-beyond fa-fw"></i>
+<i class="fa fa-dailymotion fa-fw"></i>
+<i class="fa fa-dashcube fa-fw"></i>
+<i class="fa fa-database fa-fw"></i>
+<i class="fa fa-deaf fa-fw"></i>
+<i class="fa fa-delicious fa-fw"></i>
+<i class="fa fa-democrat fa-fw"></i>
+<i class="fa fa-deploydog fa-fw"></i>
+<i class="fa fa-deskpro fa-fw"></i>
+<i class="fa fa-desktop fa-fw"></i>
+<i class="fa fa-dev fa-fw"></i>
+<i class="fa fa-deviantart fa-fw"></i>
+<i class="fa fa-dharmachakra fa-fw"></i>
+<i class="fa fa-dhl fa-fw"></i>
+<i class="fa fa-diagnoses fa-fw"></i>
+<i class="fa fa-diaspora fa-fw"></i>
+<i class="fa fa-dice fa-fw"></i>
+<i class="fa fa-dice-d20 fa-fw"></i>
+<i class="fa fa-dice-d6 fa-fw"></i>
+<i class="fa fa-dice-five fa-fw"></i>
+<i class="fa fa-dice-four fa-fw"></i>
+<i class="fa fa-dice-one fa-fw"></i>
+<i class="fa fa-dice-six fa-fw"></i>
+<i class="fa fa-dice-three fa-fw"></i>
+<i class="fa fa-dice-two fa-fw"></i>
+<i class="fa fa-digg fa-fw"></i>
+<i class="fa fa-digital-ocean fa-fw"></i>
+<i class="fa fa-digital-tachograph fa-fw"></i>
+<i class="fa fa-directions fa-fw"></i>
+<i class="fa fa-discord fa-fw"></i>
+<i class="fa fa-discourse fa-fw"></i>
+<i class="fa fa-disease fa-fw"></i>
+<i class="fa fa-divide fa-fw"></i>
+<i class="fa fa-dizzy fa-fw"></i>
+<i class="fa fa-dna fa-fw"></i>
+<i class="fa fa-dochub fa-fw"></i>
+<i class="fa fa-docker fa-fw"></i>
+<i class="fa fa-dog fa-fw"></i>
+<i class="fa fa-dollar-sign fa-fw"></i>
+<i class="fa fa-dolly fa-fw"></i>
+<i class="fa fa-dolly-flatbed fa-fw"></i>
+<i class="fa fa-donate fa-fw"></i>
+<i class="fa fa-door-closed fa-fw"></i>
+<i class="fa fa-door-open fa-fw"></i>
+<i class="fa fa-dot-circle fa-fw"></i>
+<i class="fa fa-dove fa-fw"></i>
+<i class="fa fa-download fa-fw"></i>
+<i class="fa fa-draft2digital fa-fw"></i>
+<i class="fa fa-drafting-compass fa-fw"></i>
+<i class="fa fa-dragon fa-fw"></i>
+<i class="fa fa-draw-polygon fa-fw"></i>
+<i class="fa fa-dribbble fa-fw"></i>
+<i class="fa fa-dribbble-square fa-fw"></i>
+<i class="fa fa-dropbox fa-fw"></i>
+<i class="fa fa-drum fa-fw"></i>
+<i class="fa fa-drum-steelpan fa-fw"></i>
+<i class="fa fa-drumstick-bite fa-fw"></i>
+<i class="fa fa-drupal fa-fw"></i>
+<i class="fa fa-dumbbell fa-fw"></i>
+<i class="fa fa-dumpster fa-fw"></i>
+<i class="fa fa-dumpster-fire fa-fw"></i>
+<i class="fa fa-dungeon fa-fw"></i>
+<i class="fa fa-dyalog fa-fw"></i>
+<i class="fa fa-earlybirds fa-fw"></i>
+<i class="fa fa-ebay fa-fw"></i>
+<i class="fa fa-edge fa-fw"></i>
+<i class="fa fa-edit fa-fw"></i>
+<i class="fa fa-egg fa-fw"></i>
+<i class="fa fa-eject fa-fw"></i>
+<i class="fa fa-elementor fa-fw"></i>
+<i class="fa fa-ellipsis-h fa-fw"></i>
+<i class="fa fa-ellipsis-v fa-fw"></i>
+<i class="fa fa-ello fa-fw"></i>
+<i class="fa fa-ember fa-fw"></i>
+<i class="fa fa-empire fa-fw"></i>
+<i class="fa fa-envelope fa-fw"></i>
+<i class="fa fa-envelope-open fa-fw"></i>
+<i class="fa fa-envelope-open-text fa-fw"></i>
+<i class="fa fa-envelope-square fa-fw"></i>
+<i class="fa fa-envira fa-fw"></i>
+<i class="fa fa-equals fa-fw"></i>
+<i class="fa fa-eraser fa-fw"></i>
+<i class="fa fa-erlang fa-fw"></i>
+<i class="fa fa-ethereum fa-fw"></i>
+<i class="fa fa-ethernet fa-fw"></i>
+<i class="fa fa-etsy fa-fw"></i>
+<i class="fa fa-euro-sign fa-fw"></i>
+<i class="fa fa-evernote fa-fw"></i>
+<i class="fa fa-exchange-alt fa-fw"></i>
+<i class="fa fa-exclamation fa-fw"></i>
+<i class="fa fa-exclamation-circle fa-fw"></i>
+<i class="fa fa-exclamation-triangle fa-fw"></i>
+<i class="fa fa-expand fa-fw"></i>
+<i class="fa fa-expand-alt fa-fw"></i>
+<i class="fa fa-expand-arrows-alt fa-fw"></i>
+<i class="fa fa-expeditedssl fa-fw"></i>
+<i class="fa fa-external-link-alt fa-fw"></i>
+<i class="fa fa-external-link-square-alt fa-fw"></i>
+<i class="fa fa-eye fa-fw"></i>
+<i class="fa fa-eye-dropper fa-fw"></i>
+<i class="fa fa-eye-slash fa-fw"></i>
+<i class="fa fa-facebook fa-fw"></i>
+<i class="fa fa-facebook-f fa-fw"></i>
+<i class="fa fa-facebook-messenger fa-fw"></i>
+<i class="fa fa-facebook-square fa-fw"></i>
+<i class="fa fa-fan fa-fw"></i>
+<i class="fa fa-fantasy-flight-games fa-fw"></i>
+<i class="fa fa-fast-backward fa-fw"></i>
+<i class="fa fa-fast-forward fa-fw"></i>
+<i class="fa fa-faucet fa-fw"></i>
+<i class="fa fa-fax fa-fw"></i>
+<i class="fa fa-feather fa-fw"></i>
+<i class="fa fa-feather-alt fa-fw"></i>
+<i class="fa fa-fedex fa-fw"></i>
+<i class="fa fa-fedora fa-fw"></i>
+<i class="fa fa-female fa-fw"></i>
+<i class="fa fa-fighter-jet fa-fw"></i>
+<i class="fa fa-figma fa-fw"></i>
+<i class="fa fa-file fa-fw"></i>
+<i class="fa fa-file-alt fa-fw"></i>
+<i class="fa fa-file-archive fa-fw"></i>
+<i class="fa fa-file-audio fa-fw"></i>
+<i class="fa fa-file-code fa-fw"></i>
+<i class="fa fa-file-contract fa-fw"></i>
+<i class="fa fa-file-csv fa-fw"></i>
+<i class="fa fa-file-download fa-fw"></i>
+<i class="fa fa-file-excel fa-fw"></i>
+<i class="fa fa-file-export fa-fw"></i>
+<i class="fa fa-file-image fa-fw"></i>
+<i class="fa fa-file-import fa-fw"></i>
+<i class="fa fa-file-invoice fa-fw"></i>
+<i class="fa fa-file-invoice-dollar fa-fw"></i>
+<i class="fa fa-file-medical fa-fw"></i>
+<i class="fa fa-file-medical-alt fa-fw"></i>
+<i class="fa fa-file-pdf fa-fw"></i>
+<i class="fa fa-file-powerpoint fa-fw"></i>
+<i class="fa fa-file-prescription fa-fw"></i>
+<i class="fa fa-file-signature fa-fw"></i>
+<i class="fa fa-file-upload fa-fw"></i>
+<i class="fa fa-file-video fa-fw"></i>
+<i class="fa fa-file-word fa-fw"></i>
+<i class="fa fa-fill fa-fw"></i>
+<i class="fa fa-fill-drip fa-fw"></i>
+<i class="fa fa-film fa-fw"></i>
+<i class="fa fa-filter fa-fw"></i>
+<i class="fa fa-fingerprint fa-fw"></i>
+<i class="fa fa-fire fa-fw"></i>
+<i class="fa fa-fire-alt fa-fw"></i>
+<i class="fa fa-fire-extinguisher fa-fw"></i>
+<i class="fa fa-firefox fa-fw"></i>
+<i class="fa fa-firefox-browser fa-fw"></i>
+<i class="fa fa-first-aid fa-fw"></i>
+<i class="fa fa-first-order fa-fw"></i>
+<i class="fa fa-first-order-alt fa-fw"></i>
+<i class="fa fa-firstdraft fa-fw"></i>
+<i class="fa fa-fish fa-fw"></i>
+<i class="fa fa-fist-raised fa-fw"></i>
+<i class="fa fa-flag fa-fw"></i>
+<i class="fa fa-flag-checkered fa-fw"></i>
+<i class="fa fa-flag-usa fa-fw"></i>
+<i class="fa fa-flask fa-fw"></i>
+<i class="fa fa-flickr fa-fw"></i>
+<i class="fa fa-flipboard fa-fw"></i>
+<i class="fa fa-flushed fa-fw"></i>
+<i class="fa fa-fly fa-fw"></i>
+<i class="fa fa-folder fa-fw"></i>
+<i class="fa fa-folder-minus fa-fw"></i>
+<i class="fa fa-folder-open fa-fw"></i>
+<i class="fa fa-folder-plus fa-fw"></i>
+<i class="fa fa-font fa-fw"></i>
+<i class="fa fa-font-awesome fa-fw"></i>
+<i class="fa fa-font-awesome-alt fa-fw"></i>
+<i class="fa fa-font-awesome-flag fa-fw"></i>
+<i class="fa fa-font-awesome-logo-full fa-fw"></i>
+<i class="fa fa-fonticons fa-fw"></i>
+<i class="fa fa-fonticons-fi fa-fw"></i>
+<i class="fa fa-football-ball fa-fw"></i>
+<i class="fa fa-fort-awesome fa-fw"></i>
+<i class="fa fa-fort-awesome-alt fa-fw"></i>
+<i class="fa fa-forumbee fa-fw"></i>
+<i class="fa fa-forward fa-fw"></i>
+<i class="fa fa-foursquare fa-fw"></i>
+<i class="fa fa-free-code-camp fa-fw"></i>
+<i class="fa fa-freebsd fa-fw"></i>
+<i class="fa fa-frog fa-fw"></i>
+<i class="fa fa-frown fa-fw"></i>
+<i class="fa fa-frown-open fa-fw"></i>
+<i class="fa fa-fulcrum fa-fw"></i>
+<i class="fa fa-funnel-dollar fa-fw"></i>
+<i class="fa fa-futbol fa-fw"></i>
+<i class="fa fa-galactic-republic fa-fw"></i>
+<i class="fa fa-galactic-senate fa-fw"></i>
+<i class="fa fa-gamepad fa-fw"></i>
+<i class="fa fa-gas-pump fa-fw"></i>
+<i class="fa fa-gavel fa-fw"></i>
+<i class="fa fa-gem fa-fw"></i>
+<i class="fa fa-genderless fa-fw"></i>
+<i class="fa fa-get-pocket fa-fw"></i>
+<i class="fa fa-gg fa-fw"></i>
+<i class="fa fa-gg-circle fa-fw"></i>
+<i class="fa fa-ghost fa-fw"></i>
+<i class="fa fa-gift fa-fw"></i>
+<i class="fa fa-gifts fa-fw"></i>
+<i class="fa fa-git fa-fw"></i>
+<i class="fa fa-git-alt fa-fw"></i>
+<i class="fa fa-git-square fa-fw"></i>
+<i class="fa fa-github fa-fw"></i>
+<i class="fa fa-github-alt fa-fw"></i>
+<i class="fa fa-github-square fa-fw"></i>
+<i class="fa fa-gitkraken fa-fw"></i>
+<i class="fa fa-gitlab fa-fw"></i>
+<i class="fa fa-gitter fa-fw"></i>
+<i class="fa fa-glass-cheers fa-fw"></i>
+<i class="fa fa-glass-martini fa-fw"></i>
+<i class="fa fa-glass-martini-alt fa-fw"></i>
+<i class="fa fa-glass-whiskey fa-fw"></i>
+<i class="fa fa-glasses fa-fw"></i>
+<i class="fa fa-glide fa-fw"></i>
+<i class="fa fa-glide-g fa-fw"></i>
+<i class="fa fa-globe fa-fw"></i>
+<i class="fa fa-globe-africa fa-fw"></i>
+<i class="fa fa-globe-americas fa-fw"></i>
+<i class="fa fa-globe-asia fa-fw"></i>
+<i class="fa fa-globe-europe fa-fw"></i>
+<i class="fa fa-gofore fa-fw"></i>
+<i class="fa fa-golf-ball fa-fw"></i>
+<i class="fa fa-goodreads fa-fw"></i>
+<i class="fa fa-goodreads-g fa-fw"></i>
+<i class="fa fa-google fa-fw"></i>
+<i class="fa fa-google-drive fa-fw"></i>
+<i class="fa fa-google-play fa-fw"></i>
+<i class="fa fa-google-plus fa-fw"></i>
+<i class="fa fa-google-plus-g fa-fw"></i>
+<i class="fa fa-google-plus-square fa-fw"></i>
+<i class="fa fa-google-wallet fa-fw"></i>
+<i class="fa fa-gopuram fa-fw"></i>
+<i class="fa fa-graduation-cap fa-fw"></i>
+<i class="fa fa-gratipay fa-fw"></i>
+<i class="fa fa-grav fa-fw"></i>
+<i class="fa fa-greater-than fa-fw"></i>
+<i class="fa fa-greater-than-equal fa-fw"></i>
+<i class="fa fa-grimace fa-fw"></i>
+<i class="fa fa-grin fa-fw"></i>
+<i class="fa fa-grin-alt fa-fw"></i>
+<i class="fa fa-grin-beam fa-fw"></i>
+<i class="fa fa-grin-beam-sweat fa-fw"></i>
+<i class="fa fa-grin-hearts fa-fw"></i>
+<i class="fa fa-grin-squint fa-fw"></i>
+<i class="fa fa-grin-squint-tears fa-fw"></i>
+<i class="fa fa-grin-stars fa-fw"></i>
+<i class="fa fa-grin-tears fa-fw"></i>
+<i class="fa fa-grin-tongue fa-fw"></i>
+<i class="fa fa-grin-tongue-squint fa-fw"></i>
+<i class="fa fa-grin-tongue-wink fa-fw"></i>
+<i class="fa fa-grin-wink fa-fw"></i>
+<i class="fa fa-grip-horizontal fa-fw"></i>
+<i class="fa fa-grip-lines fa-fw"></i>
+<i class="fa fa-grip-lines-vertical fa-fw"></i>
+<i class="fa fa-grip-vertical fa-fw"></i>
+<i class="fa fa-gripfire fa-fw"></i>
+<i class="fa fa-grunt fa-fw"></i>
+<i class="fa fa-guitar fa-fw"></i>
+<i class="fa fa-gulp fa-fw"></i>
+<i class="fa fa-h-square fa-fw"></i>
+<i class="fa fa-hacker-news fa-fw"></i>
+<i class="fa fa-hacker-news-square fa-fw"></i>
+<i class="fa fa-hackerrank fa-fw"></i>
+<i class="fa fa-hamburger fa-fw"></i>
+<i class="fa fa-hammer fa-fw"></i>
+<i class="fa fa-hamsa fa-fw"></i>
+<i class="fa fa-hand-holding fa-fw"></i>
+<i class="fa fa-hand-holding-heart fa-fw"></i>
+<i class="fa fa-hand-holding-medical fa-fw"></i>
+<i class="fa fa-hand-holding-usd fa-fw"></i>
+<i class="fa fa-hand-holding-water fa-fw"></i>
+<i class="fa fa-hand-lizard fa-fw"></i>
+<i class="fa fa-hand-middle-finger fa-fw"></i>
+<i class="fa fa-hand-paper fa-fw"></i>
+<i class="fa fa-hand-peace fa-fw"></i>
+<i class="fa fa-hand-point-down fa-fw"></i>
+<i class="fa fa-hand-point-left fa-fw"></i>
+<i class="fa fa-hand-point-right fa-fw"></i>
+<i class="fa fa-hand-point-up fa-fw"></i>
+<i class="fa fa-hand-pointer fa-fw"></i>
+<i class="fa fa-hand-rock fa-fw"></i>
+<i class="fa fa-hand-scissors fa-fw"></i>
+<i class="fa fa-hand-sparkles fa-fw"></i>
+<i class="fa fa-hand-spock fa-fw"></i>
+<i class="fa fa-hands fa-fw"></i>
+<i class="fa fa-hands-helping fa-fw"></i>
+<i class="fa fa-hands-wash fa-fw"></i>
+<i class="fa fa-handshake fa-fw"></i>
+<i class="fa fa-handshake-alt-slash fa-fw"></i>
+<i class="fa fa-handshake-slash fa-fw"></i>
+<i class="fa fa-hanukiah fa-fw"></i>
+<i class="fa fa-hard-hat fa-fw"></i>
+<i class="fa fa-hashtag fa-fw"></i>
+<i class="fa fa-hat-cowboy fa-fw"></i>
+<i class="fa fa-hat-cowboy-side fa-fw"></i>
+<i class="fa fa-hat-wizard fa-fw"></i>
+<i class="fa fa-hdd fa-fw"></i>
+<i class="fa fa-head-side-cough fa-fw"></i>
+<i class="fa fa-head-side-cough-slash fa-fw"></i>
+<i class="fa fa-head-side-mask fa-fw"></i>
+<i class="fa fa-head-side-virus fa-fw"></i>
+<i class="fa fa-heading fa-fw"></i>
+<i class="fa fa-headphones fa-fw"></i>
+<i class="fa fa-headphones-alt fa-fw"></i>
+<i class="fa fa-headset fa-fw"></i>
+<i class="fa fa-heart fa-fw"></i>
+<i class="fa fa-heart-broken fa-fw"></i>
+<i class="fa fa-heartbeat fa-fw"></i>
+<i class="fa fa-helicopter fa-fw"></i>
+<i class="fa fa-highlighter fa-fw"></i>
+<i class="fa fa-hiking fa-fw"></i>
+<i class="fa fa-hippo fa-fw"></i>
+<i class="fa fa-hips fa-fw"></i>
+<i class="fa fa-hire-a-helper fa-fw"></i>
+<i class="fa fa-history fa-fw"></i>
+<i class="fa fa-hockey-puck fa-fw"></i>
+<i class="fa fa-holly-berry fa-fw"></i>
+<i class="fa fa-home fa-fw"></i>
+<i class="fa fa-hooli fa-fw"></i>
+<i class="fa fa-hornbill fa-fw"></i>
+<i class="fa fa-horse fa-fw"></i>
+<i class="fa fa-horse-head fa-fw"></i>
+<i class="fa fa-hospital fa-fw"></i>
+<i class="fa fa-hospital-alt fa-fw"></i>
+<i class="fa fa-hospital-symbol fa-fw"></i>
+<i class="fa fa-hospital-user fa-fw"></i>
+<i class="fa fa-hot-tub fa-fw"></i>
+<i class="fa fa-hotdog fa-fw"></i>
+<i class="fa fa-hotel fa-fw"></i>
+<i class="fa fa-hotjar fa-fw"></i>
+<i class="fa fa-hourglass fa-fw"></i>
+<i class="fa fa-hourglass-end fa-fw"></i>
+<i class="fa fa-hourglass-half fa-fw"></i>
+<i class="fa fa-hourglass-start fa-fw"></i>
+<i class="fa fa-house-damage fa-fw"></i>
+<i class="fa fa-house-user fa-fw"></i>
+<i class="fa fa-houzz fa-fw"></i>
+<i class="fa fa-hryvnia fa-fw"></i>
+<i class="fa fa-html5 fa-fw"></i>
+<i class="fa fa-hubspot fa-fw"></i>
+<i class="fa fa-i-cursor fa-fw"></i>
+<i class="fa fa-ice-cream fa-fw"></i>
+<i class="fa fa-icicles fa-fw"></i>
+<i class="fa fa-icons fa-fw"></i>
+<i class="fa fa-id-badge fa-fw"></i>
+<i class="fa fa-id-card fa-fw"></i>
+<i class="fa fa-id-card-alt fa-fw"></i>
+<i class="fa fa-ideal fa-fw"></i>
+<i class="fa fa-igloo fa-fw"></i>
+<i class="fa fa-image fa-fw"></i>
+<i class="fa fa-images fa-fw"></i>
+<i class="fa fa-imdb fa-fw"></i>
+<i class="fa fa-inbox fa-fw"></i>
+<i class="fa fa-indent fa-fw"></i>
+<i class="fa fa-industry fa-fw"></i>
+<i class="fa fa-infinity fa-fw"></i>
+<i class="fa fa-info fa-fw"></i>
+<i class="fa fa-info-circle fa-fw"></i>
+<i class="fa fa-instagram fa-fw"></i>
+<i class="fa fa-instagram-square fa-fw"></i>
+<i class="fa fa-intercom fa-fw"></i>
+<i class="fa fa-internet-explorer fa-fw"></i>
+<i class="fa fa-invision fa-fw"></i>
+<i class="fa fa-ioxhost fa-fw"></i>
+<i class="fa fa-italic fa-fw"></i>
+<i class="fa fa-itch-io fa-fw"></i>
+<i class="fa fa-itunes fa-fw"></i>
+<i class="fa fa-itunes-note fa-fw"></i>
+<i class="fa fa-java fa-fw"></i>
+<i class="fa fa-jedi fa-fw"></i>
+<i class="fa fa-jedi-order fa-fw"></i>
+<i class="fa fa-jenkins fa-fw"></i>
+<i class="fa fa-jira fa-fw"></i>
+<i class="fa fa-joget fa-fw"></i>
+<i class="fa fa-joint fa-fw"></i>
+<i class="fa fa-joomla fa-fw"></i>
+<i class="fa fa-journal-whills fa-fw"></i>
+<i class="fa fa-js fa-fw"></i>
+<i class="fa fa-js-square fa-fw"></i>
+<i class="fa fa-jsfiddle fa-fw"></i>
+<i class="fa fa-kaaba fa-fw"></i>
+<i class="fa fa-kaggle fa-fw"></i>
+<i class="fa fa-key fa-fw"></i>
+<i class="fa fa-keybase fa-fw"></i>
+<i class="fa fa-keyboard fa-fw"></i>
+<i class="fa fa-keycdn fa-fw"></i>
+<i class="fa fa-khanda fa-fw"></i>
+<i class="fa fa-kickstarter fa-fw"></i>
+<i class="fa fa-kickstarter-k fa-fw"></i>
+<i class="fa fa-kiss fa-fw"></i>
+<i class="fa fa-kiss-beam fa-fw"></i>
+<i class="fa fa-kiss-wink-heart fa-fw"></i>
+<i class="fa fa-kiwi-bird fa-fw"></i>
+<i class="fa fa-korvue fa-fw"></i>
+<i class="fa fa-landmark fa-fw"></i>
+<i class="fa fa-language fa-fw"></i>
+<i class="fa fa-laptop fa-fw"></i>
+<i class="fa fa-laptop-code fa-fw"></i>
+<i class="fa fa-laptop-house fa-fw"></i>
+<i class="fa fa-laptop-medical fa-fw"></i>
+<i class="fa fa-laravel fa-fw"></i>
+<i class="fa fa-lastfm fa-fw"></i>
+<i class="fa fa-lastfm-square fa-fw"></i>
+<i class="fa fa-laugh fa-fw"></i>
+<i class="fa fa-laugh-beam fa-fw"></i>
+<i class="fa fa-laugh-squint fa-fw"></i>
+<i class="fa fa-laugh-wink fa-fw"></i>
+<i class="fa fa-layer-group fa-fw"></i>
+<i class="fa fa-leaf fa-fw"></i>
+<i class="fa fa-leanpub fa-fw"></i>
+<i class="fa fa-lemon fa-fw"></i>
+<i class="fa fa-less fa-fw"></i>
+<i class="fa fa-less-than fa-fw"></i>
+<i class="fa fa-less-than-equal fa-fw"></i>
+<i class="fa fa-level-down-alt fa-fw"></i>
+<i class="fa fa-level-up-alt fa-fw"></i>
+<i class="fa fa-life-ring fa-fw"></i>
+<i class="fa fa-lightbulb fa-fw"></i>
+<i class="fa fa-line fa-fw"></i>
+<i class="fa fa-link fa-fw"></i>
+<i class="fa fa-linkedin fa-fw"></i>
+<i class="fa fa-linkedin-in fa-fw"></i>
+<i class="fa fa-linode fa-fw"></i>
+<i class="fa fa-linux fa-fw"></i>
+<i class="fa fa-lira-sign fa-fw"></i>
+<i class="fa fa-list fa-fw"></i>
+<i class="fa fa-list-alt fa-fw"></i>
+<i class="fa fa-list-ol fa-fw"></i>
+<i class="fa fa-list-ul fa-fw"></i>
+<i class="fa fa-location-arrow fa-fw"></i>
+<i class="fa fa-lock fa-fw"></i>
+<i class="fa fa-lock-open fa-fw"></i>
+<i class="fa fa-long-arrow-alt-down fa-fw"></i>
+<i class="fa fa-long-arrow-alt-left fa-fw"></i>
+<i class="fa fa-long-arrow-alt-right fa-fw"></i>
+<i class="fa fa-long-arrow-alt-up fa-fw"></i>
+<i class="fa fa-low-vision fa-fw"></i>
+<i class="fa fa-luggage-cart fa-fw"></i>
+<i class="fa fa-lungs fa-fw"></i>
+<i class="fa fa-lungs-virus fa-fw"></i>
+<i class="fa fa-lyft fa-fw"></i>
+<i class="fa fa-magento fa-fw"></i>
+<i class="fa fa-magic fa-fw"></i>
+<i class="fa fa-magnet fa-fw"></i>
+<i class="fa fa-mail-bulk fa-fw"></i>
+<i class="fa fa-mailchimp fa-fw"></i>
+<i class="fa fa-male fa-fw"></i>
+<i class="fa fa-mandalorian fa-fw"></i>
+<i class="fa fa-map fa-fw"></i>
+<i class="fa fa-map-marked fa-fw"></i>
+<i class="fa fa-map-marked-alt fa-fw"></i>
+<i class="fa fa-map-marker fa-fw"></i>
+<i class="fa fa-map-marker-alt fa-fw"></i>
+<i class="fa fa-map-pin fa-fw"></i>
+<i class="fa fa-map-signs fa-fw"></i>
+<i class="fa fa-markdown fa-fw"></i>
+<i class="fa fa-marker fa-fw"></i>
+<i class="fa fa-mars fa-fw"></i>
+<i class="fa fa-mars-double fa-fw"></i>
+<i class="fa fa-mars-stroke fa-fw"></i>
+<i class="fa fa-mars-stroke-h fa-fw"></i>
+<i class="fa fa-mars-stroke-v fa-fw"></i>
+<i class="fa fa-mask fa-fw"></i>
+<i class="fa fa-mastodon fa-fw"></i>
+<i class="fa fa-maxcdn fa-fw"></i>
+<i class="fa fa-mdb fa-fw"></i>
+<i class="fa fa-medal fa-fw"></i>
+<i class="fa fa-medapps fa-fw"></i>
+<i class="fa fa-medium fa-fw"></i>
+<i class="fa fa-medium-m fa-fw"></i>
+<i class="fa fa-medkit fa-fw"></i>
+<i class="fa fa-medrt fa-fw"></i>
+<i class="fa fa-meetup fa-fw"></i>
+<i class="fa fa-megaport fa-fw"></i>
+<i class="fa fa-meh fa-fw"></i>
+<i class="fa fa-meh-blank fa-fw"></i>
+<i class="fa fa-meh-rolling-eyes fa-fw"></i>
+<i class="fa fa-memory fa-fw"></i>
+<i class="fa fa-mendeley fa-fw"></i>
+<i class="fa fa-menorah fa-fw"></i>
+<i class="fa fa-mercury fa-fw"></i>
+<i class="fa fa-meteor fa-fw"></i>
+<i class="fa fa-microblog fa-fw"></i>
+<i class="fa fa-microchip fa-fw"></i>
+<i class="fa fa-microphone fa-fw"></i>
+<i class="fa fa-microphone-alt fa-fw"></i>
+<i class="fa fa-microphone-alt-slash fa-fw"></i>
+<i class="fa fa-microphone-slash fa-fw"></i>
+<i class="fa fa-microscope fa-fw"></i>
+<i class="fa fa-microsoft fa-fw"></i>
+<i class="fa fa-minus fa-fw"></i>
+<i class="fa fa-minus-circle fa-fw"></i>
+<i class="fa fa-minus-square fa-fw"></i>
+<i class="fa fa-mitten fa-fw"></i>
+<i class="fa fa-mix fa-fw"></i>
+<i class="fa fa-mixcloud fa-fw"></i>
+<i class="fa fa-mixer fa-fw"></i>
+<i class="fa fa-mizuni fa-fw"></i>
+<i class="fa fa-mobile fa-fw"></i>
+<i class="fa fa-mobile-alt fa-fw"></i>
+<i class="fa fa-modx fa-fw"></i>
+<i class="fa fa-monero fa-fw"></i>
+<i class="fa fa-money-bill fa-fw"></i>
+<i class="fa fa-money-bill-alt fa-fw"></i>
+<i class="fa fa-money-bill-wave fa-fw"></i>
+<i class="fa fa-money-bill-wave-alt fa-fw"></i>
+<i class="fa fa-money-check fa-fw"></i>
+<i class="fa fa-money-check-alt fa-fw"></i>
+<i class="fa fa-monument fa-fw"></i>
+<i class="fa fa-moon fa-fw"></i>
+<i class="fa fa-mortar-pestle fa-fw"></i>
+<i class="fa fa-mosque fa-fw"></i>
+<i class="fa fa-motorcycle fa-fw"></i>
+<i class="fa fa-mountain fa-fw"></i>
+<i class="fa fa-mouse fa-fw"></i>
+<i class="fa fa-mouse-pointer fa-fw"></i>
+<i class="fa fa-mug-hot fa-fw"></i>
+<i class="fa fa-music fa-fw"></i>
+<i class="fa fa-napster fa-fw"></i>
+<i class="fa fa-neos fa-fw"></i>
+<i class="fa fa-network-wired fa-fw"></i>
+<i class="fa fa-neuter fa-fw"></i>
+<i class="fa fa-newspaper fa-fw"></i>
+<i class="fa fa-nimblr fa-fw"></i>
+<i class="fa fa-node fa-fw"></i>
+<i class="fa fa-node-js fa-fw"></i>
+<i class="fa fa-not-equal fa-fw"></i>
+<i class="fa fa-notes-medical fa-fw"></i>
+<i class="fa fa-npm fa-fw"></i>
+<i class="fa fa-ns8 fa-fw"></i>
+<i class="fa fa-nutritionix fa-fw"></i>
+<i class="fa fa-object-group fa-fw"></i>
+<i class="fa fa-object-ungroup fa-fw"></i>
+<i class="fa fa-odnoklassniki fa-fw"></i>
+<i class="fa fa-odnoklassniki-square fa-fw"></i>
+<i class="fa fa-oil-can fa-fw"></i>
+<i class="fa fa-old-republic fa-fw"></i>
+<i class="fa fa-om fa-fw"></i>
+<i class="fa fa-opencart fa-fw"></i>
+<i class="fa fa-openid fa-fw"></i>
+<i class="fa fa-opera fa-fw"></i>
+<i class="fa fa-optin-monster fa-fw"></i>
+<i class="fa fa-orcid fa-fw"></i>
+<i class="fa fa-osi fa-fw"></i>
+<i class="fa fa-otter fa-fw"></i>
+<i class="fa fa-outdent fa-fw"></i>
+<i class="fa fa-page4 fa-fw"></i>
+<i class="fa fa-pagelines fa-fw"></i>
+<i class="fa fa-pager fa-fw"></i>
+<i class="fa fa-paint-brush fa-fw"></i>
+<i class="fa fa-paint-roller fa-fw"></i>
+<i class="fa fa-palette fa-fw"></i>
+<i class="fa fa-palfed fa-fw"></i>
+<i class="fa fa-pallet fa-fw"></i>
+<i class="fa fa-paper-plane fa-fw"></i>
+<i class="fa fa-paperclip fa-fw"></i>
+<i class="fa fa-parachute-box fa-fw"></i>
+<i class="fa fa-paragraph fa-fw"></i>
+<i class="fa fa-parking fa-fw"></i>
+<i class="fa fa-passport fa-fw"></i>
+<i class="fa fa-pastafarianism fa-fw"></i>
+<i class="fa fa-paste fa-fw"></i>
+<i class="fa fa-patreon fa-fw"></i>
+<i class="fa fa-pause fa-fw"></i>
+<i class="fa fa-pause-circle fa-fw"></i>
+<i class="fa fa-paw fa-fw"></i>
+<i class="fa fa-paypal fa-fw"></i>
+<i class="fa fa-peace fa-fw"></i>
+<i class="fa fa-pen fa-fw"></i>
+<i class="fa fa-pen-alt fa-fw"></i>
+<i class="fa fa-pen-fancy fa-fw"></i>
+<i class="fa fa-pen-nib fa-fw"></i>
+<i class="fa fa-pen-square fa-fw"></i>
+<i class="fa fa-pencil-alt fa-fw"></i>
+<i class="fa fa-pencil-ruler fa-fw"></i>
+<i class="fa fa-penny-arcade fa-fw"></i>
+<i class="fa fa-people-arrows fa-fw"></i>
+<i class="fa fa-people-carry fa-fw"></i>
+<i class="fa fa-pepper-hot fa-fw"></i>
+<i class="fa fa-percent fa-fw"></i>
+<i class="fa fa-percentage fa-fw"></i>
+<i class="fa fa-periscope fa-fw"></i>
+<i class="fa fa-person-booth fa-fw"></i>
+<i class="fa fa-phabricator fa-fw"></i>
+<i class="fa fa-phoenix-framework fa-fw"></i>
+<i class="fa fa-phoenix-squadron fa-fw"></i>
+<i class="fa fa-phone fa-fw"></i>
+<i class="fa fa-phone-alt fa-fw"></i>
+<i class="fa fa-phone-slash fa-fw"></i>
+<i class="fa fa-phone-square fa-fw"></i>
+<i class="fa fa-phone-square-alt fa-fw"></i>
+<i class="fa fa-phone-volume fa-fw"></i>
+<i class="fa fa-photo-video fa-fw"></i>
+<i class="fa fa-php fa-fw"></i>
+<i class="fa fa-pied-piper fa-fw"></i>
+<i class="fa fa-pied-piper-alt fa-fw"></i>
+<i class="fa fa-pied-piper-hat fa-fw"></i>
+<i class="fa fa-pied-piper-pp fa-fw"></i>
+<i class="fa fa-pied-piper-square fa-fw"></i>
+<i class="fa fa-piggy-bank fa-fw"></i>
+<i class="fa fa-pills fa-fw"></i>
+<i class="fa fa-pinterest fa-fw"></i>
+<i class="fa fa-pinterest-p fa-fw"></i>
+<i class="fa fa-pinterest-square fa-fw"></i>
+<i class="fa fa-pizza-slice fa-fw"></i>
+<i class="fa fa-place-of-worship fa-fw"></i>
+<i class="fa fa-plane fa-fw"></i>
+<i class="fa fa-plane-arrival fa-fw"></i>
+<i class="fa fa-plane-departure fa-fw"></i>
+<i class="fa fa-plane-slash fa-fw"></i>
+<i class="fa fa-play fa-fw"></i>
+<i class="fa fa-play-circle fa-fw"></i>
+<i class="fa fa-playstation fa-fw"></i>
+<i class="fa fa-plug fa-fw"></i>
+<i class="fa fa-plus fa-fw"></i>
+<i class="fa fa-plus-circle fa-fw"></i>
+<i class="fa fa-plus-square fa-fw"></i>
+<i class="fa fa-podcast fa-fw"></i>
+<i class="fa fa-poll fa-fw"></i>
+<i class="fa fa-poll-h fa-fw"></i>
+<i class="fa fa-poo fa-fw"></i>
+<i class="fa fa-poo-storm fa-fw"></i>
+<i class="fa fa-poop fa-fw"></i>
+<i class="fa fa-portrait fa-fw"></i>
+<i class="fa fa-pound-sign fa-fw"></i>
+<i class="fa fa-power-off fa-fw"></i>
+<i class="fa fa-pray fa-fw"></i>
+<i class="fa fa-praying-hands fa-fw"></i>
+<i class="fa fa-prescription fa-fw"></i>
+<i class="fa fa-prescription-bottle fa-fw"></i>
+<i class="fa fa-prescription-bottle-alt fa-fw"></i>
+<i class="fa fa-print fa-fw"></i>
+<i class="fa fa-procedures fa-fw"></i>
+<i class="fa fa-product-hunt fa-fw"></i>
+<i class="fa fa-project-diagram fa-fw"></i>
+<i class="fa fa-pump-medical fa-fw"></i>
+<i class="fa fa-pump-soap fa-fw"></i>
+<i class="fa fa-pushed fa-fw"></i>
+<i class="fa fa-puzzle-piece fa-fw"></i>
+<i class="fa fa-python fa-fw"></i>
+<i class="fa fa-qq fa-fw"></i>
+<i class="fa fa-qrcode fa-fw"></i>
+<i class="fa fa-question fa-fw"></i>
+<i class="fa fa-question-circle fa-fw"></i>
+<i class="fa fa-quidditch fa-fw"></i>
+<i class="fa fa-quinscape fa-fw"></i>
+<i class="fa fa-quora fa-fw"></i>
+<i class="fa fa-quote-left fa-fw"></i>
+<i class="fa fa-quote-right fa-fw"></i>
+<i class="fa fa-quran fa-fw"></i>
+<i class="fa fa-r-project fa-fw"></i>
+<i class="fa fa-radiation fa-fw"></i>
+<i class="fa fa-radiation-alt fa-fw"></i>
+<i class="fa fa-rainbow fa-fw"></i>
+<i class="fa fa-random fa-fw"></i>
+<i class="fa fa-raspberry-pi fa-fw"></i>
+<i class="fa fa-ravelry fa-fw"></i>
+<i class="fa fa-react fa-fw"></i>
+<i class="fa fa-reacteurope fa-fw"></i>
+<i class="fa fa-readme fa-fw"></i>
+<i class="fa fa-rebel fa-fw"></i>
+<i class="fa fa-receipt fa-fw"></i>
+<i class="fa fa-record-vinyl fa-fw"></i>
+<i class="fa fa-recycle fa-fw"></i>
+<i class="fa fa-red-river fa-fw"></i>
+<i class="fa fa-reddit fa-fw"></i>
+<i class="fa fa-reddit-alien fa-fw"></i>
+<i class="fa fa-reddit-square fa-fw"></i>
+<i class="fa fa-redhat fa-fw"></i>
+<i class="fa fa-redo fa-fw"></i>
+<i class="fa fa-redo-alt fa-fw"></i>
+<i class="fa fa-registered fa-fw"></i>
+<i class="fa fa-remove-format fa-fw"></i>
+<i class="fa fa-renren fa-fw"></i>
+<i class="fa fa-reply fa-fw"></i>
+<i class="fa fa-reply-all fa-fw"></i>
+<i class="fa fa-replyd fa-fw"></i>
+<i class="fa fa-republican fa-fw"></i>
+<i class="fa fa-researchgate fa-fw"></i>
+<i class="fa fa-resolving fa-fw"></i>
+<i class="fa fa-restroom fa-fw"></i>
+<i class="fa fa-retweet fa-fw"></i>
+<i class="fa fa-rev fa-fw"></i>
+<i class="fa fa-ribbon fa-fw"></i>
+<i class="fa fa-ring fa-fw"></i>
+<i class="fa fa-road fa-fw"></i>
+<i class="fa fa-robot fa-fw"></i>
+<i class="fa fa-rocket fa-fw"></i>
+<i class="fa fa-rocketchat fa-fw"></i>
+<i class="fa fa-rockrms fa-fw"></i>
+<i class="fa fa-route fa-fw"></i>
+<i class="fa fa-rss fa-fw"></i>
+<i class="fa fa-rss-square fa-fw"></i>
+<i class="fa fa-ruble-sign fa-fw"></i>
+<i class="fa fa-ruler fa-fw"></i>
+<i class="fa fa-ruler-combined fa-fw"></i>
+<i class="fa fa-ruler-horizontal fa-fw"></i>
+<i class="fa fa-ruler-vertical fa-fw"></i>
+<i class="fa fa-running fa-fw"></i>
+<i class="fa fa-rupee-sign fa-fw"></i>
+<i class="fa fa-sad-cry fa-fw"></i>
+<i class="fa fa-sad-tear fa-fw"></i>
+<i class="fa fa-safari fa-fw"></i>
+<i class="fa fa-salesforce fa-fw"></i>
+<i class="fa fa-sass fa-fw"></i>
+<i class="fa fa-satellite fa-fw"></i>
+<i class="fa fa-satellite-dish fa-fw"></i>
+<i class="fa fa-save fa-fw"></i>
+<i class="fa fa-schlix fa-fw"></i>
+<i class="fa fa-school fa-fw"></i>
+<i class="fa fa-screwdriver fa-fw"></i>
+<i class="fa fa-scribd fa-fw"></i>
+<i class="fa fa-scroll fa-fw"></i>
+<i class="fa fa-sd-card fa-fw"></i>
+<i class="fa fa-search fa-fw"></i>
+<i class="fa fa-search-dollar fa-fw"></i>
+<i class="fa fa-search-location fa-fw"></i>
+<i class="fa fa-search-minus fa-fw"></i>
+<i class="fa fa-search-plus fa-fw"></i>
+<i class="fa fa-searchengin fa-fw"></i>
+<i class="fa fa-seedling fa-fw"></i>
+<i class="fa fa-sellcast fa-fw"></i>
+<i class="fa fa-sellsy fa-fw"></i>
+<i class="fa fa-server fa-fw"></i>
+<i class="fa fa-servicestack fa-fw"></i>
+<i class="fa fa-shapes fa-fw"></i>
+<i class="fa fa-share fa-fw"></i>
+<i class="fa fa-share-alt fa-fw"></i>
+<i class="fa fa-share-alt-square fa-fw"></i>
+<i class="fa fa-share-square fa-fw"></i>
+<i class="fa fa-shekel-sign fa-fw"></i>
+<i class="fa fa-shield-alt fa-fw"></i>
+<i class="fa fa-shield-virus fa-fw"></i>
+<i class="fa fa-ship fa-fw"></i>
+<i class="fa fa-shipping-fast fa-fw"></i>
+<i class="fa fa-shirtsinbulk fa-fw"></i>
+<i class="fa fa-shoe-prints fa-fw"></i>
+<i class="fa fa-shopify fa-fw"></i>
+<i class="fa fa-shopping-bag fa-fw"></i>
+<i class="fa fa-shopping-basket fa-fw"></i>
+<i class="fa fa-shopping-cart fa-fw"></i>
+<i class="fa fa-shopware fa-fw"></i>
+<i class="fa fa-shower fa-fw"></i>
+<i class="fa fa-shuttle-van fa-fw"></i>
+<i class="fa fa-sign fa-fw"></i>
+<i class="fa fa-sign-in-alt fa-fw"></i>
+<i class="fa fa-sign-language fa-fw"></i>
+<i class="fa fa-sign-out-alt fa-fw"></i>
+<i class="fa fa-signal fa-fw"></i>
+<i class="fa fa-signature fa-fw"></i>
+<i class="fa fa-sim-card fa-fw"></i>
+<i class="fa fa-simplybuilt fa-fw"></i>
+<i class="fa fa-sistrix fa-fw"></i>
+<i class="fa fa-sitemap fa-fw"></i>
+<i class="fa fa-sith fa-fw"></i>
+<i class="fa fa-skating fa-fw"></i>
+<i class="fa fa-sketch fa-fw"></i>
+<i class="fa fa-skiing fa-fw"></i>
+<i class="fa fa-skiing-nordic fa-fw"></i>
+<i class="fa fa-skull fa-fw"></i>
+<i class="fa fa-skull-crossbones fa-fw"></i>
+<i class="fa fa-skyatlas fa-fw"></i>
+<i class="fa fa-skype fa-fw"></i>
+<i class="fa fa-slack fa-fw"></i>
+<i class="fa fa-slack-hash fa-fw"></i>
+<i class="fa fa-slash fa-fw"></i>
+<i class="fa fa-sleigh fa-fw"></i>
+<i class="fa fa-sliders-h fa-fw"></i>
+<i class="fa fa-slideshare fa-fw"></i>
+<i class="fa fa-smile fa-fw"></i>
+<i class="fa fa-smile-beam fa-fw"></i>
+<i class="fa fa-smile-wink fa-fw"></i>
+<i class="fa fa-smog fa-fw"></i>
+<i class="fa fa-smoking fa-fw"></i>
+<i class="fa fa-smoking-ban fa-fw"></i>
+<i class="fa fa-sms fa-fw"></i>
+<i class="fa fa-snapchat fa-fw"></i>
+<i class="fa fa-snapchat-ghost fa-fw"></i>
+<i class="fa fa-snapchat-square fa-fw"></i>
+<i class="fa fa-snowboarding fa-fw"></i>
+<i class="fa fa-snowflake fa-fw"></i>
+<i class="fa fa-snowman fa-fw"></i>
+<i class="fa fa-snowplow fa-fw"></i>
+<i class="fa fa-soap fa-fw"></i>
+<i class="fa fa-socks fa-fw"></i>
+<i class="fa fa-solar-panel fa-fw"></i>
+<i class="fa fa-sort fa-fw"></i>
+<i class="fa fa-sort-alpha-down fa-fw"></i>
+<i class="fa fa-sort-alpha-down-alt fa-fw"></i>
+<i class="fa fa-sort-alpha-up fa-fw"></i>
+<i class="fa fa-sort-alpha-up-alt fa-fw"></i>
+<i class="fa fa-sort-amount-down fa-fw"></i>
+<i class="fa fa-sort-amount-down-alt fa-fw"></i>
+<i class="fa fa-sort-amount-up fa-fw"></i>
+<i class="fa fa-sort-amount-up-alt fa-fw"></i>
+<i class="fa fa-sort-down fa-fw"></i>
+<i class="fa fa-sort-numeric-down fa-fw"></i>
+<i class="fa fa-sort-numeric-down-alt fa-fw"></i>
+<i class="fa fa-sort-numeric-up fa-fw"></i>
+<i class="fa fa-sort-numeric-up-alt fa-fw"></i>
+<i class="fa fa-sort-up fa-fw"></i>
+<i class="fa fa-soundcloud fa-fw"></i>
+<i class="fa fa-sourcetree fa-fw"></i>
+<i class="fa fa-spa fa-fw"></i>
+<i class="fa fa-space-shuttle fa-fw"></i>
+<i class="fa fa-speakap fa-fw"></i>
+<i class="fa fa-speaker-deck fa-fw"></i>
+<i class="fa fa-spell-check fa-fw"></i>
+<i class="fa fa-spider fa-fw"></i>
+<i class="fa fa-spinner fa-fw"></i>
+<i class="fa fa-splotch fa-fw"></i>
+<i class="fa fa-spotify fa-fw"></i>
+<i class="fa fa-spray-can fa-fw"></i>
+<i class="fa fa-square fa-fw"></i>
+<i class="fa fa-square-full fa-fw"></i>
+<i class="fa fa-square-root-alt fa-fw"></i>
+<i class="fa fa-squarespace fa-fw"></i>
+<i class="fa fa-stack-exchange fa-fw"></i>
+<i class="fa fa-stack-overflow fa-fw"></i>
+<i class="fa fa-stackpath fa-fw"></i>
+<i class="fa fa-stamp fa-fw"></i>
+<i class="fa fa-star fa-fw"></i>
+<i class="fa fa-star-and-crescent fa-fw"></i>
+<i class="fa fa-star-half fa-fw"></i>
+<i class="fa fa-star-half-alt fa-fw"></i>
+<i class="fa fa-star-of-david fa-fw"></i>
+<i class="fa fa-star-of-life fa-fw"></i>
+<i class="fa fa-staylinked fa-fw"></i>
+<i class="fa fa-steam fa-fw"></i>
+<i class="fa fa-steam-square fa-fw"></i>
+<i class="fa fa-steam-symbol fa-fw"></i>
+<i class="fa fa-step-backward fa-fw"></i>
+<i class="fa fa-step-forward fa-fw"></i>
+<i class="fa fa-stethoscope fa-fw"></i>
+<i class="fa fa-sticker-mule fa-fw"></i>
+<i class="fa fa-sticky-note fa-fw"></i>
+<i class="fa fa-stop fa-fw"></i>
+<i class="fa fa-stop-circle fa-fw"></i>
+<i class="fa fa-stopwatch fa-fw"></i>
+<i class="fa fa-stopwatch-20 fa-fw"></i>
+<i class="fa fa-store fa-fw"></i>
+<i class="fa fa-store-alt fa-fw"></i>
+<i class="fa fa-store-alt-slash fa-fw"></i>
+<i class="fa fa-store-slash fa-fw"></i>
+<i class="fa fa-strava fa-fw"></i>
+<i class="fa fa-stream fa-fw"></i>
+<i class="fa fa-street-view fa-fw"></i>
+<i class="fa fa-strikethrough fa-fw"></i>
+<i class="fa fa-stripe fa-fw"></i>
+<i class="fa fa-stripe-s fa-fw"></i>
+<i class="fa fa-stroopwafel fa-fw"></i>
+<i class="fa fa-studiovinari fa-fw"></i>
+<i class="fa fa-stumbleupon fa-fw"></i>
+<i class="fa fa-stumbleupon-circle fa-fw"></i>
+<i class="fa fa-subscript fa-fw"></i>
+<i class="fa fa-subway fa-fw"></i>
+<i class="fa fa-suitcase fa-fw"></i>
+<i class="fa fa-suitcase-rolling fa-fw"></i>
+<i class="fa fa-sun fa-fw"></i>
+<i class="fa fa-superpowers fa-fw"></i>
+<i class="fa fa-superscript fa-fw"></i>
+<i class="fa fa-supple fa-fw"></i>
+<i class="fa fa-surprise fa-fw"></i>
+<i class="fa fa-suse fa-fw"></i>
+<i class="fa fa-swatchbook fa-fw"></i>
+<i class="fa fa-swift fa-fw"></i>
+<i class="fa fa-swimmer fa-fw"></i>
+<i class="fa fa-swimming-pool fa-fw"></i>
+<i class="fa fa-symfony fa-fw"></i>
+<i class="fa fa-synagogue fa-fw"></i>
+<i class="fa fa-sync fa-fw"></i>
+<i class="fa fa-sync-alt fa-fw"></i>
+<i class="fa fa-syringe fa-fw"></i>
+<i class="fa fa-table fa-fw"></i>
+<i class="fa fa-table-tennis fa-fw"></i>
+<i class="fa fa-tablet fa-fw"></i>
+<i class="fa fa-tablet-alt fa-fw"></i>
+<i class="fa fa-tablets fa-fw"></i>
+<i class="fa fa-tachometer-alt fa-fw"></i>
+<i class="fa fa-tag fa-fw"></i>
+<i class="fa fa-tags fa-fw"></i>
+<i class="fa fa-tape fa-fw"></i>
+<i class="fa fa-tasks fa-fw"></i>
+<i class="fa fa-taxi fa-fw"></i>
+<i class="fa fa-teamspeak fa-fw"></i>
+<i class="fa fa-teeth fa-fw"></i>
+<i class="fa fa-teeth-open fa-fw"></i>
+<i class="fa fa-telegram fa-fw"></i>
+<i class="fa fa-telegram-plane fa-fw"></i>
+<i class="fa fa-temperature-high fa-fw"></i>
+<i class="fa fa-temperature-low fa-fw"></i>
+<i class="fa fa-tencent-weibo fa-fw"></i>
+<i class="fa fa-tenge fa-fw"></i>
+<i class="fa fa-terminal fa-fw"></i>
+<i class="fa fa-text-height fa-fw"></i>
+<i class="fa fa-text-width fa-fw"></i>
+<i class="fa fa-th fa-fw"></i>
+<i class="fa fa-th-large fa-fw"></i>
+<i class="fa fa-th-list fa-fw"></i>
+<i class="fa fa-the-red-yeti fa-fw"></i>
+<i class="fa fa-theater-masks fa-fw"></i>
+<i class="fa fa-themeco fa-fw"></i>
+<i class="fa fa-themeisle fa-fw"></i>
+<i class="fa fa-thermometer fa-fw"></i>
+<i class="fa fa-thermometer-empty fa-fw"></i>
+<i class="fa fa-thermometer-full fa-fw"></i>
+<i class="fa fa-thermometer-half fa-fw"></i>
+<i class="fa fa-thermometer-quarter fa-fw"></i>
+<i class="fa fa-thermometer-three-quarters fa-fw"></i>
+<i class="fa fa-think-peaks fa-fw"></i>
+<i class="fa fa-thumbs-down fa-fw"></i>
+<i class="fa fa-thumbs-up fa-fw"></i>
+<i class="fa fa-thumbtack fa-fw"></i>
+<i class="fa fa-ticket-alt fa-fw"></i>
+<i class="fa fa-times fa-fw"></i>
+<i class="fa fa-times-circle fa-fw"></i>
+<i class="fa fa-tint fa-fw"></i>
+<i class="fa fa-tint-slash fa-fw"></i>
+<i class="fa fa-tired fa-fw"></i>
+<i class="fa fa-toggle-off fa-fw"></i>
+<i class="fa fa-toggle-on fa-fw"></i>
+<i class="fa fa-toilet fa-fw"></i>
+<i class="fa fa-toilet-paper fa-fw"></i>
+<i class="fa fa-toilet-paper-slash fa-fw"></i>
+<i class="fa fa-toolbox fa-fw"></i>
+<i class="fa fa-tools fa-fw"></i>
+<i class="fa fa-tooth fa-fw"></i>
+<i class="fa fa-torah fa-fw"></i>
+<i class="fa fa-torii-gate fa-fw"></i>
+<i class="fa fa-tractor fa-fw"></i>
+<i class="fa fa-trade-federation fa-fw"></i>
+<i class="fa fa-trademark fa-fw"></i>
+<i class="fa fa-traffic-light fa-fw"></i>
+<i class="fa fa-trailer fa-fw"></i>
+<i class="fa fa-train fa-fw"></i>
+<i class="fa fa-tram fa-fw"></i>
+<i class="fa fa-transgender fa-fw"></i>
+<i class="fa fa-transgender-alt fa-fw"></i>
+<i class="fa fa-trash fa-fw"></i>
+<i class="fa fa-trash-alt fa-fw"></i>
+<i class="fa fa-trash-restore fa-fw"></i>
+<i class="fa fa-trash-restore-alt fa-fw"></i>
+<i class="fa fa-tree fa-fw"></i>
+<i class="fa fa-trello fa-fw"></i>
+<i class="fa fa-tripadvisor fa-fw"></i>
+<i class="fa fa-trophy fa-fw"></i>
+<i class="fa fa-truck fa-fw"></i>
+<i class="fa fa-truck-loading fa-fw"></i>
+<i class="fa fa-truck-monster fa-fw"></i>
+<i class="fa fa-truck-moving fa-fw"></i>
+<i class="fa fa-truck-pickup fa-fw"></i>
+<i class="fa fa-tshirt fa-fw"></i>
+<i class="fa fa-tty fa-fw"></i>
+<i class="fa fa-tumblr fa-fw"></i>
+<i class="fa fa-tumblr-square fa-fw"></i>
+<i class="fa fa-tv fa-fw"></i>
+<i class="fa fa-twitch fa-fw"></i>
+<i class="fa fa-twitter fa-fw"></i>
+<i class="fa fa-twitter-square fa-fw"></i>
+<i class="fa fa-typo3 fa-fw"></i>
+<i class="fa fa-uber fa-fw"></i>
+<i class="fa fa-ubuntu fa-fw"></i>
+<i class="fa fa-uikit fa-fw"></i>
+<i class="fa fa-umbraco fa-fw"></i>
+<i class="fa fa-umbrella fa-fw"></i>
+<i class="fa fa-umbrella-beach fa-fw"></i>
+<i class="fa fa-underline fa-fw"></i>
+<i class="fa fa-undo fa-fw"></i>
+<i class="fa fa-undo-alt fa-fw"></i>
+<i class="fa fa-uniregistry fa-fw"></i>
+<i class="fa fa-unity fa-fw"></i>
+<i class="fa fa-universal-access fa-fw"></i>
+<i class="fa fa-university fa-fw"></i>
+<i class="fa fa-unlink fa-fw"></i>
+<i class="fa fa-unlock fa-fw"></i>
+<i class="fa fa-unlock-alt fa-fw"></i>
+<i class="fa fa-untappd fa-fw"></i>
+<i class="fa fa-upload fa-fw"></i>
+<i class="fa fa-ups fa-fw"></i>
+<i class="fa fa-usb fa-fw"></i>
+<i class="fa fa-user fa-fw"></i>
+<i class="fa fa-user-alt fa-fw"></i>
+<i class="fa fa-user-alt-slash fa-fw"></i>
+<i class="fa fa-user-astronaut fa-fw"></i>
+<i class="fa fa-user-check fa-fw"></i>
+<i class="fa fa-user-circle fa-fw"></i>
+<i class="fa fa-user-clock fa-fw"></i>
+<i class="fa fa-user-cog fa-fw"></i>
+<i class="fa fa-user-edit fa-fw"></i>
+<i class="fa fa-user-friends fa-fw"></i>
+<i class="fa fa-user-graduate fa-fw"></i>
+<i class="fa fa-user-injured fa-fw"></i>
+<i class="fa fa-user-lock fa-fw"></i>
+<i class="fa fa-user-md fa-fw"></i>
+<i class="fa fa-user-minus fa-fw"></i>
+<i class="fa fa-user-ninja fa-fw"></i>
+<i class="fa fa-user-nurse fa-fw"></i>
+<i class="fa fa-user-plus fa-fw"></i>
+<i class="fa fa-user-secret fa-fw"></i>
+<i class="fa fa-user-shield fa-fw"></i>
+<i class="fa fa-user-slash fa-fw"></i>
+<i class="fa fa-user-tag fa-fw"></i>
+<i class="fa fa-user-tie fa-fw"></i>
+<i class="fa fa-user-times fa-fw"></i>
+<i class="fa fa-users fa-fw"></i>
+<i class="fa fa-users-cog fa-fw"></i>
+<i class="fa fa-usps fa-fw"></i>
+<i class="fa fa-ussunnah fa-fw"></i>
+<i class="fa fa-utensil-spoon fa-fw"></i>
+<i class="fa fa-utensils fa-fw"></i>
+<i class="fa fa-vaadin fa-fw"></i>
+<i class="fa fa-vector-square fa-fw"></i>
+<i class="fa fa-venus fa-fw"></i>
+<i class="fa fa-venus-double fa-fw"></i>
+<i class="fa fa-venus-mars fa-fw"></i>
+<i class="fa fa-viacoin fa-fw"></i>
+<i class="fa fa-viadeo fa-fw"></i>
+<i class="fa fa-viadeo-square fa-fw"></i>
+<i class="fa fa-vial fa-fw"></i>
+<i class="fa fa-vials fa-fw"></i>
+<i class="fa fa-viber fa-fw"></i>
+<i class="fa fa-video fa-fw"></i>
+<i class="fa fa-video-slash fa-fw"></i>
+<i class="fa fa-vihara fa-fw"></i>
+<i class="fa fa-vimeo fa-fw"></i>
+<i class="fa fa-vimeo-square fa-fw"></i>
+<i class="fa fa-vimeo-v fa-fw"></i>
+<i class="fa fa-vine fa-fw"></i>
+<i class="fa fa-virus fa-fw"></i>
+<i class="fa fa-virus-slash fa-fw"></i>
+<i class="fa fa-viruses fa-fw"></i>
+<i class="fa fa-vk fa-fw"></i>
+<i class="fa fa-vnv fa-fw"></i>
+<i class="fa fa-voicemail fa-fw"></i>
+<i class="fa fa-volleyball-ball fa-fw"></i>
+<i class="fa fa-volume-down fa-fw"></i>
+<i class="fa fa-volume-mute fa-fw"></i>
+<i class="fa fa-volume-off fa-fw"></i>
+<i class="fa fa-volume-up fa-fw"></i>
+<i class="fa fa-vote-yea fa-fw"></i>
+<i class="fa fa-vr-cardboard fa-fw"></i>
+<i class="fa fa-vuejs fa-fw"></i>
+<i class="fa fa-walking fa-fw"></i>
+<i class="fa fa-wallet fa-fw"></i>
+<i class="fa fa-warehouse fa-fw"></i>
+<i class="fa fa-water fa-fw"></i>
+<i class="fa fa-wave-square fa-fw"></i>
+<i class="fa fa-waze fa-fw"></i>
+<i class="fa fa-weebly fa-fw"></i>
+<i class="fa fa-weibo fa-fw"></i>
+<i class="fa fa-weight fa-fw"></i>
+<i class="fa fa-weight-hanging fa-fw"></i>
+<i class="fa fa-weixin fa-fw"></i>
+<i class="fa fa-whatsapp fa-fw"></i>
+<i class="fa fa-whatsapp-square fa-fw"></i>
+<i class="fa fa-wheelchair fa-fw"></i>
+<i class="fa fa-whmcs fa-fw"></i>
+<i class="fa fa-wifi fa-fw"></i>
+<i class="fa fa-wikipedia-w fa-fw"></i>
+<i class="fa fa-wind fa-fw"></i>
+<i class="fa fa-window-close fa-fw"></i>
+<i class="fa fa-window-maximize fa-fw"></i>
+<i class="fa fa-window-minimize fa-fw"></i>
+<i class="fa fa-window-restore fa-fw"></i>
+<i class="fa fa-windows fa-fw"></i>
+<i class="fa fa-wine-bottle fa-fw"></i>
+<i class="fa fa-wine-glass fa-fw"></i>
+<i class="fa fa-wine-glass-alt fa-fw"></i>
+<i class="fa fa-wix fa-fw"></i>
+<i class="fa fa-wizards-of-the-coast fa-fw"></i>
+<i class="fa fa-wolf-pack-battalion fa-fw"></i>
+<i class="fa fa-won-sign fa-fw"></i>
+<i class="fa fa-wordpress fa-fw"></i>
+<i class="fa fa-wordpress-simple fa-fw"></i>
+<i class="fa fa-wpbeginner fa-fw"></i>
+<i class="fa fa-wpexplorer fa-fw"></i>
+<i class="fa fa-wpforms fa-fw"></i>
+<i class="fa fa-wpressr fa-fw"></i>
+<i class="fa fa-wrench fa-fw"></i>
+<i class="fa fa-x-ray fa-fw"></i>
+<i class="fa fa-xbox fa-fw"></i>
+<i class="fa fa-xing fa-fw"></i>
+<i class="fa fa-xing-square fa-fw"></i>
+<i class="fa fa-y-combinator fa-fw"></i>
+<i class="fa fa-yahoo fa-fw"></i>
+<i class="fa fa-yammer fa-fw"></i>
+<i class="fa fa-yandex fa-fw"></i>
+<i class="fa fa-yandex-international fa-fw"></i>
+<i class="fa fa-yarn fa-fw"></i>
+<i class="fa fa-yelp fa-fw"></i>
+<i class="fa fa-yen-sign fa-fw"></i>
+<i class="fa fa-yin-yang fa-fw"></i>
+<i class="fa fa-yoast fa-fw"></i>
+<i class="fa fa-youtube fa-fw"></i>
+<i class="fa fa-youtube-square fa-fw"></i>
+<i class="fa fa-zhihu fa-fw"></i>
+
+</div>]]></content>
+      <categories>
+        <category>默认</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>收集图床网站</title>
+    <url>/posts/43892.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>免费又好用的图床网站在这里</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
 <span id="more"></span>
 
 
-<h2 id="hexo-deplayer-git"><a href="#hexo-deplayer-git" class="headerlink" title="hexo-deplayer-git"></a>hexo-deplayer-git</h2><p><strong>GitHub</strong>上传插件<br><code>npm install hexo-deployer-git --save</code></p>
-<h2 id="hexo-abbrlink"><a href="#hexo-abbrlink" class="headerlink" title="hexo-abbrlink"></a>hexo-abbrlink</h2><p><strong>生成唯一链接</strong><br><code>npm install hexo-abbrlink --save</code><br><strong>_config.yml</strong> 配置文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># permalink: :year/:month/:day/:title/</span><br><span class="line"># permalink_defaults:</span><br><span class="line">permalink: posts/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  # alg: crc32 #算法： crc16(default) and crc32</span><br><span class="line">  rep: dec #进制： dec(default) and hex</span><br></pre></td></tr></table></figure>
-<h2 id="生成站点地图SSR"><a href="#生成站点地图SSR" class="headerlink" title="生成站点地图SSR"></a>生成站点地图SSR</h2><p><code>npm install hexo-generator-feed --save</code><br><strong>_config.yml</strong> 配置文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># RSS订阅</span><br><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br><span class="line">  content_limit: 140</span><br><span class="line">  content_limit_delim: &#x27; &#x27;</span><br></pre></td></tr></table></figure>
-<h2 id="本地搜索支持"><a href="#本地搜索支持" class="headerlink" title="本地搜索支持"></a>本地搜索支持</h2><p><code>$ npm install hexo-generator-searchdb</code><br><strong>_config.yml</strong> 配置文件<br>next在主题开启即可</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: true</span><br><span class="line">  format: html</span><br></pre></td></tr></table></figure>
-<h2 id="日历插件"><a href="#日历插件" class="headerlink" title="日历插件"></a>日历插件</h2><p><a href="https://github.com/theme-next/theme-next-calendar">https://github.com/theme-next/theme-next-calendar</a><br><code>npm install theme-next/theme-next-calendar</code><br>在next主题配置文件_config.yml配置</p>
-<blockquote>
-<p>不怎么好看，停用了🙃</p>
+
+<h2 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h2><h3 id="thumbsnap"><a href="#thumbsnap" class="headerlink" title="thumbsnap"></a>thumbsnap</h3><blockquote>
+<p><a href="https://thumbsnap.com/">https://thumbsnap.com/</a><br>media hosting, avatar hosting, sig hosting, image hosting api</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">CloudCalendar:</span><br><span class="line">  enable: true</span><br><span class="line">  language: zh-CN</span><br><span class="line">  single: true</span><br><span class="line">  root: /calendar/</span><br><span class="line">  calendarCdn: //cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js</span><br><span class="line">  langCdn: //cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js</span><br><span class="line">  #disableSidebar: false</span><br></pre></td></tr></table></figure>
-<h2 id="pdf使用"><a href="#pdf使用" class="headerlink" title="pdf使用"></a>pdf使用</h2><p><code>&#123;% pdf url %&#125;</code></p>
+<h3 id="upup"><a href="#upup" class="headerlink" title="upup"></a>upup</h3><blockquote>
+<p><a href="https://upup.xkx.me/">https://upup.xkx.me/</a><br>upup外链</p>
+</blockquote>
+<h3 id="sm-ms"><a href="#sm-ms" class="headerlink" title="sm.ms"></a>sm.ms</h3><blockquote>
+<p><a href="https://sm.ms/">https://sm.ms/</a><br>sm.ms有免费有收费</p>
+</blockquote>
+<h3 id="老王图床"><a href="#老王图床" class="headerlink" title="老王图床"></a>老王图床</h3><blockquote>
+<p><a href="https://img.gejiba.com/">https://img.gejiba.com</a><br>免费公共图床, 老王图床</p>
+</blockquote>
+<h3 id="老王外链"><a href="#老王外链" class="headerlink" title="老王外链"></a>老王外链</h3><blockquote>
+<p><a href="https://www.gejiba.com/">https://www.gejiba.com/</a><br>老王外链网盘提供大容量云存储服务</p>
+</blockquote>
+<h2 id="新增"><a href="#新增" class="headerlink" title="新增"></a>新增</h2><h3 id="全能图床"><a href="#全能图床" class="headerlink" title="全能图床"></a>全能图床</h3><blockquote>
+<p><a href="https://tool.liumingye.cn/tuchuang/">https://tool.liumingye.cn/tuchuang/</a><br>全能图床,图床,博客图床,免费图床,七牛图床</p>
+</blockquote>
+<h3 id="sky-Pro"><a href="#sky-Pro" class="headerlink" title="sky Pro"></a>sky Pro</h3><blockquote>
+<p><a href="https://www.icpbk.com/">https://www.icpbk.com/</a></p>
+</blockquote>
+<h3 id="熊猫图床"><a href="#熊猫图床" class="headerlink" title="熊猫图床"></a>熊猫图床</h3><blockquote>
+<p><a href="https://www.pandaimg.com/">https://www.pandaimg.com/</a><br>本站支持的格式： jpeg,jpg,png,gif,tif,bmp,ico,psd,webp</p>
+</blockquote>
+<h3 id="img-nn-ci"><a href="#img-nn-ci" class="headerlink" title="img.nn.ci"></a>img.nn.ci</h3><blockquote>
+<p><a href="https://img.nn.ci/">https://img.nn.ci</a><br>点击左上角按钮选择接口<br>接口有点多。。<br>速度：国内 CDN 加速 </p>
+</blockquote>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><h3 id="映画の图床"><a href="#映画の图床" class="headerlink" title="映画の图床"></a>映画の图床</h3><blockquote>
+<p><a href="https://pic.ihcloud.net/">https://pic.ihcloud.net</a><br>最大单张不超过5M<br>速度：国内 CDN 加速 </p>
+</blockquote>
+<h3 id="TG-图床"><a href="#TG-图床" class="headerlink" title="TG 图床"></a>TG 图床</h3><blockquote>
+<p><a href="https://img.tg/">https://img.tg</a><br>节点包含中国 CDN 在任何地方快速访问您的图片<br>未经许可私自将图床用于商业用途可能被封号</p>
+</blockquote>
+<h3 id="IMG-WANG"><a href="#IMG-WANG" class="headerlink" title="IMG.WANG"></a>IMG.WANG</h3><blockquote>
+<p><a href="https://img.wang/">https://img.wang</a><br>速度：百度云 CDN </p>
+</blockquote>
+<h3 id="去不图床"><a href="#去不图床" class="headerlink" title="去不图床"></a>去不图床</h3><blockquote>
+<p><a href="https://7bu.top/">https://7bu.top/</a><br>长期保留图片需付费<br>图床使用阿里轻服务主机，腾讯云 CDN 节点加速。支持格式：JPEG&#x2F;JPG&#x2F;PNG&#x2F;GIF&#x2F;TIF&#x2F;BMP&#x2F;ICO&#x2F;PSD&#x2F;WEBP</p>
+</blockquote>
+<h3 id="惜染外链"><a href="#惜染外链" class="headerlink" title="惜染外链"></a>惜染外链</h3><blockquote>
+<p><a href="https://tp.hefollo.com/">https://tp.hefollo.com/</a><br>惜染外链</p>
+</blockquote>
+<h3 id="imgBB"><a href="#imgBB" class="headerlink" title="imgBB"></a>imgBB</h3><blockquote>
+<p><a href="https://imgbb.com/">https://imgbb.com/</a><br>ImgBB — 免费图片存取&#x2F;上传图片</p>
+</blockquote>
+<h3 id="路过"><a href="#路过" class="headerlink" title="路过"></a>路过</h3><blockquote>
+<p><a href="https://cdnjson.com/">https://cdnjson.com/</a><br>免费图片上传-图片外链-免费公共图床 </p>
+</blockquote>
+<h3 id="imgURL"><a href="#imgURL" class="headerlink" title="imgURL"></a>imgURL</h3><blockquote>
+<p><a href="https://imgurl.org/">https://imgurl.org/</a><br>imgURL</p>
+</blockquote>
+<h3 id="浅析"><a href="#浅析" class="headerlink" title="浅析"></a>浅析</h3><blockquote>
+<p><a href="https://tc.bllts.cn/">https://tc.bllts.cn/</a><br>浅析</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>分类</category>
+        <category>网站</category>
       </categories>
       <tags>
-        <tag>标签1</tag>
+        <tag>图床</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>天若OCR文字识别</title>
+    <url>/posts/33021.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>快速识别，在线翻译</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+<p><img src="https://ocr.tianruo.net/images/1573471333.png" alt="天若OCR"></p>
+<table>
+<thead>
+<tr>
+<th align="left">功能</th>
+<th align="left">介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">文本识别</td>
+<td align="left">将图片中的文本转换成可编辑文本</td>
+</tr>
+<tr>
+<td align="left">表格识别</td>
+<td align="left">将图片中的表格转换成可编辑表格</td>
+</tr>
+<tr>
+<td align="left">竖排识别</td>
+<td align="left">将图片竖排文字识别成可编辑文本</td>
+</tr>
+<tr>
+<td align="left">公式识别</td>
+<td align="left">将图片公式识别出latex代码</td>
+</tr>
+<tr>
+<td align="left">矫正识别</td>
+<td align="left">可以将图片进行倾斜透视矫正</td>
+</tr>
+<tr>
+<td align="left">高级识别</td>
+<td align="left">调整识别对比度，自动绘制表格线</td>
+</tr>
+<tr>
+<td align="left">识别翻译</td>
+<td align="left">识别图片后自动翻译</td>
+</tr>
+<tr>
+<td align="left">识别搜索</td>
+<td align="left">识别图片后自动搜索</td>
+</tr>
+<tr>
+<td align="left">截图功能</td>
+<td align="left">丰富的截图标注功能</td>
+</tr>
+</tbody></table>
+<p><a href="https://ocr.tianruo.net/" title="官网">天若OCR</a><br><a href="https://tianruo.lanzoux.com/b0mn2zif" title="蓝奏云下载">下载地址</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>电脑软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>恒星播放插件合集</title>
+    <url>/posts/41063.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>恒星播放插件合集</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th align="center">链接</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>插件合集</td>
+<td align="center"><a href="https://github.com/simplecelery/stellar-search">https://github.com/simplecelery/stellar-search</a></td>
+<td></td>
+</tr>
+<tr>
+<td>看电视</td>
+<td align="center"><a href="https://github.com/stellarplayer/stellar-watch-tv">https://github.com/stellarplayer/stellar-watch-tv</a></td>
+<td></td>
+</tr>
+<tr>
+<td>看直播</td>
+<td align="center"><a href="https://github.com/simplecelery/zhibo">https://github.com/simplecelery/zhibo</a></td>
+<td>支持虎牙，斗鱼，花椒等等。。</td>
+</tr>
+<tr>
+<td>电影天堂-新片</td>
+<td align="center"><a href="https://github.com/simplecelery/stellar-rmys">https://github.com/simplecelery/stellar-rmys</a></td>
+<td>边下边播</td>
+</tr>
+<tr>
+<td>电影天堂-全量</td>
+<td align="center"><a href="https://github.com/ninebird1/stellar_dytt">https://github.com/ninebird1/stellar_dytt</a></td>
+<td>边下边播</td>
+</tr>
+<tr>
+<td>看电影</td>
+<td align="center"><a href="https://github.com/xiaohu-xh/stellar-movie">https://github.com/xiaohu-xh/stellar-movie</a></td>
+<td>搜索播放，边下边播</td>
+</tr>
+<tr>
+<td>日漫追番</td>
+<td align="center"><a href="https://github.com/simplecelery/stellar-yszf">https://github.com/simplecelery/stellar-yszf</a></td>
+<td>在线播放</td>
+</tr>
+<tr>
+<td>在线影视</td>
+<td align="center"><a href="https://github.com/simplecelery/stellar-lives">https://github.com/simplecelery/stellar-lives</a></td>
+<td>在线播放</td>
+</tr>
+<tr>
+<td>影视资源站</td>
+<td align="center"><a href="https://github.com/simplecelery/stellar-yszy">https://github.com/simplecelery/stellar-yszy</a></td>
+<td>在线播放</td>
+</tr>
+<tr>
+<td>66 影视</td>
+<td align="center"><a href="https://github.com/ninebird1/stellar-66ys">https://github.com/ninebird1/stellar-66ys</a></td>
+<td></td>
+</tr>
+<tr>
+<td>听音乐</td>
+<td align="center"><a href="https://github.com/simplecelery/stellar-netmusic">https://github.com/simplecelery/stellar-netmusic</a></td>
+<td></td>
+</tr>
+<tr>
+<td>电影先生</td>
+<td align="center"><a href="https://github.com/simplecelery/stellar-dyxs">https://github.com/simplecelery/stellar-dyxs</a></td>
+<td>在线播放</td>
+</tr>
+<tr>
+<td>磁力熊</td>
+<td align="center"><a href="https://github.com/ninebird1/stellar-cilixiong">https://github.com/ninebird1/stellar-cilixiong</a></td>
+<td>BT下载-边下边播</td>
+</tr>
+<tr>
+<td>第三方直播</td>
+<td align="center"><a href="https://github.com/simplecelery/stellar-stream">https://github.com/simplecelery/stellar-stream</a></td>
+<td>各大直播网站直播地中，可在播放器中播放</td>
+</tr>
+<tr>
+<td>影片地址解析</td>
+<td align="center"><a href="https://github.com/simplecelery/webdecode">https://github.com/simplecelery/webdecode</a></td>
+<td>复制各大网站影片地址，可在播放器中播放</td>
+</tr>
+<tr>
+<td>WebDav插件</td>
+<td align="center"><a href="https://github.com/ninebird1/stellar-webdav">https://github.com/ninebird1/stellar-webdav</a></td>
+<td></td>
+</tr>
+<tr>
+<td>遥控器</td>
+<td align="center"><a href="https://github.com/stellarplayer/stellar-web-ctrl">https://github.com/stellarplayer/stellar-web-ctrl</a></td>
+<td>通过手机扫码遥控播放器</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>搭建hexo教程</title>
+    <url>/posts/9571.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>记录一下，容易忘事没办法🤔</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<span id="more"></span>
+
+
+<h1 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h1><a class="btn" href="https://nodejs.org/en/download/">
+            <i class="fa fa-link fa-fw"></i>Node.js下载
+          </a>
+<p>包含环境变量及npm的安装<br>安装后检测Node.js与npm是否安装成功</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><a class="btn" href="https://link.zhihu.com/?target=https%3A//git-scm.com/download/win">
+            <i class="fa fa-link fa-fw"></i>git官网下载
+          </a>
+<p>Git Bash，设置user.name和user.email配置信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;你的GitHub用户名&quot;</span><br><span class="line">git config --global user.email &quot;你的GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
+<p>生成ssh密钥文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
+<p>然后直接三个回车即可，默认不需要设置密码<br>然后找到生成的.ssh的文件夹中的id_rsa.pub密钥，将内容全部复制<br><img src="https://pic4.zhimg.com/80/v2-d1e47103ec1aa8675f68688c5d63bd27_720w.jpg"><br><a href="https://github.com/settings/keys">打开GitHub_Settings_keys</a>新建new SSH Key<br><img src="https://pic1.zhimg.com/80/v2-72a3f22c080e99343c3cc4aabce10e3c_720w.jpg"><br>Title为标题，任意填即可，将刚刚复制的id_rsa.pub内容粘贴进去，最后点击Add SSH key。<br>在Git Bash中检测GitHub公钥设置是否成功，输入 <code>ssh git@github.com</code><br><img src="https://pic3.zhimg.com/80/v2-da481ffa686410becd4186c656b4ebd6_720w.jpg"></p>
+<blockquote>
+<p>用gitee时候不需要弄这个 ，输入一次密码账户有缓存后就不用每次输入了，GitHub应该也差不多<br>查看配置<code>git config -l</code></p>
+</blockquote>
+<hr>
+<h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><div class="note ">
+            <p><strong>安装命令</strong></p>
+          </div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>创建blog文件夹并初始化博客</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+<div class="note ">
+            <p><strong>检测网站雏形</strong></p>
+          </div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">创建名为test博文</span><br><span class="line">hexo new test</span><br><span class="line">生成</span><br><span class="line">hexo g</span><br><span class="line">预览</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<div class="note ">
+            <p><strong>常用的Hexo 命令</strong></p>
+          </div>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo -g #安装Hexo</span><br><span class="line">npm update hexo -g #升级</span><br><span class="line">hexo init #初始化博客</span><br><span class="line"></span><br><span class="line">命令简写</span><br><span class="line">hexo n &quot;我的博客&quot; == hexo new &quot;我的博客&quot; #新建文章</span><br><span class="line">hexo g == hexo generate #生成</span><br><span class="line">hexo s == hexo server #启动服务预览</span><br><span class="line">hexo d == hexo deploy #部署</span><br><span class="line"></span><br><span class="line">hexo server #Hexo会监视文件变动并自动更新，无须重启服务器</span><br><span class="line">hexo server -s #静态模式</span><br><span class="line">hexo server -p 5000 #更改端口</span><br><span class="line">hexo server -i 192.168.1.1 #自定义 IP</span><br><span class="line">hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</span><br></pre></td></tr></table></figure>
+
+<div class="note ">
+            <p><strong>设置RSS</strong></p>
+          </div>
+<p>先安装 <strong>hexo-generator-feed</strong> 插件 插件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
+<p>打开 站点配置文件 找到<strong>Extensions</strong>在下面添加</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># RSS订阅</span><br><span class="line">feed:</span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: 20</span><br><span class="line">  hub:</span><br><span class="line">  content:</span><br><span class="line">  content_limit: 140</span><br><span class="line">  content_limit_delim: &#x27; &#x27;</span><br></pre></td></tr></table></figure>
+<p>打开 主题配置文件 找到rss，设置为<strong>rss: &#x2F;atom.xmlrss: &#x2F;atom.xml</strong></p>
+<div class="note ">
+            <p><strong>更换主题</strong></p>
+          </div>
+<p>下载主题到themes并命名为next <strong>git clone 主题链接 themes&#x2F;next</strong></p>
+<div class="note ">
+            <p><strong>上传到GitHub&#x2F;gitee</strong></p>
+          </div>
+<p>GitHub&#x2F;gitee创建个人仓库GitHub&#x2F;gitee创建个人仓库后<br>修改根目录下**_config.yml**</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">	type: git</span><br><span class="line">	repo: GitHub/gitee路径</span><br><span class="line">	branch: main</span><br></pre></td></tr></table></figure>
+<p>Git部署插件 <strong>npm install hexo-deployer-git –save</strong> 上传</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p><strong>绑定域名</strong><br>域名运营商处选择CNAME解析域名到：<code>你的仓库名.giehub.io</code><br>GitHub仓库根目录创建名为CNAME文件，内写你的域名</p>
+<p>配置文件描述</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: 标题</span><br><span class="line">subtitle: 副标题</span><br><span class="line">description: 描述</span><br><span class="line">author: 作者</span><br><span class="line">language: 语言（简体中文是zh-Hans）</span><br><span class="line">timezone: 网站时区（Hexo 默认使用您电脑的时区，不用写）</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="网上教程地址"><a href="#网上教程地址" class="headerlink" title="网上教程地址"></a>网上教程地址</h1><a class="btn" href="https://zhuanlan.zhihu.com/p/26625249">
+            <i class="fa fa-link fa-fw"></i>知乎教程
+          </a>
+<a class="btn" href="https://www.jianshu.com/p/3a05351a37dc">
+            <i class="fa fa-link fa-fw"></i>hexo next主题教程
+          </a>]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>git</tag>
+        <tag>npm</tag>
+        <tag>nodejs</tag>
+        <tag>github</tag>
+        <tag>gitee</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>浏览器插件</title>
+    <url>/posts/60430.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>自用浏览器插件收藏</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+
+<h2 id="FeHelper"><a href="#FeHelper" class="headerlink" title="FeHelper"></a>FeHelper</h2><p><strong>FeHelperWeb开发者助手</strong><br>插件支持Chrome、Firefox、MS-Edge浏览器，内部工具集持续增加，目前包括 JSON自动&#x2F;手动格式化、JSON内容比对、代码美化与压缩、信息编解码转换、二维码生成与解码、图片Base64编解码转换、Markdown、 网页油猴、网页取色器、脑图(Xmind)等贴心工具，甚至在目前新版本的FeHelper中，还集成了FH开发者工具， 如果你也想自己搞一个工具集成到FeHelper中，那这一定能满足到你<br><a href="https://www.baidufe.com/" title="软件官网">FeHelper</a>↔️<a href="https://github.com/zxlie/FeHelper" title="GitHub项目">GitHub项目</a></p>
+<h2 id="沙拉查词"><a href="#沙拉查词" class="headerlink" title="沙拉查词"></a>沙拉查词</h2><p><strong>聚合词典划词翻译</strong><br>精选大量词典，手工打磨排版，涵盖几乎所有领域，自动发音，可选不同词典、英美音，各个词典支持个性化调整，整个网页翻译，谷歌和有道分级网页翻译，右键支持更多词典页面直达</p>
+<h2 id="SuperCopy"><a href="#SuperCopy" class="headerlink" title="SuperCopy"></a>SuperCopy</h2><p><strong>超级复制</strong><br>一键破解禁止右键、破解禁止选择、破解禁止复制、破解禁止粘贴，启用复制，启用右键，启用选择，启用粘贴。<br>特性：</p>
+<ol>
+<li>一键破解js方式的禁止复制网站。</li>
+<li>一键破解css方式的禁止复制网站。</li>
+<li>具有记忆功能，下次打开相同页面自动破解禁止复制。</li>
+<li>具有联想功能，打开同站点其他页面自动破解禁止复制。</li>
+</ol>
+<p><a href="https://www.crxfun.com/detail?id=onepmapfbjohnegdmfhndpefjkppbjkm" title="扩展派">下载地址</a></p>
+<h2 id="草料二维码"><a href="#草料二维码" class="headerlink" title="草料二维码"></a>草料二维码</h2><p><strong>二维码编码与解码</strong><br>草料二维码官方开发的免费浏览器插件，提供简单、专业、快捷的二维码生成和解码功能，支持在各个浏览器上快速安装。<br><a href="https://cli.im/help/53255" title="官网下载地址">下载地址</a></p>
+<h2 id="ColorZilla"><a href="#ColorZilla" class="headerlink" title="ColorZilla"></a>ColorZilla</h2><p><strong>取色工具</strong><br>官网还有生成css渐变的工具</p>
+<h2 id="书签侧边栏"><a href="#书签侧边栏" class="headerlink" title="书签侧边栏"></a>书签侧边栏</h2><p>在浏览器视图区左侧添加可调节的侧边栏管理您的书签</p>
+<h2 id="Adblock-Plus"><a href="#Adblock-Plus" class="headerlink" title="Adblock Plus"></a>Adblock Plus</h2><p><strong>免费的广告拦截器</strong><br>高达四颗半的评分，目前用过最好用的广告拦截器了😁<br>官网有Firefox . Microsoft Edge . Opera版下载链接<br>拦截：横幅，YouTube 视频广告，Facebook 广告，弹出窗口，所有其他显眼的广告。</p>
+<h2 id="infinity"><a href="#infinity" class="headerlink" title="infinity"></a>infinity</h2><p><strong>浏览器新标签页</strong><br>轻松管理常用网站<br>快速添加常用网站图标，颜色、大小、布局均可自由定制，让新标签页一目了然</p>
+<h2 id="ImageAssistant"><a href="#ImageAssistant" class="headerlink" title="ImageAssistant"></a>ImageAssistant</h2><p><strong>提取网站内图片，批量下载</strong><br>用于从网页嗅探、分析和批量下载图像的图像提取器，可多页提取</p>
+<h2 id="云端硬盘应用启动器"><a href="#云端硬盘应用启动器" class="headerlink" title="云端硬盘应用启动器"></a>云端硬盘应用启动器</h2><p><strong>快速保存文件到云盘</strong></p>
+<h2 id="PostWoman"><a href="#PostWoman" class="headerlink" title="PostWoman"></a>PostWoman</h2><p><strong>Http接口调试插件</strong><br>不知道为啥安装的。。。不会用<br>PostWoman是一个完全开源免费的接口调试插件，该插件可独立使用，数据支持本地存储也可同步至云端。支持post、get、xml、josn等测试</p>
+<h2 id="Recent-History"><a href="#Recent-History" class="headerlink" title="Recent History"></a>Recent History</h2><p><strong>右上角显示最近访问历史</strong><br>本扩展可以在一个弹窗中显示你的最近访问历史、最近关闭的标签页、最常访问的页面和最近添加的书签。</p>
+<h2 id="sps"><a href="#sps" class="headerlink" title="sps"></a>sps</h2><p><strong>歌曲搜索试听 &amp; 在线广播</strong><br>支持网易，QQ，咪咕，油管，，，</p>
+<h2 id="Imagus"><a href="#Imagus" class="headerlink" title="Imagus"></a>Imagus</h2><p>鼠标指针悬停在链接或缩略图上时直接在当前页面的弹出视图上显示这些图片、HTML5 视频&#x2F;音频和内容专辑。</p>
+<h2 id="Tampermonkey-油猴"><a href="#Tampermonkey-油猴" class="headerlink" title="Tampermonkey 油猴"></a>Tampermonkey 油猴</h2><p>Tampermonkey用于在网站上运行所谓的用户脚本（有时也称为Greasemonkey脚本）。<br>用户脚本是小型计算机程序，可以更改页面的布局，添加或删除新功能和内容或自动执行操作。</p>
+<hr>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><p>三个扩展下载地址<br><a class="el-tag el-tag--success el-tag--small" href="https://www.extfans.com/" title="title">Extfans</a> <a class="el-tag el-tag--success el-tag--small" href="https://www.crxsoso.com/" title="title">crx扩展</a> <a class="el-tag el-tag--success el-tag--small" href="https://www.crxfun.com/" title="title">扩展派</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>浏览器插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>破解压缩文件</title>
+    <url>/posts/18751.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>破解 RAR、Zip压缩包密码！Hashcat +john the ripper</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<span id="more"></span>
+
+<p>轻松搞定 RAR、Zip压缩包密码！Hashcat +john the ripper</p>
+<ol>
+<li>hashcat ：<a href="https://hashcat.net/">https://hashcat.net</a></li>
+<li>john the ripper ：<a href="https://www.openwall.com/">https://www.openwall.com</a></li>
+</ol>
+<blockquote>
+<p>注：官网是英文的，可以通过谷歌浏览器翻译成中文</p>
+</blockquote>
+<p>只需用到2个命令：cmd<br>rar2john.exe xxxx.rar   –获取hash值<br><code>hashcat.exe -m 13000 -w 4 -a 3 $rar5$16$b88c1d7d2c96dc9d1b1a5ccdc5c25d50$15$8f0b287c982535c868bbff486ee9acd2$8$43907bfa03430471 -o password.txt</code>  — 开始</p>
+<p>更多的参数说明：</p>
+<h2 id="针对Word密码的命令："><a href="#针对Word密码的命令：" class="headerlink" title="针对Word密码的命令："></a>针对Word密码的命令：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">python office2john.py test.docx</span><br><span class="line">获取word加密文件的Hash指令(此处需要安装python并配置环境变量)</span><br><span class="line">test.docx:$office$*2013*100000*256*16*561f4dcaaac333e7c06d150f9ea5aea2*ef4e7b026217124561ecb865b324eac4*e9ef4a859f2c81581db0e27d9ce48e6451b82cd1641941e8adc10dc5600969cb</span><br><span class="line">所得Hash返回结果</span><br><span class="line">hashcat.exe -m 9600 -a 3 $office$*2013*100000*256*16*561f4dcaaac333e7c06d150f9ea5aea2*ef4e7b026217124561ecb865b324eac4*e9ef4a859f2c81581db0e27d9ce48e6451b82cd1641941e8adc10dc5600969cb ?d?d?d?d -o out.txt</span><br><span class="line">Hashcat破解对应hash</span><br></pre></td></tr></table></figure>
+<h2 id="针对PDF密码的命令："><a href="#针对PDF密码的命令：" class="headerlink" title="针对PDF密码的命令："></a>针对PDF密码的命令：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">perl pdf2john.pl test.pdf</span><br><span class="line">获取pdf加密文件的Hash指令(此处需要安装perl并配置环境变量)</span><br><span class="line">test.pdf:$pdf$4*4*128*-3904*0*16*55f913d20e34724fd70d3004f5e43166*32*7a29310ea5dc0276d34c1bef24595d61984a08eb759eaba56bd4887a260bbcce*32*de0c200bbe6887a980dc429edbdabc40f39a368841d804afefa726b2bd7c7b24</span><br><span class="line">所得Hash返回结果</span><br><span class="line">hashcat.exe -m 10500 -a 3 $pdf$4*4*128*-3904*0*16*55f913d20e34724fd70d3004f5e43166*32*7a29310ea5dc0276d34c1bef24595d61984a08eb759eaba56bd4887a260bbcce*32*de0c200bbe6887a980dc429edbdabc40f39a368841d804afefa726b2bd7c7b24 ?l?l?l?l?l?l -o out.txt  Hashcat破解对应hash，此处?l对应一个小写字母</span><br></pre></td></tr></table></figure>
+<h2 id="针对Zip密码的命令："><a href="#针对Zip密码的命令：" class="headerlink" title="针对Zip密码的命令："></a>针对Zip密码的命令：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">zip2john.exe test.zip</span><br><span class="line">获取zip加密文件的Hash指令</span><br><span class="line">test.zip/test.txt:$pkzip2$1*1*2*0*15*9*4aac42f3*0*26*0*15*4aac*470b*6fa72c2bc69e5738181cb7f406187f8084ce07cf5f*$/pkzip2$:test.txt:test.zip::test.zip</span><br><span class="line">所得Hash返回结果</span><br><span class="line">hashcat -a 0 -m 17210 $pkzip2$1*1*2*0*15*9*4aac42f3*0*26*0*15*4aac*470b*6fa72c2bc69e5738181cb7f406187f8084ce07cf5f*$/pkzip2$ password.txt --force</span><br><span class="line">password.txt中存放密码字典</span><br></pre></td></tr></table></figure>
+<p>提醒：运行John the Ripper需要安装python和perl环境变量，如果命令出错，请自行下载安装python和perl</p>
+<hr>
+<a class="btn" href="http://www.activestate.com/activeperl">
+            <i class="fa fa-"></i>perl
+          </a>
+<a class="btn" href="https://www.python.orghttps://www.python.org">
+            <i class="fa fa-"></i>python
+          </a>]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>破解</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>站点运行时间计算js</title>
+    <url>/posts/53614.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>站点运行时间计算js</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+
+
+<p>html代码</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">&quot;span_dt_dt&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: #2F889A;&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:#C40000&quot;</span>&gt;</span>187<span class="tag">&lt;/<span class="name">font</span>&gt;</span> 天 <span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:#C40000&quot;</span>&gt;</span>0<span class="tag">&lt;/<span class="name">font</span>&gt;</span> 时 <span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:#C40000&quot;</span>&gt;</span>4<span class="tag">&lt;/<span class="name">font</span>&gt;</span> 分 <span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:#C40000&quot;</span>&gt;</span>39<span class="tag">&lt;/<span class="name">font</span>&gt;</span> 秒<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>js代码</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;script language=<span class="string">&quot;javascript&quot;</span>&gt;<span class="keyword">function</span> <span class="title function_">show_date_time</span>(<span class="params"></span>)&#123;</span><br><span class="line">	<span class="variable language_">window</span>.<span class="built_in">setTimeout</span>(<span class="string">&quot;show_date_time()&quot;</span>, <span class="number">1000</span>);</span><br><span class="line">	<span class="title class_">BirthDay</span>=<span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&quot;12/23/2020 21:07:13 &quot;</span>);</span><br><span class="line">	today=<span class="keyword">new</span> <span class="title class_">Date</span>();</span><br><span class="line">	timeold=(today.<span class="title function_">getTime</span>()-<span class="title class_">BirthDay</span>.<span class="title function_">getTime</span>());</span><br><span class="line">	sectimeold=timeold/<span class="number">1000</span></span><br><span class="line">	secondsold=<span class="title class_">Math</span>.<span class="title function_">floor</span>(sectimeold);</span><br><span class="line">	msPerDay=<span class="number">24</span>*<span class="number">60</span>*<span class="number">60</span>*<span class="number">1000</span></span><br><span class="line">	e_daysold=timeold/msPerDay</span><br><span class="line">	daysold=<span class="title class_">Math</span>.<span class="title function_">floor</span>(e_daysold);</span><br><span class="line">	e_hrsold=(e_daysold-daysold)*<span class="number">24</span>;</span><br><span class="line">	hrsold=<span class="title class_">Math</span>.<span class="title function_">floor</span>(e_hrsold);</span><br><span class="line">	e_minsold=(e_hrsold-hrsold)*<span class="number">60</span>;</span><br><span class="line">	minsold=<span class="title class_">Math</span>.<span class="title function_">floor</span>((e_hrsold-hrsold)*<span class="number">60</span>);</span><br><span class="line">	seconds=<span class="title class_">Math</span>.<span class="title function_">floor</span>((e_minsold-minsold)*<span class="number">60</span>);</span><br><span class="line">	span_dt_dt.<span class="property">innerHTML</span>=<span class="string">&#x27;&lt;font style=color:#C40000&gt;&#x27;</span>+daysold+<span class="string">&#x27;&lt;/font&gt; 天 &lt;font style=color:#C40000&gt;&#x27;</span>+hrsold+<span class="string">&#x27;&lt;/font&gt; 时 &lt;font style=color:#C40000&gt;&#x27;</span>+minsold+<span class="string">&#x27;&lt;/font&gt; 分 &lt;font style=color:#C40000&gt;&#x27;</span>+seconds+<span class="string">&#x27;&lt;/font&gt; 秒&#x27;</span>;</span><br><span class="line">&#125;<span class="title function_">show_date_time</span>();&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>代码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>css代码记录</title>
+    <url>/posts/20241.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>记录css使用</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+
+<h2 id="引用css的几种方法"><a href="#引用css的几种方法" class="headerlink" title="引用css的几种方法"></a>引用css的几种方法</h2><p>外联式： <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;url&quot; /&gt;</code>要写到head中<br>内嵌式：<code>&lt;style&gt;代码&lt;/style&gt;</code>只能应用于当前网页<br>行内式：<code>style=&quot;代码&quot;</code><br>@import：<code>&lt;style type=&quot;text/css&quot;&gt;@import url(url);&lt;/style&gt;</code>CSS提供的⼀种⽅式<br>建议</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">flowchart LR</span><br><span class="line">    外联 --&gt; 内嵌 --&gt; 行内  --&gt; import</span><br></pre></td></tr></table></figure>
+
+<p><code>background-image</code>背景图<br><code>background-color</code>背景色<br><code>z-index:999;</code> 最上层显示，999为最大值，可以-1<br><code>font-family:楷体;</code>修改字体<br><code>justify-content: center;</code>css居中<br><code>margin: 0 auto;</code> margin居中<br><code>center</code>居中标签</p>
+<h2 id="响应式布局"><a href="#响应式布局" class="headerlink" title="响应式布局"></a>响应式布局</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">响应式布局</span><br><span class="line"><span class="keyword">@media</span> print, screen <span class="keyword">and</span> (<span class="attribute">max-width</span>:<span class="number">55em</span>)&#123;&#125;</span><br><span class="line"><span class="attribute">max-width</span>:<span class="number">55em</span>小于</span><br><span class="line">min-width:<span class="number">40em</span>大于</span><br><span class="line">也可根据屏幕大小加载不同css文件</span><br><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> type=<span class="string">&quot;text/css&quot;</span> href=<span class="string">&quot;styleA.css&quot;</span> media=<span class="string">&quot;screen and (min-width: 400px)&quot;</span>&gt;</span><br><span class="line">&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> type=<span class="string">&quot;text/css&quot;</span> href=<span class="string">&quot;styleB.css&quot;</span>  media=<span class="string">&quot;screen and (min-width: 600px) and (max-width: 800px)&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="a链接"><a href="#a链接" class="headerlink" title="a链接"></a>a链接</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a:link &#123;color:#FF0000;&#125; /* 未访问的链接 */</span><br><span class="line">a:visited &#123;color:#00FF00;&#125; /* 已访问的链接 */</span><br><span class="line">a:hover &#123;color:#FF00FF;&#125; /* 鼠标划过链接 */</span><br><span class="line">a:active &#123;color:#0000FF;&#125; /* 已选中的链接 */</span><br><span class="line">	text-decoration:none; /* 去除下划线 */</span><br><span class="line">	display: block /* 独占一行，改为块级元素 */</span><br></pre></td></tr></table></figure>
+<h2 id="隐藏或显示"><a href="#隐藏或显示" class="headerlink" title="隐藏或显示"></a>隐藏或显示</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">display: none; 隐藏</span><br><span class="line">display: block; 显示</span><br><span class="line">根据屏幕大小显示或隐藏</span><br><span class="line">@media print, screen and (max-width:55em)&#123;</span><br><span class="line">    .btn &#123;display: none;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="文字超出盒子隐藏"><a href="#文字超出盒子隐藏" class="headerlink" title="文字超出盒子隐藏"></a>文字超出盒子隐藏</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">whitespace:nowrap;  <span class="comment">/*这边是阻止文字换行*/</span></span><br><span class="line"><span class="attribute">overflow</span>:hidden;    <span class="comment">/*隐藏溢出部分*/</span></span><br><span class="line">test-<span class="attribute">overflow</span>:ellipsis;  <span class="comment">/*用点代替被切断文字*/</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="video↔️audio"><a href="#video↔️audio" class="headerlink" title="video↔️audio"></a>video↔️audio</h2><p><code>autoplay</code>视频准备就绪&#x3D;&#x3D;自动&#x3D;&#x3D;播放<br><code>loop</code>&#x3D;&#x3D;循环&#x3D;&#x3D;播放<br><code>muted</code>默认&#x3D;&#x3D;静音&#x3D;&#x3D;<br><code>width=&quot;100%&quot;</code>宽<br><code>height=&quot;404&quot;</code>高<br><code>controls=&quot;controls&quot;</code>默认显示&#x3D;&#x3D;控件&#x3D;&#x3D;<br><code>poster=&quot;&quot;</code>视频添加&#x3D;&#x3D;封面&#x3D;&#x3D;</p>
+<hr>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><blockquote>
+<p><a href="https://wenku.baidu.com/view/535a1563bd1e650e52ea551810a6f524ccbfcb2a.html">css三种引用方式</a><br><a href="https://blog.csdn.net/l333f/article/details/60877276">HTML5中 audio标签的样式修改</a><br><a href="https://blog.csdn.net/weixin_42077074/article/details/121042536">更改鼠标样式</a><br><a href="https://www.jianshu.com/p/3cc866a57e1a">自适应导航栏</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>css滚动栏美化</title>
+    <url>/posts/20241.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>滚动栏美化</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+<p>参考: <a href="https://blog.csdn.net/u012551928/article/details/109286853">https://blog.csdn.net/u012551928/article/details/109286853</a></p>
+<p><code>::-webkit-scrollbar</code> CSS伪类选择器影响了一个元素的滚动条的样式<br><code>::-webkit-scrollbar</code> 仅仅在支持WebKit的浏览器 (例如, 谷歌Chrome, 苹果Safari)可以使用.<br>你可以使用以下伪元素选择器去修改各式webkit浏览器的滚动条样式:</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar — 整个滚动条.</span><br><span class="line">::-webkit-scrollbar-button — 滚动条上的按钮 (上下箭头).</span><br><span class="line">::-webkit-scrollbar-thumb — 滚动条上的滚动滑块.</span><br><span class="line">::-webkit-scrollbar-track — 滚动条轨道.</span><br><span class="line">::-webkit-scrollbar-track-piece — 滚动条没有滑块的轨道部分.</span><br><span class="line">::-webkit-scrollbar-corner — 当同时有垂直滚动条和水平滚动条时交汇的部分.</span><br><span class="line">::-webkit-resizer — 某些元素的corner部分的部分样式(例:textarea的可拖动按钮).</span><br></pre></td></tr></table></figure>
+<h2 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">12px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">5px</span></span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    <span class="attribute">background-color</span>:<span class="number">#12b7f5</span>;</span><br><span class="line">    <span class="attribute">background-image</span>:<span class="built_in">-webkit-linear-gradient</span>(<span class="number">30deg</span>, <span class="built_in">rgba</span>(<span class="number">18</span>, <span class="number">183</span>, <span class="number">245</span>, <span class="number">1</span>) <span class="number">100%</span>, transparent <span class="number">25%</span>, transparent <span class="number">50%</span>, <span class="built_in">rgba</span>(<span class="number">18</span>, <span class="number">183</span>, <span class="number">243</span>, <span class="number">1</span>) <span class="number">50%</span>, <span class="built_in">rgba</span>(<span class="number">18</span>, <span class="number">183</span>, <span class="number">245</span>, <span class="number">1</span>) <span class="number">75%</span>, transparent <span class="number">100%</span>, transparent)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>滚动栏美化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>py读取每行链接并下载</title>
+    <url>/posts/58370.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>py读取每行链接并下载</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> requests.packages.urllib3.exceptions <span class="keyword">import</span> InsecureRequestWarning</span><br><span class="line"></span><br><span class="line">requests.packages.urllib3.disable_warnings(InsecureRequestWarning)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义列表保存已经下载的URL</span></span><br><span class="line">saved = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;链接文档.txt&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    urls = f.readlines()</span><br><span class="line">    urls = [url.strip(<span class="string">&#x27;\n&#x27;</span>) <span class="keyword">for</span> url <span class="keyword">in</span> urls]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> url <span class="keyword">in</span> urls:</span><br><span class="line">    <span class="keyword">if</span> url <span class="keyword">not</span> <span class="keyword">in</span> saved:</span><br><span class="line">        res = requests.get(url, verify=<span class="literal">False</span>)</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;保存目录&#x27;</span>+url.split(<span class="string">&#x27;/&#x27;</span>)[-<span class="number">1</span>], <span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.write(res.content)</span><br><span class="line">            saved.append(url)</span><br><span class="line">            <span class="built_in">print</span>(url.strip(<span class="string">&#x27;\n&#x27;</span>)[-<span class="number">1</span>], <span class="string">&#x27;下载完成&#x27;</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>py读取返回链接并保存</title>
+    <url>/posts/16525.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>py读取返回链接并保存</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> requests <span class="keyword">import</span> get</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;url.txt&#x27;</span>, <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:  <span class="comment"># 该文件放入爬取到的图片链接</span></span><br><span class="line">        urllist = f.read().splitlines()</span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">    urllist = []</span><br><span class="line"><span class="built_in">print</span>(urllist)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">GetPic</span>():</span><br><span class="line">    api = <span class="string">&#x27;https://api.vvhan.com/api/bing?type=sj&#x27;</span>  <span class="comment"># 将要爬取的站点</span></span><br><span class="line">    headers = &#123;</span><br><span class="line">        <span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36&#x27;</span>&#125;</span><br><span class="line">    url = get(api, headers=headers, timeout=<span class="number">2</span>).request.url</span><br><span class="line">    <span class="keyword">if</span> url:</span><br><span class="line">        <span class="keyword">return</span> url</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">init</span>():</span><br><span class="line">    i = <span class="number">0</span></span><br><span class="line">    ii = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> i &lt; <span class="number">30</span> <span class="keyword">and</span> ii &lt; <span class="number">3000</span>:  <span class="comment"># 连续30张图都重复或者本次采集到3000张图就停止</span></span><br><span class="line">        url = GetPic()</span><br><span class="line">        <span class="keyword">if</span> url <span class="keyword">not</span> <span class="keyword">in</span> urllist:</span><br><span class="line">            <span class="built_in">print</span>(url)</span><br><span class="line">            urllist.append(url)</span><br><span class="line">            <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;url.txt&#x27;</span>, <span class="string">&#x27;a+&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                f.write(url + <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            ii = ii + <span class="number">1</span></span><br><span class="line">            i = <span class="number">0</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            i = i + <span class="number">1</span></span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;重复次数&quot;</span> + <span class="built_in">str</span>(i) + <span class="string">&quot;,重复的: &quot;</span> + url)</span><br><span class="line">        time.sleep(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">init()</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
       </tags>
   </entry>
 </search>
