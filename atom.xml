@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-06-08T17:01:37.767Z</updated>
+  <updated>2022-07-22T17:18:32.997Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Datatables使用记录</title>
+    <link href="http://example.com/posts/19654.html"/>
+    <id>http://example.com/posts/19654.html</id>
+    <published>2022-07-16T07:13:23.000Z</published>
+    <updated>2022-07-22T17:18:32.997Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;Datatables是一款jquery表格插件。它是一个高度灵活的工具，可以将任何HTML表格添加高级的交互功能。&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Datatables" scheme="http://example.com/tags/Datatables/"/>
+    
+    <category term="网站程序" scheme="http://example.com/tags/%E7%BD%91%E7%AB%99%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>py读取返回链接并保存</title>
@@ -261,6 +287,27 @@
     <category term="软件" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6/"/>
     
     <category term="破解" scheme="http://example.com/tags/%E7%A0%B4%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo插件收藏</title>
+    <link href="http://example.com/posts/48669.html"/>
+    <id>http://example.com/posts/48669.html</id>
+    <published>2021-11-15T08:42:58.000Z</published>
+    <updated>2022-06-09T08:21:54.554Z</updated>
+    
+    
+    <summary type="html">&lt;center&gt;hexo插件收藏&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="插件" scheme="http://example.com/tags/%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   

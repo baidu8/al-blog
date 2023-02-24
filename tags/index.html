@@ -20,7 +20,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","Muse | Mist":320,"Pisces | Gemini":240,"width":300,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","Muse | Mist":320,"Pisces | Gemini":240,"width":300,"display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":true,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeIn","post_body":"expandIn","coll_header":"fadeIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -128,31 +128,31 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section">首页</a>
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section">关于</a>
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section">标签<span class="badge">21</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">23</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section">分类<span class="badge">5</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section">归档<span class="badge">15</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">17</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger">搜索
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
       </li>
   </ul>
@@ -189,6 +189,7 @@
 
     
   <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
     <main class="main">
@@ -223,10 +224,10 @@
       <div class="post-body">
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-              目前共计 21 个标签
+              目前共计 23 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Fluid/" style="font-size: 12px; color: #ccc">Fluid</a> <a href="/tags/css/" style="font-size: 21px; color: #6f6f6f">css</a> <a href="/tags/git/" style="font-size: 12px; color: #ccc">git</a> <a href="/tags/gitee/" style="font-size: 12px; color: #ccc">gitee</a> <a href="/tags/github/" style="font-size: 12px; color: #ccc">github</a> <a href="/tags/git%E4%BB%A3%E7%A0%81/" style="font-size: 12px; color: #ccc">git代码</a> <a href="/tags/hexo/" style="font-size: 30px; color: #111">hexo</a> <a href="/tags/js/" style="font-size: 12px; color: #ccc">js</a> <a href="/tags/next/" style="font-size: 12px; color: #ccc">next</a> <a href="/tags/nodejs/" style="font-size: 12px; color: #ccc">nodejs</a> <a href="/tags/npm/" style="font-size: 12px; color: #ccc">npm</a> <a href="/tags/python/" style="font-size: 21px; color: #6f6f6f">python</a> <a href="/tags/%E4%B8%BB%E9%A2%98/" style="font-size: 21px; color: #6f6f6f">主题</a> <a href="/tags/%E4%BB%A3%E7%A0%81/" style="font-size: 12px; color: #ccc">代码</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 12px; color: #ccc">图床</a> <a href="/tags/%E6%8F%92%E4%BB%B6/" style="font-size: 12px; color: #ccc">插件</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" style="font-size: 12px; color: #ccc">浏览器插件</a> <a href="/tags/%E6%BB%9A%E5%8A%A8%E6%A0%8F%E7%BE%8E%E5%8C%96/" style="font-size: 12px; color: #ccc">滚动栏美化</a> <a href="/tags/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/" style="font-size: 12px; color: #ccc">电脑软件</a> <a href="/tags/%E7%A0%B4%E8%A7%A3/" style="font-size: 12px; color: #ccc">破解</a> <a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 21px; color: #6f6f6f">软件</a>
+              <a href="/tags/Datatables/" style="font-size: 12px; color: #ccc">Datatables</a> <a href="/tags/Fluid/" style="font-size: 12px; color: #ccc">Fluid</a> <a href="/tags/css/" style="font-size: 21px; color: #6f6f6f">css</a> <a href="/tags/git/" style="font-size: 12px; color: #ccc">git</a> <a href="/tags/gitee/" style="font-size: 12px; color: #ccc">gitee</a> <a href="/tags/github/" style="font-size: 12px; color: #ccc">github</a> <a href="/tags/git%E4%BB%A3%E7%A0%81/" style="font-size: 12px; color: #ccc">git代码</a> <a href="/tags/hexo/" style="font-size: 30px; color: #111">hexo</a> <a href="/tags/js/" style="font-size: 12px; color: #ccc">js</a> <a href="/tags/next/" style="font-size: 12px; color: #ccc">next</a> <a href="/tags/nodejs/" style="font-size: 12px; color: #ccc">nodejs</a> <a href="/tags/npm/" style="font-size: 12px; color: #ccc">npm</a> <a href="/tags/python/" style="font-size: 21px; color: #6f6f6f">python</a> <a href="/tags/%E4%B8%BB%E9%A2%98/" style="font-size: 21px; color: #6f6f6f">主题</a> <a href="/tags/%E4%BB%A3%E7%A0%81/" style="font-size: 12px; color: #ccc">代码</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 12px; color: #ccc">图床</a> <a href="/tags/%E6%8F%92%E4%BB%B6/" style="font-size: 21px; color: #6f6f6f">插件</a> <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" style="font-size: 12px; color: #ccc">浏览器插件</a> <a href="/tags/%E6%BB%9A%E5%8A%A8%E6%A0%8F%E7%BE%8E%E5%8C%96/" style="font-size: 12px; color: #ccc">滚动栏美化</a> <a href="/tags/%E7%94%B5%E8%84%91%E8%BD%AF%E4%BB%B6/" style="font-size: 12px; color: #ccc">电脑软件</a> <a href="/tags/%E7%A0%B4%E8%A7%A3/" style="font-size: 12px; color: #ccc">破解</a> <a href="/tags/%E7%BD%91%E7%AB%99%E7%A8%8B%E5%BA%8F/" style="font-size: 12px; color: #ccc">网站程序</a> <a href="/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 21px; color: #6f6f6f">软件</a>
             </div>
           </div>
         
@@ -305,7 +306,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -318,7 +319,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-count">23</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -339,7 +340,20 @@
   </div>
 
 
-
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友联🦢
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://baidu8.github.io/" title="https:&#x2F;&#x2F;baidu8.github.io" rel="noopener" target="_blank">baidu8</a>
+        </li>
+    </ul>
+  </div>
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div>
       </div>
         <div class="back-to-top motion-element">
           <i class="fa fa-arrow-up"></i>
@@ -363,7 +377,7 @@
 <div class="copyright">
   
   &copy; Ganbi博客网 – 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-hand-holding-heart fa-fw"></i>
   </span>
@@ -396,10 +410,12 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/pisces.js"></script>
+<script src="/js/schemes/muse.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
 
 
 
@@ -457,6 +473,23 @@ document.querySelectorAll('.pdfobject-container').forEach(element => {
       });
       });
   </script>
+<!-- calendar widget -->
+
+    <script src="//fastly.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//fastly.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
+
 
 </body>
 </html>
