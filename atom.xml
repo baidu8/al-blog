@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-07-22T17:18:32.997Z</updated>
+  <updated>2023-02-25T15:31:47.980Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>本站用到的插件</title>
+    <link href="http://example.com/posts/1.html"/>
+    <id>http://example.com/posts/1.html</id>
+    <published>2023-02-25T15:20:41.000Z</published>
+    <updated>2023-02-25T15:31:47.980Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;生成唯一永久文章链接&quot;&gt;&lt;a href=&quot;#生成唯一永久文章链接&quot; class=&quot;headerlink&quot; title=&quot;生成唯一永久文章链接&quot;&gt;&lt;/a&gt;生成唯一永久文章链接&lt;/h2&gt;&lt;p&gt;+– &lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Datatables使用记录</title>
     <link href="http://example.com/posts/19654.html"/>
     <id>http://example.com/posts/19654.html</id>
     <published>2022-07-16T07:13:23.000Z</published>
-    <updated>2022-07-22T17:18:32.997Z</updated>
+    <updated>2023-02-25T07:40:13.508Z</updated>
     
     
     <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
@@ -291,32 +312,11 @@
   </entry>
   
   <entry>
-    <title>hexo插件收藏</title>
-    <link href="http://example.com/posts/48669.html"/>
-    <id>http://example.com/posts/48669.html</id>
-    <published>2021-11-15T08:42:58.000Z</published>
-    <updated>2022-06-09T08:21:54.554Z</updated>
-    
-    
-    <summary type="html">&lt;center&gt;hexo插件收藏&lt;/center&gt;</summary>
-    
-    
-    
-    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
-    
-    <category term="插件" scheme="http://example.com/tags/%E6%8F%92%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Fluid主题常用</title>
     <link href="http://example.com/posts/26793.html"/>
     <id>http://example.com/posts/26793.html</id>
     <published>2021-11-15T08:42:57.000Z</published>
-    <updated>2022-06-16T16:05:59.605Z</updated>
+    <updated>2023-02-25T13:33:04.418Z</updated>
     
     
     <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
@@ -364,6 +364,27 @@
     <category term="主题" scheme="http://example.com/tags/%E4%B8%BB%E9%A2%98/"/>
     
     <category term="next" scheme="http://example.com/tags/next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo插件收藏</title>
+    <link href="http://example.com/posts/48669.html"/>
+    <id>http://example.com/posts/48669.html</id>
+    <published>2021-11-15T08:42:00.000Z</published>
+    <updated>2023-02-25T15:29:47.619Z</updated>
+    
+    
+    <summary type="html">&lt;center&gt;hexo插件收藏&lt;/center&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+    <category term="插件" scheme="http://example.com/tags/%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   
