@@ -1285,7 +1285,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #f6bf05;
+  background: #dbf086;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1529,6 +1529,7 @@ pre .javascript .function {
   color: #ff0000;
   display: inline-block;
   margin: 0 5px;
+  animation: iconAnimate 1.33s ease-in-out infinite;
 }
 .powered-by,
 .theme-info {
@@ -2805,8 +2806,19 @@ hr {
   color: #fff;
   cursor: pointer;
 }
-#CloudCalendar {
-  background-color: #fff;
+.sidebar {
+  background: #f5f5f5;
+}
+.sidebar-toggle {
+  background: #5cb85c;
+}
+.site-author-image {
+  border: 1px solid #e7f1ff;
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  padding: 2px;
+  border-radius: 50%;
 }
 .site-author-name {
   font-family: 'Pacifico', "PingFang SC", "Microsoft YaHei", sans-serif;
