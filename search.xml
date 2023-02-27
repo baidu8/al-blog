@@ -75,81 +75,6 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo插件收藏</title>
-    <url>/posts/48669.html</url>
-    <content><![CDATA[<center>hexo插件收藏</center>
-<span id="more"></span>
-
-<h2 id="置顶与隐藏"><a href="#置顶与隐藏" class="headerlink" title="置顶与隐藏"></a>置顶与隐藏</h2><p>安装此插件需要卸载官方hexo-generator-index插件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-generator-index</span><br><span class="line">npm install hexo-generator-index-custom --save</span><br></pre></td></tr></table></figure>
-<p>在文章开头的配置中添加 sticky 或 top 参数，可以置顶文章。<br>sticky 的优先级比 top 高，故所有使用 sticky 都会排在 top 之前。<br>其值可以是 true 或数字，数字越大，文章排在越前面。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">sticky: 100</span><br><span class="line">top: 100</span><br><span class="line">hide: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h2 id="npm-install-–save-hexo-admin"><a href="#npm-install-–save-hexo-admin" class="headerlink" title="npm install –save hexo-admin"></a>npm install –save hexo-admin</h2><p>可视化操作界面，编写上传<br><img src="/%5Cimages%5Cpasted-0.png" alt="upload successful"></p>
-<h3 id="设置deploy"><a href="#设置deploy" class="headerlink" title="设置deploy"></a>设置deploy</h3><p>博客根目录建立批处理文件 hexo-deploy.bat，内容如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@echo off</span><br><span class="line">call hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="添加登录账户密码"><a href="#添加登录账户密码" class="headerlink" title="添加登录账户密码"></a>添加登录账户密码</h3><p>在_config.yml 添加</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># hexo-admin authentification</span><br><span class="line">admin:</span><br><span class="line">  username: username</span><br><span class="line">  password_hash: $2a$10$L.XAIqIWgTc5S1zpvV3MEu7/rH34p4Is/nq824smv8EZ3lIPCp1su</span><br><span class="line">  secret: my super secret phrase</span><br><span class="line">  deployCommand: ‘hexo-deploy.bat&#x27;</span><br></pre></td></tr></table></figure>
-
-<h2 id="hexo-deplayer-git"><a href="#hexo-deplayer-git" class="headerlink" title="hexo-deplayer-git"></a>hexo-deplayer-git</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h2 id="图片插件"><a href="#图片插件" class="headerlink" title="图片插件"></a>图片插件</h2><p><a href="https://github.com/xcodebuild/hexo-asset-image">hexo-asset-image</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
-<p><code>**_config.yml** 配置文件</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_asset_folder: false改为true</span><br></pre></td></tr></table></figure>
-
-<h2 id="hexo-abbrlink"><a href="#hexo-abbrlink" class="headerlink" title="hexo-abbrlink"></a><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></h2><p>解决站点链接中文编码问题(此插件会与图片插件产生冲突,解决方案参考<a href="https://imgod.me/posts/55.html">此文章</a>)</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-<p><code>**_config.yml** 配置文件</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># permalink: :year/:month/:day/:title/</span><br><span class="line"># permalink_defaults:</span><br><span class="line">permalink: posts/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  # alg: crc32 #算法： crc16(default) and crc32</span><br><span class="line">  rep: dec #进制： dec(default) and hex</span><br></pre></td></tr></table></figure>
-<h2 id="hexo-renderer-pug"><a href="#hexo-renderer-pug" class="headerlink" title="hexo-renderer-pug"></a><a href="https://github.com/hexojs/hexo-renderer-pug">hexo-renderer-pug</a></h2><p>以及<a href="https://github.com/hexojs/hexo-renderer-stylus">hexo-renderer-stylus</a><br>pug 以及 stylus 的渲染器（folud 主题不需要）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
-<h2 id="hexo-wordcount"><a href="#hexo-wordcount" class="headerlink" title="hexo-wordcount"></a><a href="https://github.com/willin/hexo-wordcount">hexo-wordcount</a></h2><p>文章字数统计插件（folud 主题不需要）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure>
-<h2 id="hexo-generator-sitemap"><a href="#hexo-generator-sitemap" class="headerlink" title="hexo-generator-sitemap"></a><a href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a></h2><p>以及<a href="https://github.com/coneycode/hexo-generator-baidu-sitemap">hexo-generator-baidu-sitemap</a><br>站点地图插件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
-<h2 id="hexo-generator-search"><a href="#hexo-generator-search" class="headerlink" title="hexo-generator-search"></a><a href="https://github.com/wzpan/hexo-generator-search">hexo-generator-search</a></h2><p>本地搜索插件（folud 主题不需要）</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure>
-<h2 id="hexo-blog-encrypt"><a href="#hexo-blog-encrypt" class="headerlink" title="hexo-blog-encrypt"></a><a href="https://github.com/D0n9X1n/hexo-blog-encrypt">hexo-blog-encrypt</a></h2><p>文章加密插件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure>
-<p><code>**post.md** 文件</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">abbrlink:</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories:</span><br><span class="line">tags:</span><br><span class="line">description:</span><br><span class="line">password: （密码）</span><br><span class="line">abstract: 有东西被加密了, 请输入密码查看.</span><br><span class="line">message: 您好, 这里需要密码.</span><br></pre></td></tr></table></figure>
-<h3 id="标签加密"><a href="#标签加密" class="headerlink" title="标签加密"></a>标签加密</h3><p>在博客根目录下的_config.xml中添加:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">encrypt: # hexo-blog-encrypt</span><br><span class="line">  abstract: 这里有东西被加密了，需要输入密码查看哦。</span><br><span class="line">  message: 您好, 这里需要密码.</span><br><span class="line">  tags:</span><br><span class="line">  - &#123;name: tagName, password: 密码A&#125;</span><br><span class="line">  - &#123;name: tagName, password: 密码B&#125;</span><br><span class="line">  template: &lt;div id=&quot;hexo-blog-encrypt&quot; data-wpm=&quot;&#123;&#123;hbeWrongPassMessage&#125;&#125;&quot; data-whm=&quot;&#123;&#123;hbeWrongHashMessage&#125;&#125;&quot;&gt;&lt;div class=&quot;hbe-input-container&quot;&gt;&lt;input type=&quot;password&quot; id=&quot;hbePass&quot; placeholder=&quot;&#123;&#123;hbeMessage&#125;&#125;&quot; /&gt;&lt;label&gt;&#123;&#123;hbeMessage&#125;&#125;&lt;/label&gt;&lt;div class=&quot;bottom-line&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;script id=&quot;hbeData&quot; type=&quot;hbeData&quot; data-hmacdigest=&quot;&#123;&#123;hbeHmacDigest&#125;&#125;&quot;&gt;&#123;&#123;hbeEncryptedData&#125;&#125;&lt;/script&gt;&lt;/div&gt;</span><br><span class="line">  wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.</span><br><span class="line">  wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<blockquote>
-<p>原文链接：<a href="https://imgod.me/posts/60161.html">https://imgod.me/posts/60161.html</a></p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>插件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git代码记录</title>
     <url>/posts/53509.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -260,6 +185,157 @@
         <tag>hexo</tag>
         <tag>主题</tag>
         <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo插件收藏</title>
+    <url>/posts/48669.html</url>
+    <content><![CDATA[<center>hexo插件收藏</center>
+<span id="more"></span>
+
+<h2 id="置顶与隐藏"><a href="#置顶与隐藏" class="headerlink" title="置顶与隐藏"></a>置顶与隐藏</h2><p>安装此插件需要卸载官方hexo-generator-index插件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-generator-index</span><br><span class="line">npm install hexo-generator-index-custom --save</span><br></pre></td></tr></table></figure>
+<p>在文章开头的配置中添加 sticky 或 top 参数，可以置顶文章。<br>sticky 的优先级比 top 高，故所有使用 sticky 都会排在 top 之前。<br>其值可以是 true 或数字，数字越大，文章排在越前面。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">sticky: 100</span><br><span class="line">top: 100</span><br><span class="line">hide: true</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h2 id="npm-install-–save-hexo-admin"><a href="#npm-install-–save-hexo-admin" class="headerlink" title="npm install –save hexo-admin"></a>npm install –save hexo-admin</h2><p>可视化操作界面，编写上传<br><img src="/images/pasted-0.png" alt="upload successful"></p>
+<h3 id="设置deploy"><a href="#设置deploy" class="headerlink" title="设置deploy"></a>设置deploy</h3><p>博客根目录建立批处理文件 hexo-deploy.bat，内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@echo off</span><br><span class="line">call hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+<h3 id="添加登录账户密码"><a href="#添加登录账户密码" class="headerlink" title="添加登录账户密码"></a>添加登录账户密码</h3><p>在_config.yml 添加</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># hexo-admin authentification</span><br><span class="line">admin:</span><br><span class="line">  username: username</span><br><span class="line">  password_hash: $2a$10$L.XAIqIWgTc5S1zpvV3MEu7/rH34p4Is/nq824smv8EZ3lIPCp1su</span><br><span class="line">  secret: my super secret phrase</span><br><span class="line">  deployCommand: ‘hexo-deploy.bat&#x27;</span><br></pre></td></tr></table></figure>
+
+<h2 id="hexo-deplayer-git"><a href="#hexo-deplayer-git" class="headerlink" title="hexo-deplayer-git"></a>hexo-deplayer-git</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h2 id="图片插件"><a href="#图片插件" class="headerlink" title="图片插件"></a>图片插件</h2><p><a href="https://github.com/xcodebuild/hexo-asset-image">hexo-asset-image</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<p><code>**_config.yml** 配置文件</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_asset_folder: false改为true</span><br></pre></td></tr></table></figure>
+
+<h2 id="hexo-abbrlink"><a href="#hexo-abbrlink" class="headerlink" title="hexo-abbrlink"></a><a href="https://github.com/rozbo/hexo-abbrlink">hexo-abbrlink</a></h2><p>解决站点链接中文编码问题(此插件会与图片插件产生冲突,解决方案参考<a href="https://imgod.me/posts/55.html">此文章</a>)</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+<p><code>**_config.yml** 配置文件</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># permalink: :year/:month/:day/:title/</span><br><span class="line"># permalink_defaults:</span><br><span class="line">permalink: posts/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  # alg: crc32 #算法： crc16(default) and crc32</span><br><span class="line">  rep: dec #进制： dec(default) and hex</span><br></pre></td></tr></table></figure>
+<h2 id="hexo-renderer-pug"><a href="#hexo-renderer-pug" class="headerlink" title="hexo-renderer-pug"></a><a href="https://github.com/hexojs/hexo-renderer-pug">hexo-renderer-pug</a></h2><p>以及<a href="https://github.com/hexojs/hexo-renderer-stylus">hexo-renderer-stylus</a><br>pug 以及 stylus 的渲染器（folud 主题不需要）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
+<h2 id="hexo-wordcount"><a href="#hexo-wordcount" class="headerlink" title="hexo-wordcount"></a><a href="https://github.com/willin/hexo-wordcount">hexo-wordcount</a></h2><p>文章字数统计插件（folud 主题不需要）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure>
+<h2 id="hexo-generator-sitemap"><a href="#hexo-generator-sitemap" class="headerlink" title="hexo-generator-sitemap"></a><a href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a></h2><p>以及<a href="https://github.com/coneycode/hexo-generator-baidu-sitemap">hexo-generator-baidu-sitemap</a><br>站点地图插件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+<h2 id="hexo-generator-search"><a href="#hexo-generator-search" class="headerlink" title="hexo-generator-search"></a><a href="https://github.com/wzpan/hexo-generator-search">hexo-generator-search</a></h2><p>本地搜索插件（folud 主题不需要）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure>
+<h2 id="hexo-blog-encrypt"><a href="#hexo-blog-encrypt" class="headerlink" title="hexo-blog-encrypt"></a><a href="https://github.com/D0n9X1n/hexo-blog-encrypt">hexo-blog-encrypt</a></h2><p>文章加密插件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure>
+<p><code>**post.md** 文件</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">abbrlink:</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">categories:</span><br><span class="line">tags:</span><br><span class="line">description:</span><br><span class="line">password: （密码）</span><br><span class="line">abstract: 有东西被加密了, 请输入密码查看.</span><br><span class="line">message: 您好, 这里需要密码.</span><br></pre></td></tr></table></figure>
+<h3 id="标签加密"><a href="#标签加密" class="headerlink" title="标签加密"></a>标签加密</h3><p>在博客根目录下的_config.xml中添加:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">encrypt: # hexo-blog-encrypt</span><br><span class="line">  abstract: 这里有东西被加密了，需要输入密码查看哦。</span><br><span class="line">  message: 您好, 这里需要密码.</span><br><span class="line">  tags:</span><br><span class="line">  - &#123;name: tagName, password: 密码A&#125;</span><br><span class="line">  - &#123;name: tagName, password: 密码B&#125;</span><br><span class="line">  template: &lt;div id=&quot;hexo-blog-encrypt&quot; data-wpm=&quot;&#123;&#123;hbeWrongPassMessage&#125;&#125;&quot; data-whm=&quot;&#123;&#123;hbeWrongHashMessage&#125;&#125;&quot;&gt;&lt;div class=&quot;hbe-input-container&quot;&gt;&lt;input type=&quot;password&quot; id=&quot;hbePass&quot; placeholder=&quot;&#123;&#123;hbeMessage&#125;&#125;&quot; /&gt;&lt;label&gt;&#123;&#123;hbeMessage&#125;&#125;&lt;/label&gt;&lt;div class=&quot;bottom-line&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;script id=&quot;hbeData&quot; type=&quot;hbeData&quot; data-hmacdigest=&quot;&#123;&#123;hbeHmacDigest&#125;&#125;&quot;&gt;&#123;&#123;hbeEncryptedData&#125;&#125;&lt;/script&gt;&lt;/div&gt;</span><br><span class="line">  wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.</span><br><span class="line">  wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote>
+<p>原文链接：<a href="https://imgod.me/posts/60161.html">https://imgod.me/posts/60161.html</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>插件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>收集图床网站</title>
+    <url>/posts/43892.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>免费又好用的图床网站在这里</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+
+
+
+<h2 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h2><h3 id="thumbsnap"><a href="#thumbsnap" class="headerlink" title="thumbsnap"></a>thumbsnap</h3><blockquote>
+<p><a href="https://thumbsnap.com/">https://thumbsnap.com/</a><br>media hosting, avatar hosting, sig hosting, image hosting api</p>
+</blockquote>
+<h3 id="upup"><a href="#upup" class="headerlink" title="upup"></a>upup</h3><blockquote>
+<p><a href="https://upup.xkx.me/">https://upup.xkx.me/</a><br>upup外链</p>
+</blockquote>
+<h3 id="sm-ms"><a href="#sm-ms" class="headerlink" title="sm.ms"></a>sm.ms</h3><blockquote>
+<p><a href="https://sm.ms/">https://sm.ms/</a><br>sm.ms有免费有收费</p>
+</blockquote>
+<h3 id="老王图床"><a href="#老王图床" class="headerlink" title="老王图床"></a>老王图床</h3><blockquote>
+<p><a href="https://img.gejiba.com/">https://img.gejiba.com</a><br>免费公共图床, 老王图床</p>
+</blockquote>
+<h3 id="老王外链"><a href="#老王外链" class="headerlink" title="老王外链"></a>老王外链</h3><blockquote>
+<p><a href="https://www.gejiba.com/">https://www.gejiba.com/</a><br>老王外链网盘提供大容量云存储服务</p>
+</blockquote>
+<h2 id="新增"><a href="#新增" class="headerlink" title="新增"></a>新增</h2><h3 id="全能图床"><a href="#全能图床" class="headerlink" title="全能图床"></a>全能图床</h3><blockquote>
+<p><a href="https://tool.liumingye.cn/tuchuang/">https://tool.liumingye.cn/tuchuang/</a><br>全能图床,图床,博客图床,免费图床,七牛图床</p>
+</blockquote>
+<h3 id="sky-Pro"><a href="#sky-Pro" class="headerlink" title="sky Pro"></a>sky Pro</h3><blockquote>
+<p><a href="https://www.icpbk.com/">https://www.icpbk.com/</a></p>
+</blockquote>
+<h3 id="熊猫图床"><a href="#熊猫图床" class="headerlink" title="熊猫图床"></a>熊猫图床</h3><blockquote>
+<p><a href="https://www.pandaimg.com/">https://www.pandaimg.com/</a><br>本站支持的格式： jpeg,jpg,png,gif,tif,bmp,ico,psd,webp</p>
+</blockquote>
+<h3 id="img-nn-ci"><a href="#img-nn-ci" class="headerlink" title="img.nn.ci"></a>img.nn.ci</h3><blockquote>
+<p><a href="https://img.nn.ci/">https://img.nn.ci</a><br>点击左上角按钮选择接口<br>接口有点多。。<br>速度：国内 CDN 加速 </p>
+</blockquote>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><h3 id="映画の图床"><a href="#映画の图床" class="headerlink" title="映画の图床"></a>映画の图床</h3><blockquote>
+<p><a href="https://pic.ihcloud.net/">https://pic.ihcloud.net</a><br>最大单张不超过5M<br>速度：国内 CDN 加速 </p>
+</blockquote>
+<h3 id="TG-图床"><a href="#TG-图床" class="headerlink" title="TG 图床"></a>TG 图床</h3><blockquote>
+<p><a href="https://img.tg/">https://img.tg</a><br>节点包含中国 CDN 在任何地方快速访问您的图片<br>未经许可私自将图床用于商业用途可能被封号</p>
+</blockquote>
+<h3 id="IMG-WANG"><a href="#IMG-WANG" class="headerlink" title="IMG.WANG"></a>IMG.WANG</h3><blockquote>
+<p><a href="https://img.wang/">https://img.wang</a><br>速度：百度云 CDN </p>
+</blockquote>
+<h3 id="去不图床"><a href="#去不图床" class="headerlink" title="去不图床"></a>去不图床</h3><blockquote>
+<p><a href="https://7bu.top/">https://7bu.top/</a><br>长期保留图片需付费<br>图床使用阿里轻服务主机，腾讯云 CDN 节点加速。支持格式：JPEG&#x2F;JPG&#x2F;PNG&#x2F;GIF&#x2F;TIF&#x2F;BMP&#x2F;ICO&#x2F;PSD&#x2F;WEBP</p>
+</blockquote>
+<h3 id="惜染外链"><a href="#惜染外链" class="headerlink" title="惜染外链"></a>惜染外链</h3><blockquote>
+<p><a href="https://tp.hefollo.com/">https://tp.hefollo.com/</a><br>惜染外链</p>
+</blockquote>
+<h3 id="imgBB"><a href="#imgBB" class="headerlink" title="imgBB"></a>imgBB</h3><blockquote>
+<p><a href="https://imgbb.com/">https://imgbb.com/</a><br>ImgBB — 免费图片存取&#x2F;上传图片</p>
+</blockquote>
+<h3 id="路过"><a href="#路过" class="headerlink" title="路过"></a>路过</h3><blockquote>
+<p><a href="https://cdnjson.com/">https://cdnjson.com/</a><br>免费图片上传-图片外链-免费公共图床 </p>
+</blockquote>
+<h3 id="imgURL"><a href="#imgURL" class="headerlink" title="imgURL"></a>imgURL</h3><blockquote>
+<p><a href="https://imgurl.org/">https://imgurl.org/</a><br>imgURL</p>
+</blockquote>
+<h3 id="浅析"><a href="#浅析" class="headerlink" title="浅析"></a>浅析</h3><blockquote>
+<p><a href="https://tc.bllts.cn/">https://tc.bllts.cn/</a><br>浅析</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>图床</tag>
       </tags>
   </entry>
   <entry>
@@ -1719,148 +1795,6 @@
       </categories>
   </entry>
   <entry>
-    <title>收集图床网站</title>
-    <url>/posts/43892.html</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>免费又好用的图床网站在这里</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-
-<span id="more"></span>
-
-
-
-<h2 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h2><h3 id="thumbsnap"><a href="#thumbsnap" class="headerlink" title="thumbsnap"></a>thumbsnap</h3><blockquote>
-<p><a href="https://thumbsnap.com/">https://thumbsnap.com/</a><br>media hosting, avatar hosting, sig hosting, image hosting api</p>
-</blockquote>
-<h3 id="upup"><a href="#upup" class="headerlink" title="upup"></a>upup</h3><blockquote>
-<p><a href="https://upup.xkx.me/">https://upup.xkx.me/</a><br>upup外链</p>
-</blockquote>
-<h3 id="sm-ms"><a href="#sm-ms" class="headerlink" title="sm.ms"></a>sm.ms</h3><blockquote>
-<p><a href="https://sm.ms/">https://sm.ms/</a><br>sm.ms有免费有收费</p>
-</blockquote>
-<h3 id="老王图床"><a href="#老王图床" class="headerlink" title="老王图床"></a>老王图床</h3><blockquote>
-<p><a href="https://img.gejiba.com/">https://img.gejiba.com</a><br>免费公共图床, 老王图床</p>
-</blockquote>
-<h3 id="老王外链"><a href="#老王外链" class="headerlink" title="老王外链"></a>老王外链</h3><blockquote>
-<p><a href="https://www.gejiba.com/">https://www.gejiba.com/</a><br>老王外链网盘提供大容量云存储服务</p>
-</blockquote>
-<h2 id="新增"><a href="#新增" class="headerlink" title="新增"></a>新增</h2><h3 id="全能图床"><a href="#全能图床" class="headerlink" title="全能图床"></a>全能图床</h3><blockquote>
-<p><a href="https://tool.liumingye.cn/tuchuang/">https://tool.liumingye.cn/tuchuang/</a><br>全能图床,图床,博客图床,免费图床,七牛图床</p>
-</blockquote>
-<h3 id="sky-Pro"><a href="#sky-Pro" class="headerlink" title="sky Pro"></a>sky Pro</h3><blockquote>
-<p><a href="https://www.icpbk.com/">https://www.icpbk.com/</a></p>
-</blockquote>
-<h3 id="熊猫图床"><a href="#熊猫图床" class="headerlink" title="熊猫图床"></a>熊猫图床</h3><blockquote>
-<p><a href="https://www.pandaimg.com/">https://www.pandaimg.com/</a><br>本站支持的格式： jpeg,jpg,png,gif,tif,bmp,ico,psd,webp</p>
-</blockquote>
-<h3 id="img-nn-ci"><a href="#img-nn-ci" class="headerlink" title="img.nn.ci"></a>img.nn.ci</h3><blockquote>
-<p><a href="https://img.nn.ci/">https://img.nn.ci</a><br>点击左上角按钮选择接口<br>接口有点多。。<br>速度：国内 CDN 加速 </p>
-</blockquote>
-<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><h3 id="映画の图床"><a href="#映画の图床" class="headerlink" title="映画の图床"></a>映画の图床</h3><blockquote>
-<p><a href="https://pic.ihcloud.net/">https://pic.ihcloud.net</a><br>最大单张不超过5M<br>速度：国内 CDN 加速 </p>
-</blockquote>
-<h3 id="TG-图床"><a href="#TG-图床" class="headerlink" title="TG 图床"></a>TG 图床</h3><blockquote>
-<p><a href="https://img.tg/">https://img.tg</a><br>节点包含中国 CDN 在任何地方快速访问您的图片<br>未经许可私自将图床用于商业用途可能被封号</p>
-</blockquote>
-<h3 id="IMG-WANG"><a href="#IMG-WANG" class="headerlink" title="IMG.WANG"></a>IMG.WANG</h3><blockquote>
-<p><a href="https://img.wang/">https://img.wang</a><br>速度：百度云 CDN </p>
-</blockquote>
-<h3 id="去不图床"><a href="#去不图床" class="headerlink" title="去不图床"></a>去不图床</h3><blockquote>
-<p><a href="https://7bu.top/">https://7bu.top/</a><br>长期保留图片需付费<br>图床使用阿里轻服务主机，腾讯云 CDN 节点加速。支持格式：JPEG&#x2F;JPG&#x2F;PNG&#x2F;GIF&#x2F;TIF&#x2F;BMP&#x2F;ICO&#x2F;PSD&#x2F;WEBP</p>
-</blockquote>
-<h3 id="惜染外链"><a href="#惜染外链" class="headerlink" title="惜染外链"></a>惜染外链</h3><blockquote>
-<p><a href="https://tp.hefollo.com/">https://tp.hefollo.com/</a><br>惜染外链</p>
-</blockquote>
-<h3 id="imgBB"><a href="#imgBB" class="headerlink" title="imgBB"></a>imgBB</h3><blockquote>
-<p><a href="https://imgbb.com/">https://imgbb.com/</a><br>ImgBB — 免费图片存取&#x2F;上传图片</p>
-</blockquote>
-<h3 id="路过"><a href="#路过" class="headerlink" title="路过"></a>路过</h3><blockquote>
-<p><a href="https://cdnjson.com/">https://cdnjson.com/</a><br>免费图片上传-图片外链-免费公共图床 </p>
-</blockquote>
-<h3 id="imgURL"><a href="#imgURL" class="headerlink" title="imgURL"></a>imgURL</h3><blockquote>
-<p><a href="https://imgurl.org/">https://imgurl.org/</a><br>imgURL</p>
-</blockquote>
-<h3 id="浅析"><a href="#浅析" class="headerlink" title="浅析"></a>浅析</h3><blockquote>
-<p><a href="https://tc.bllts.cn/">https://tc.bllts.cn/</a><br>浅析</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>图床</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>天若OCR文字识别</title>
-    <url>/posts/33021.html</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>快速识别，在线翻译</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-
-<span id="more"></span>
-<p><img src="https://ocr.tianruo.net/images/1573471333.png" alt="天若OCR"></p>
-<table>
-<thead>
-<tr>
-<th align="left">功能</th>
-<th align="left">介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">文本识别</td>
-<td align="left">将图片中的文本转换成可编辑文本</td>
-</tr>
-<tr>
-<td align="left">表格识别</td>
-<td align="left">将图片中的表格转换成可编辑表格</td>
-</tr>
-<tr>
-<td align="left">竖排识别</td>
-<td align="left">将图片竖排文字识别成可编辑文本</td>
-</tr>
-<tr>
-<td align="left">公式识别</td>
-<td align="left">将图片公式识别出latex代码</td>
-</tr>
-<tr>
-<td align="left">矫正识别</td>
-<td align="left">可以将图片进行倾斜透视矫正</td>
-</tr>
-<tr>
-<td align="left">高级识别</td>
-<td align="left">调整识别对比度，自动绘制表格线</td>
-</tr>
-<tr>
-<td align="left">识别翻译</td>
-<td align="left">识别图片后自动翻译</td>
-</tr>
-<tr>
-<td align="left">识别搜索</td>
-<td align="left">识别图片后自动搜索</td>
-</tr>
-<tr>
-<td align="left">截图功能</td>
-<td align="left">丰富的截图标注功能</td>
-</tr>
-</tbody></table>
-<p><a href="https://ocr.tianruo.net/" title="官网">天若OCR</a><br><a href="https://tianruo.lanzoux.com/b0mn2zif" title="蓝奏云下载">下载地址</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>电脑软件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>恒星播放插件合集</title>
     <url>/posts/41063.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -1975,6 +1909,72 @@
       </tags>
   </entry>
   <entry>
+    <title>天若OCR文字识别</title>
+    <url>/posts/33021.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>快速识别，在线翻译</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+<p><img src="https://ocr.tianruo.net/images/1573471333.png" alt="天若OCR"></p>
+<table>
+<thead>
+<tr>
+<th align="left">功能</th>
+<th align="left">介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">文本识别</td>
+<td align="left">将图片中的文本转换成可编辑文本</td>
+</tr>
+<tr>
+<td align="left">表格识别</td>
+<td align="left">将图片中的表格转换成可编辑表格</td>
+</tr>
+<tr>
+<td align="left">竖排识别</td>
+<td align="left">将图片竖排文字识别成可编辑文本</td>
+</tr>
+<tr>
+<td align="left">公式识别</td>
+<td align="left">将图片公式识别出latex代码</td>
+</tr>
+<tr>
+<td align="left">矫正识别</td>
+<td align="left">可以将图片进行倾斜透视矫正</td>
+</tr>
+<tr>
+<td align="left">高级识别</td>
+<td align="left">调整识别对比度，自动绘制表格线</td>
+</tr>
+<tr>
+<td align="left">识别翻译</td>
+<td align="left">识别图片后自动翻译</td>
+</tr>
+<tr>
+<td align="left">识别搜索</td>
+<td align="left">识别图片后自动搜索</td>
+</tr>
+<tr>
+<td align="left">截图功能</td>
+<td align="left">丰富的截图标注功能</td>
+</tr>
+</tbody></table>
+<p><a href="https://ocr.tianruo.net/" title="官网">天若OCR</a><br><a href="https://tianruo.lanzoux.com/b0mn2zif" title="蓝奏云下载">下载地址</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>电脑软件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建hexo教程</title>
     <url>/posts/9571.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -2068,13 +2068,13 @@
   <entry>
     <title>本站用到的插件</title>
     <url>/posts/1.html</url>
-    <content><![CDATA[<h2 id="生成唯一永久文章链接"><a href="#生成唯一永久文章链接" class="headerlink" title="生成唯一永久文章链接"></a>生成唯一永久文章链接</h2><p>+– <a href="mailto:&#104;&#x65;&#120;&#x6f;&#45;&#97;&#98;&#x62;&#114;&#108;&#x69;&#x6e;&#107;&#x40;&#x32;&#46;&#x32;&#46;&#49;">&#104;&#x65;&#120;&#x6f;&#45;&#97;&#98;&#x62;&#114;&#108;&#x69;&#x6e;&#107;&#x40;&#x32;&#46;&#x32;&#46;&#49;</a></p>
-<h2 id="git上传"><a href="#git上传" class="headerlink" title="git上传"></a>git上传</h2><p>+– <a href="mailto:&#x68;&#101;&#120;&#x6f;&#45;&#x64;&#101;&#x70;&#x6c;&#111;&#121;&#101;&#x72;&#x2d;&#x67;&#x69;&#x74;&#64;&#51;&#x2e;&#48;&#46;&#48;">&#x68;&#101;&#120;&#x6f;&#45;&#x64;&#101;&#x70;&#x6c;&#111;&#121;&#101;&#x72;&#x2d;&#x67;&#x69;&#x74;&#64;&#51;&#x2e;&#48;&#46;&#48;</a></p>
-<h2 id="rss"><a href="#rss" class="headerlink" title="rss"></a>rss</h2><p>+– <a href="mailto:&#x68;&#101;&#x78;&#111;&#45;&#103;&#101;&#x6e;&#x65;&#x72;&#97;&#116;&#111;&#x72;&#x2d;&#102;&#101;&#101;&#100;&#64;&#x33;&#46;&#x30;&#46;&#48;">&#x68;&#101;&#x78;&#111;&#45;&#103;&#101;&#x6e;&#x65;&#x72;&#97;&#116;&#111;&#x72;&#x2d;&#102;&#101;&#101;&#100;&#64;&#x33;&#46;&#x30;&#46;&#48;</a></p>
-<h2 id="官方置顶插件"><a href="#官方置顶插件" class="headerlink" title="官方置顶插件"></a>官方置顶插件</h2><p>+– <a href="mailto:&#104;&#101;&#120;&#111;&#45;&#x67;&#101;&#110;&#x65;&#114;&#x61;&#116;&#x6f;&#114;&#x2d;&#x69;&#110;&#100;&#101;&#x78;&#x40;&#x32;&#46;&#x30;&#x2e;&#x30;">&#104;&#101;&#120;&#111;&#45;&#x67;&#101;&#110;&#x65;&#114;&#x61;&#116;&#x6f;&#114;&#x2d;&#x69;&#110;&#100;&#101;&#x78;&#x40;&#x32;&#46;&#x30;&#x2e;&#x30;</a></p>
+    <content><![CDATA[<h2 id="生成唯一永久文章链接"><a href="#生成唯一永久文章链接" class="headerlink" title="生成唯一永久文章链接"></a>生成唯一永久文章链接</h2><p>+– <a href="mailto:&#104;&#x65;&#120;&#111;&#45;&#x61;&#x62;&#98;&#114;&#x6c;&#x69;&#x6e;&#x6b;&#64;&#50;&#46;&#50;&#46;&#x31;">&#104;&#x65;&#120;&#111;&#45;&#x61;&#x62;&#98;&#114;&#x6c;&#x69;&#x6e;&#x6b;&#64;&#50;&#46;&#50;&#46;&#x31;</a></p>
+<h2 id="git上传"><a href="#git上传" class="headerlink" title="git上传"></a>git上传</h2><p>+– <a href="mailto:&#x68;&#101;&#120;&#x6f;&#45;&#100;&#101;&#x70;&#x6c;&#x6f;&#x79;&#x65;&#114;&#45;&#x67;&#x69;&#x74;&#64;&#x33;&#46;&#48;&#46;&#x30;">&#x68;&#101;&#120;&#x6f;&#45;&#100;&#101;&#x70;&#x6c;&#x6f;&#x79;&#x65;&#114;&#45;&#x67;&#x69;&#x74;&#64;&#x33;&#46;&#48;&#46;&#x30;</a></p>
+<h2 id="rss"><a href="#rss" class="headerlink" title="rss"></a>rss</h2><p>+– <a href="mailto:&#x68;&#x65;&#x78;&#111;&#45;&#x67;&#101;&#x6e;&#x65;&#x72;&#97;&#116;&#111;&#114;&#45;&#102;&#x65;&#101;&#x64;&#64;&#x33;&#46;&#48;&#46;&#48;">&#x68;&#x65;&#x78;&#111;&#45;&#x67;&#101;&#x6e;&#x65;&#x72;&#97;&#116;&#111;&#114;&#45;&#102;&#x65;&#101;&#x64;&#64;&#x33;&#46;&#48;&#46;&#48;</a></p>
+<h2 id="官方置顶插件"><a href="#官方置顶插件" class="headerlink" title="官方置顶插件"></a>官方置顶插件</h2><p>+– <a href="mailto:&#104;&#101;&#x78;&#111;&#45;&#x67;&#101;&#x6e;&#101;&#114;&#97;&#x74;&#x6f;&#x72;&#x2d;&#105;&#110;&#100;&#101;&#120;&#x40;&#x32;&#46;&#48;&#46;&#x30;">&#104;&#101;&#x78;&#111;&#45;&#x67;&#101;&#x6e;&#101;&#114;&#97;&#x74;&#x6f;&#x72;&#x2d;&#105;&#110;&#100;&#101;&#120;&#x40;&#x32;&#46;&#48;&#46;&#x30;</a></p>
 <h2 id="第三方置顶插件，可隐藏文章"><a href="#第三方置顶插件，可隐藏文章" class="headerlink" title="第三方置顶插件，可隐藏文章"></a>第三方置顶插件，可隐藏文章</h2><p>npm install hexo-generator-index-custom –save</p>
-<h2 id="本地搜索插件"><a href="#本地搜索插件" class="headerlink" title="本地搜索插件"></a>本地搜索插件</h2><p>+– <a href="mailto:&#x68;&#x65;&#x78;&#111;&#x2d;&#x67;&#101;&#x6e;&#x65;&#x72;&#97;&#116;&#x6f;&#x72;&#45;&#x73;&#101;&#x61;&#x72;&#x63;&#x68;&#x64;&#x62;&#64;&#49;&#46;&#52;&#46;&#x30;">&#x68;&#x65;&#x78;&#111;&#x2d;&#x67;&#101;&#x6e;&#x65;&#x72;&#97;&#116;&#x6f;&#x72;&#45;&#x73;&#101;&#x61;&#x72;&#x63;&#x68;&#x64;&#x62;&#64;&#49;&#46;&#52;&#46;&#x30;</a></p>
-<h2 id="文章计数插件"><a href="#文章计数插件" class="headerlink" title="文章计数插件"></a>文章计数插件</h2><p>+– <a href="mailto:&#x68;&#x65;&#120;&#111;&#45;&#x77;&#111;&#114;&#x64;&#99;&#111;&#117;&#110;&#116;&#x40;&#54;&#46;&#x30;&#46;&#x31;">&#x68;&#x65;&#120;&#111;&#45;&#x77;&#111;&#114;&#x64;&#99;&#111;&#117;&#110;&#116;&#x40;&#54;&#46;&#x30;&#46;&#x31;</a></p>
+<h2 id="本地搜索插件"><a href="#本地搜索插件" class="headerlink" title="本地搜索插件"></a>本地搜索插件</h2><p>+– <a href="mailto:&#x68;&#x65;&#x78;&#x6f;&#x2d;&#x67;&#101;&#110;&#101;&#x72;&#x61;&#116;&#111;&#x72;&#45;&#115;&#x65;&#97;&#114;&#99;&#x68;&#x64;&#x62;&#x40;&#x31;&#46;&#52;&#46;&#48;">&#x68;&#x65;&#x78;&#x6f;&#x2d;&#x67;&#101;&#110;&#101;&#x72;&#x61;&#116;&#111;&#x72;&#45;&#115;&#x65;&#97;&#114;&#99;&#x68;&#x64;&#x62;&#x40;&#x31;&#46;&#52;&#46;&#48;</a></p>
+<h2 id="文章计数插件"><a href="#文章计数插件" class="headerlink" title="文章计数插件"></a>文章计数插件</h2><p>+– <a href="mailto:&#104;&#101;&#x78;&#111;&#45;&#x77;&#111;&#114;&#x64;&#99;&#x6f;&#x75;&#x6e;&#x74;&#64;&#x36;&#x2e;&#48;&#x2e;&#49;">&#104;&#101;&#x78;&#111;&#45;&#x77;&#111;&#114;&#x64;&#99;&#x6f;&#x75;&#x6e;&#x74;&#64;&#x36;&#x2e;&#48;&#x2e;&#49;</a></p>
 <h2 id="可视化编辑"><a href="#可视化编辑" class="headerlink" title="可视化编辑"></a>可视化编辑</h2><p>npm install –save hexo-admin</p>
 ]]></content>
   </entry>
@@ -2189,6 +2189,29 @@
       </tags>
   </entry>
   <entry>
+    <title>css滚动栏美化</title>
+    <url>/posts/20242.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>滚动栏美化</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+<p>参考: <a href="https://blog.csdn.net/u012551928/article/details/109286853">https://blog.csdn.net/u012551928/article/details/109286853</a></p>
+<p><code>::-webkit-scrollbar</code> CSS伪类选择器影响了一个元素的滚动条的样式<br><code>::-webkit-scrollbar</code> 仅仅在支持WebKit的浏览器 (例如, 谷歌Chrome, 苹果Safari)可以使用.<br>你可以使用以下伪元素选择器去修改各式webkit浏览器的滚动条样式:</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar — 整个滚动条.</span><br><span class="line">::-webkit-scrollbar-button — 滚动条上的按钮 (上下箭头).</span><br><span class="line">::-webkit-scrollbar-thumb — 滚动条上的滚动滑块.</span><br><span class="line">::-webkit-scrollbar-track — 滚动条轨道.</span><br><span class="line">::-webkit-scrollbar-track-piece — 滚动条没有滑块的轨道部分.</span><br><span class="line">::-webkit-scrollbar-corner — 当同时有垂直滚动条和水平滚动条时交汇的部分.</span><br><span class="line">::-webkit-resizer — 某些元素的corner部分的部分样式(例:textarea的可拖动按钮).</span><br></pre></td></tr></table></figure>
+<h2 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">12px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">5px</span></span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    <span class="attribute">background-color</span>:<span class="number">#12b7f5</span>;</span><br><span class="line">    <span class="attribute">background-image</span>:<span class="built_in">-webkit-linear-gradient</span>(<span class="number">30deg</span>, <span class="built_in">rgba</span>(<span class="number">18</span>, <span class="number">183</span>, <span class="number">245</span>, <span class="number">1</span>) <span class="number">100%</span>, transparent <span class="number">25%</span>, transparent <span class="number">50%</span>, <span class="built_in">rgba</span>(<span class="number">18</span>, <span class="number">183</span>, <span class="number">243</span>, <span class="number">1</span>) <span class="number">50%</span>, <span class="built_in">rgba</span>(<span class="number">18</span>, <span class="number">183</span>, <span class="number">245</span>, <span class="number">1</span>) <span class="number">75%</span>, transparent <span class="number">100%</span>, transparent)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>代码</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>滚动栏美化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>css代码记录</title>
     <url>/posts/20241.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -2222,29 +2245,6 @@
       </categories>
       <tags>
         <tag>css</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>css滚动栏美化</title>
-    <url>/posts/20242.html</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>滚动栏美化</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-
-<span id="more"></span>
-<p>参考: <a href="https://blog.csdn.net/u012551928/article/details/109286853">https://blog.csdn.net/u012551928/article/details/109286853</a></p>
-<p><code>::-webkit-scrollbar</code> CSS伪类选择器影响了一个元素的滚动条的样式<br><code>::-webkit-scrollbar</code> 仅仅在支持WebKit的浏览器 (例如, 谷歌Chrome, 苹果Safari)可以使用.<br>你可以使用以下伪元素选择器去修改各式webkit浏览器的滚动条样式:</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar — 整个滚动条.</span><br><span class="line">::-webkit-scrollbar-button — 滚动条上的按钮 (上下箭头).</span><br><span class="line">::-webkit-scrollbar-thumb — 滚动条上的滚动滑块.</span><br><span class="line">::-webkit-scrollbar-track — 滚动条轨道.</span><br><span class="line">::-webkit-scrollbar-track-piece — 滚动条没有滑块的轨道部分.</span><br><span class="line">::-webkit-scrollbar-corner — 当同时有垂直滚动条和水平滚动条时交汇的部分.</span><br><span class="line">::-webkit-resizer — 某些元素的corner部分的部分样式(例:textarea的可拖动按钮).</span><br></pre></td></tr></table></figure>
-<h2 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">::-webkit-scrollbar &#123;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">12px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">5px</span></span><br><span class="line">&#125;</span><br><span class="line">::-webkit-scrollbar-thumb &#123;</span><br><span class="line">    <span class="attribute">background-color</span>:<span class="number">#12b7f5</span>;</span><br><span class="line">    <span class="attribute">background-image</span>:<span class="built_in">-webkit-linear-gradient</span>(<span class="number">30deg</span>, <span class="built_in">rgba</span>(<span class="number">18</span>, <span class="number">183</span>, <span class="number">245</span>, <span class="number">1</span>) <span class="number">100%</span>, transparent <span class="number">25%</span>, transparent <span class="number">50%</span>, <span class="built_in">rgba</span>(<span class="number">18</span>, <span class="number">183</span>, <span class="number">243</span>, <span class="number">1</span>) <span class="number">50%</span>, <span class="built_in">rgba</span>(<span class="number">18</span>, <span class="number">183</span>, <span class="number">245</span>, <span class="number">1</span>) <span class="number">75%</span>, transparent <span class="number">100%</span>, transparent)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>代码</category>
-      </categories>
-      <tags>
-        <tag>css</tag>
-        <tag>滚动栏美化</tag>
       </tags>
   </entry>
   <entry>
