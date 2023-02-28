@@ -48,33 +48,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Fluid主题常用</title>
-    <url>/posts/26793.html</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>记录一下，容易忘事没办法🤔</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-<span id="more"></span>
-
-<p>排序<code>sticky: 100</code>数值越大越靠前<br>隐藏文章，不显示却存在<code>hide: true</code></p>
-<h2 id="组图"><a href="#组图" class="headerlink" title="组图"></a>组图</h2><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% gi total n1-n2-... %&#125;</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">&#123;% endgi %&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<a class="btn" href="https://hexo.fluid-dev.com/docs/start/">
-            <i class="fa fa-"></i>官方文档
-          </a>]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>主题</tag>
-        <tag>Fluid</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>git代码记录</title>
     <url>/posts/53509.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -101,6 +74,33 @@
       </categories>
       <tags>
         <tag>git代码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Fluid主题常用</title>
+    <url>/posts/26793.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>记录一下，容易忘事没办法🤔</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<span id="more"></span>
+
+<p>排序<code>sticky: 100</code>数值越大越靠前<br>隐藏文章，不显示却存在<code>hide: true</code></p>
+<h2 id="组图"><a href="#组图" class="headerlink" title="组图"></a>组图</h2><figure class="highlight md"><table><tr><td class="code"><pre><span class="line">&#123;% gi total n1-n2-... %&#125;</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">  ![](<span class="link">url</span>)</span><br><span class="line">&#123;% endgi %&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<a class="btn" href="https://hexo.fluid-dev.com/docs/start/">
+            <i class="fa fa-"></i>官方文档
+          </a>]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>主题</tag>
+        <tag>Fluid</tag>
       </tags>
   </entry>
   <entry>
@@ -260,6 +260,82 @@
         <tag>hexo</tag>
         <tag>主题</tag>
         <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>收集图床网站</title>
+    <url>/posts/43892.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>免费又好用的图床网站在这里</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+
+
+
+<h2 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h2><h3 id="thumbsnap"><a href="#thumbsnap" class="headerlink" title="thumbsnap"></a>thumbsnap</h3><blockquote>
+<p><a href="https://thumbsnap.com/">https://thumbsnap.com/</a><br>media hosting, avatar hosting, sig hosting, image hosting api</p>
+</blockquote>
+<h3 id="upup"><a href="#upup" class="headerlink" title="upup"></a>upup</h3><blockquote>
+<p><a href="https://upup.xkx.me/">https://upup.xkx.me/</a><br>upup外链</p>
+</blockquote>
+<h3 id="sm-ms"><a href="#sm-ms" class="headerlink" title="sm.ms"></a>sm.ms</h3><blockquote>
+<p><a href="https://sm.ms/">https://sm.ms/</a><br>sm.ms有免费有收费</p>
+</blockquote>
+<h3 id="老王图床"><a href="#老王图床" class="headerlink" title="老王图床"></a>老王图床</h3><blockquote>
+<p><a href="https://img.gejiba.com/">https://img.gejiba.com</a><br>免费公共图床, 老王图床</p>
+</blockquote>
+<h3 id="老王外链"><a href="#老王外链" class="headerlink" title="老王外链"></a>老王外链</h3><blockquote>
+<p><a href="https://www.gejiba.com/">https://www.gejiba.com/</a><br>老王外链网盘提供大容量云存储服务</p>
+</blockquote>
+<h2 id="新增"><a href="#新增" class="headerlink" title="新增"></a>新增</h2><h3 id="全能图床"><a href="#全能图床" class="headerlink" title="全能图床"></a>全能图床</h3><blockquote>
+<p><a href="https://tool.liumingye.cn/tuchuang/">https://tool.liumingye.cn/tuchuang/</a><br>全能图床,图床,博客图床,免费图床,七牛图床</p>
+</blockquote>
+<h3 id="sky-Pro"><a href="#sky-Pro" class="headerlink" title="sky Pro"></a>sky Pro</h3><blockquote>
+<p><a href="https://www.icpbk.com/">https://www.icpbk.com/</a></p>
+</blockquote>
+<h3 id="熊猫图床"><a href="#熊猫图床" class="headerlink" title="熊猫图床"></a>熊猫图床</h3><blockquote>
+<p><a href="https://www.pandaimg.com/">https://www.pandaimg.com/</a><br>本站支持的格式： jpeg,jpg,png,gif,tif,bmp,ico,psd,webp</p>
+</blockquote>
+<h3 id="img-nn-ci"><a href="#img-nn-ci" class="headerlink" title="img.nn.ci"></a>img.nn.ci</h3><blockquote>
+<p><a href="https://img.nn.ci/">https://img.nn.ci</a><br>点击左上角按钮选择接口<br>接口有点多。。<br>速度：国内 CDN 加速 </p>
+</blockquote>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><h3 id="映画の图床"><a href="#映画の图床" class="headerlink" title="映画の图床"></a>映画の图床</h3><blockquote>
+<p><a href="https://pic.ihcloud.net/">https://pic.ihcloud.net</a><br>最大单张不超过5M<br>速度：国内 CDN 加速 </p>
+</blockquote>
+<h3 id="TG-图床"><a href="#TG-图床" class="headerlink" title="TG 图床"></a>TG 图床</h3><blockquote>
+<p><a href="https://img.tg/">https://img.tg</a><br>节点包含中国 CDN 在任何地方快速访问您的图片<br>未经许可私自将图床用于商业用途可能被封号</p>
+</blockquote>
+<h3 id="IMG-WANG"><a href="#IMG-WANG" class="headerlink" title="IMG.WANG"></a>IMG.WANG</h3><blockquote>
+<p><a href="https://img.wang/">https://img.wang</a><br>速度：百度云 CDN </p>
+</blockquote>
+<h3 id="去不图床"><a href="#去不图床" class="headerlink" title="去不图床"></a>去不图床</h3><blockquote>
+<p><a href="https://7bu.top/">https://7bu.top/</a><br>长期保留图片需付费<br>图床使用阿里轻服务主机，腾讯云 CDN 节点加速。支持格式：JPEG&#x2F;JPG&#x2F;PNG&#x2F;GIF&#x2F;TIF&#x2F;BMP&#x2F;ICO&#x2F;PSD&#x2F;WEBP</p>
+</blockquote>
+<h3 id="惜染外链"><a href="#惜染外链" class="headerlink" title="惜染外链"></a>惜染外链</h3><blockquote>
+<p><a href="https://tp.hefollo.com/">https://tp.hefollo.com/</a><br>惜染外链</p>
+</blockquote>
+<h3 id="imgBB"><a href="#imgBB" class="headerlink" title="imgBB"></a>imgBB</h3><blockquote>
+<p><a href="https://imgbb.com/">https://imgbb.com/</a><br>ImgBB — 免费图片存取&#x2F;上传图片</p>
+</blockquote>
+<h3 id="路过"><a href="#路过" class="headerlink" title="路过"></a>路过</h3><blockquote>
+<p><a href="https://cdnjson.com/">https://cdnjson.com/</a><br>免费图片上传-图片外链-免费公共图床 </p>
+</blockquote>
+<h3 id="imgURL"><a href="#imgURL" class="headerlink" title="imgURL"></a>imgURL</h3><blockquote>
+<p><a href="https://imgurl.org/">https://imgurl.org/</a><br>imgURL</p>
+</blockquote>
+<h3 id="浅析"><a href="#浅析" class="headerlink" title="浅析"></a>浅析</h3><blockquote>
+<p><a href="https://tc.bllts.cn/">https://tc.bllts.cn/</a><br>浅析</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>图床</tag>
       </tags>
   </entry>
   <entry>
@@ -1719,148 +1795,6 @@
       </categories>
   </entry>
   <entry>
-    <title>天若OCR文字识别</title>
-    <url>/posts/33021.html</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>快速识别，在线翻译</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-
-<span id="more"></span>
-<p><img src="https://ocr.tianruo.net/images/1573471333.png" alt="天若OCR"></p>
-<table>
-<thead>
-<tr>
-<th align="left">功能</th>
-<th align="left">介绍</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">文本识别</td>
-<td align="left">将图片中的文本转换成可编辑文本</td>
-</tr>
-<tr>
-<td align="left">表格识别</td>
-<td align="left">将图片中的表格转换成可编辑表格</td>
-</tr>
-<tr>
-<td align="left">竖排识别</td>
-<td align="left">将图片竖排文字识别成可编辑文本</td>
-</tr>
-<tr>
-<td align="left">公式识别</td>
-<td align="left">将图片公式识别出latex代码</td>
-</tr>
-<tr>
-<td align="left">矫正识别</td>
-<td align="left">可以将图片进行倾斜透视矫正</td>
-</tr>
-<tr>
-<td align="left">高级识别</td>
-<td align="left">调整识别对比度，自动绘制表格线</td>
-</tr>
-<tr>
-<td align="left">识别翻译</td>
-<td align="left">识别图片后自动翻译</td>
-</tr>
-<tr>
-<td align="left">识别搜索</td>
-<td align="left">识别图片后自动搜索</td>
-</tr>
-<tr>
-<td align="left">截图功能</td>
-<td align="left">丰富的截图标注功能</td>
-</tr>
-</tbody></table>
-<p><a href="https://ocr.tianruo.net/" title="官网">天若OCR</a><br><a href="https://tianruo.lanzoux.com/b0mn2zif" title="蓝奏云下载">下载地址</a></p>
-]]></content>
-      <categories>
-        <category>软件</category>
-      </categories>
-      <tags>
-        <tag>软件</tag>
-        <tag>电脑软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>收集图床网站</title>
-    <url>/posts/43892.html</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>免费又好用的图床网站在这里</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-
-<span id="more"></span>
-
-
-
-<h2 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h2><h3 id="thumbsnap"><a href="#thumbsnap" class="headerlink" title="thumbsnap"></a>thumbsnap</h3><blockquote>
-<p><a href="https://thumbsnap.com/">https://thumbsnap.com/</a><br>media hosting, avatar hosting, sig hosting, image hosting api</p>
-</blockquote>
-<h3 id="upup"><a href="#upup" class="headerlink" title="upup"></a>upup</h3><blockquote>
-<p><a href="https://upup.xkx.me/">https://upup.xkx.me/</a><br>upup外链</p>
-</blockquote>
-<h3 id="sm-ms"><a href="#sm-ms" class="headerlink" title="sm.ms"></a>sm.ms</h3><blockquote>
-<p><a href="https://sm.ms/">https://sm.ms/</a><br>sm.ms有免费有收费</p>
-</blockquote>
-<h3 id="老王图床"><a href="#老王图床" class="headerlink" title="老王图床"></a>老王图床</h3><blockquote>
-<p><a href="https://img.gejiba.com/">https://img.gejiba.com</a><br>免费公共图床, 老王图床</p>
-</blockquote>
-<h3 id="老王外链"><a href="#老王外链" class="headerlink" title="老王外链"></a>老王外链</h3><blockquote>
-<p><a href="https://www.gejiba.com/">https://www.gejiba.com/</a><br>老王外链网盘提供大容量云存储服务</p>
-</blockquote>
-<h2 id="新增"><a href="#新增" class="headerlink" title="新增"></a>新增</h2><h3 id="全能图床"><a href="#全能图床" class="headerlink" title="全能图床"></a>全能图床</h3><blockquote>
-<p><a href="https://tool.liumingye.cn/tuchuang/">https://tool.liumingye.cn/tuchuang/</a><br>全能图床,图床,博客图床,免费图床,七牛图床</p>
-</blockquote>
-<h3 id="sky-Pro"><a href="#sky-Pro" class="headerlink" title="sky Pro"></a>sky Pro</h3><blockquote>
-<p><a href="https://www.icpbk.com/">https://www.icpbk.com/</a></p>
-</blockquote>
-<h3 id="熊猫图床"><a href="#熊猫图床" class="headerlink" title="熊猫图床"></a>熊猫图床</h3><blockquote>
-<p><a href="https://www.pandaimg.com/">https://www.pandaimg.com/</a><br>本站支持的格式： jpeg,jpg,png,gif,tif,bmp,ico,psd,webp</p>
-</blockquote>
-<h3 id="img-nn-ci"><a href="#img-nn-ci" class="headerlink" title="img.nn.ci"></a>img.nn.ci</h3><blockquote>
-<p><a href="https://img.nn.ci/">https://img.nn.ci</a><br>点击左上角按钮选择接口<br>接口有点多。。<br>速度：国内 CDN 加速 </p>
-</blockquote>
-<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><h3 id="映画の图床"><a href="#映画の图床" class="headerlink" title="映画の图床"></a>映画の图床</h3><blockquote>
-<p><a href="https://pic.ihcloud.net/">https://pic.ihcloud.net</a><br>最大单张不超过5M<br>速度：国内 CDN 加速 </p>
-</blockquote>
-<h3 id="TG-图床"><a href="#TG-图床" class="headerlink" title="TG 图床"></a>TG 图床</h3><blockquote>
-<p><a href="https://img.tg/">https://img.tg</a><br>节点包含中国 CDN 在任何地方快速访问您的图片<br>未经许可私自将图床用于商业用途可能被封号</p>
-</blockquote>
-<h3 id="IMG-WANG"><a href="#IMG-WANG" class="headerlink" title="IMG.WANG"></a>IMG.WANG</h3><blockquote>
-<p><a href="https://img.wang/">https://img.wang</a><br>速度：百度云 CDN </p>
-</blockquote>
-<h3 id="去不图床"><a href="#去不图床" class="headerlink" title="去不图床"></a>去不图床</h3><blockquote>
-<p><a href="https://7bu.top/">https://7bu.top/</a><br>长期保留图片需付费<br>图床使用阿里轻服务主机，腾讯云 CDN 节点加速。支持格式：JPEG&#x2F;JPG&#x2F;PNG&#x2F;GIF&#x2F;TIF&#x2F;BMP&#x2F;ICO&#x2F;PSD&#x2F;WEBP</p>
-</blockquote>
-<h3 id="惜染外链"><a href="#惜染外链" class="headerlink" title="惜染外链"></a>惜染外链</h3><blockquote>
-<p><a href="https://tp.hefollo.com/">https://tp.hefollo.com/</a><br>惜染外链</p>
-</blockquote>
-<h3 id="imgBB"><a href="#imgBB" class="headerlink" title="imgBB"></a>imgBB</h3><blockquote>
-<p><a href="https://imgbb.com/">https://imgbb.com/</a><br>ImgBB — 免费图片存取&#x2F;上传图片</p>
-</blockquote>
-<h3 id="路过"><a href="#路过" class="headerlink" title="路过"></a>路过</h3><blockquote>
-<p><a href="https://cdnjson.com/">https://cdnjson.com/</a><br>免费图片上传-图片外链-免费公共图床 </p>
-</blockquote>
-<h3 id="imgURL"><a href="#imgURL" class="headerlink" title="imgURL"></a>imgURL</h3><blockquote>
-<p><a href="https://imgurl.org/">https://imgurl.org/</a><br>imgURL</p>
-</blockquote>
-<h3 id="浅析"><a href="#浅析" class="headerlink" title="浅析"></a>浅析</h3><blockquote>
-<p><a href="https://tc.bllts.cn/">https://tc.bllts.cn/</a><br>浅析</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
-      <tags>
-        <tag>图床</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>恒星播放插件合集</title>
     <url>/posts/41063.html</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -1973,6 +1907,85 @@
       <tags>
         <tag>插件</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>天若OCR文字识别</title>
+    <url>/posts/33021.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>快速识别，在线翻译</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+
+<span id="more"></span>
+<p><img src="https://ocr.tianruo.net/images/1573471333.png" alt="天若OCR"></p>
+<table>
+<thead>
+<tr>
+<th align="left">功能</th>
+<th align="left">介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">文本识别</td>
+<td align="left">将图片中的文本转换成可编辑文本</td>
+</tr>
+<tr>
+<td align="left">表格识别</td>
+<td align="left">将图片中的表格转换成可编辑表格</td>
+</tr>
+<tr>
+<td align="left">竖排识别</td>
+<td align="left">将图片竖排文字识别成可编辑文本</td>
+</tr>
+<tr>
+<td align="left">公式识别</td>
+<td align="left">将图片公式识别出latex代码</td>
+</tr>
+<tr>
+<td align="left">矫正识别</td>
+<td align="left">可以将图片进行倾斜透视矫正</td>
+</tr>
+<tr>
+<td align="left">高级识别</td>
+<td align="left">调整识别对比度，自动绘制表格线</td>
+</tr>
+<tr>
+<td align="left">识别翻译</td>
+<td align="left">识别图片后自动翻译</td>
+</tr>
+<tr>
+<td align="left">识别搜索</td>
+<td align="left">识别图片后自动搜索</td>
+</tr>
+<tr>
+<td align="left">截图功能</td>
+<td align="left">丰富的截图标注功能</td>
+</tr>
+</tbody></table>
+<p><a href="https://ocr.tianruo.net/" title="官网">天若OCR</a><br><a href="https://tianruo.lanzoux.com/b0mn2zif" title="蓝奏云下载">下载地址</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
+        <tag>电脑软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>本站用到的插件</title>
+    <url>/posts/1.html</url>
+    <content><![CDATA[<h2 id="生成唯一永久文章链接"><a href="#生成唯一永久文章链接" class="headerlink" title="生成唯一永久文章链接"></a>生成唯一永久文章链接</h2><p>+– <a href="mailto:&#x68;&#x65;&#x78;&#111;&#45;&#x61;&#98;&#x62;&#x72;&#108;&#105;&#x6e;&#x6b;&#x40;&#50;&#x2e;&#50;&#46;&#49;">&#x68;&#x65;&#x78;&#111;&#45;&#x61;&#98;&#x62;&#x72;&#108;&#105;&#x6e;&#x6b;&#x40;&#50;&#x2e;&#50;&#46;&#49;</a></p>
+<h2 id="git上传"><a href="#git上传" class="headerlink" title="git上传"></a>git上传</h2><p>+– <a href="mailto:&#x68;&#x65;&#120;&#111;&#45;&#100;&#x65;&#112;&#108;&#111;&#121;&#101;&#114;&#45;&#103;&#105;&#116;&#x40;&#x33;&#46;&#48;&#46;&#x30;">&#x68;&#x65;&#120;&#111;&#45;&#100;&#x65;&#112;&#108;&#111;&#121;&#101;&#114;&#45;&#103;&#105;&#116;&#x40;&#x33;&#46;&#48;&#46;&#x30;</a></p>
+<h2 id="rss"><a href="#rss" class="headerlink" title="rss"></a>rss</h2><p>+– <a href="mailto:&#x68;&#x65;&#120;&#x6f;&#x2d;&#103;&#101;&#x6e;&#x65;&#x72;&#x61;&#116;&#111;&#x72;&#45;&#102;&#101;&#101;&#x64;&#64;&#x33;&#x2e;&#48;&#x2e;&#48;">&#x68;&#x65;&#120;&#x6f;&#x2d;&#103;&#101;&#x6e;&#x65;&#x72;&#x61;&#116;&#111;&#x72;&#45;&#102;&#101;&#101;&#x64;&#64;&#x33;&#x2e;&#48;&#x2e;&#48;</a></p>
+<h2 id="官方置顶插件"><a href="#官方置顶插件" class="headerlink" title="官方置顶插件"></a>官方置顶插件</h2><p>+– <a href="mailto:&#104;&#x65;&#120;&#x6f;&#45;&#x67;&#101;&#110;&#x65;&#x72;&#97;&#x74;&#x6f;&#114;&#45;&#x69;&#110;&#100;&#101;&#x78;&#x40;&#x32;&#46;&#x30;&#46;&#x30;">&#104;&#x65;&#120;&#x6f;&#45;&#x67;&#101;&#110;&#x65;&#x72;&#97;&#x74;&#x6f;&#114;&#45;&#x69;&#110;&#100;&#101;&#x78;&#x40;&#x32;&#46;&#x30;&#46;&#x30;</a></p>
+<h2 id="第三方置顶插件，可隐藏文章"><a href="#第三方置顶插件，可隐藏文章" class="headerlink" title="第三方置顶插件，可隐藏文章"></a>第三方置顶插件，可隐藏文章</h2><p>npm install hexo-generator-index-custom –save</p>
+<h2 id="本地搜索插件"><a href="#本地搜索插件" class="headerlink" title="本地搜索插件"></a>本地搜索插件</h2><p>+– <a href="mailto:&#104;&#x65;&#120;&#111;&#45;&#x67;&#x65;&#110;&#x65;&#114;&#97;&#x74;&#x6f;&#114;&#x2d;&#115;&#101;&#x61;&#114;&#99;&#104;&#x64;&#98;&#x40;&#x31;&#x2e;&#52;&#46;&#48;">&#104;&#x65;&#120;&#111;&#45;&#x67;&#x65;&#110;&#x65;&#114;&#97;&#x74;&#x6f;&#114;&#x2d;&#115;&#101;&#x61;&#114;&#99;&#104;&#x64;&#98;&#x40;&#x31;&#x2e;&#52;&#46;&#48;</a></p>
+<h2 id="文章计数插件"><a href="#文章计数插件" class="headerlink" title="文章计数插件"></a>文章计数插件</h2><p>+– <a href="mailto:&#x68;&#101;&#x78;&#x6f;&#45;&#x77;&#x6f;&#114;&#100;&#x63;&#x6f;&#x75;&#x6e;&#116;&#64;&#54;&#x2e;&#48;&#46;&#49;">&#x68;&#101;&#x78;&#x6f;&#45;&#x77;&#x6f;&#114;&#100;&#x63;&#x6f;&#x75;&#x6e;&#116;&#64;&#54;&#x2e;&#48;&#46;&#49;</a></p>
+<h2 id="可视化编辑"><a href="#可视化编辑" class="headerlink" title="可视化编辑"></a>可视化编辑</h2><p>npm install –save hexo-admin</p>
+]]></content>
   </entry>
   <entry>
     <title>搭建hexo教程</title>
@@ -2110,17 +2123,47 @@
       </tags>
   </entry>
   <entry>
-    <title>本站用到的插件</title>
-    <url>/posts/1.html</url>
-    <content><![CDATA[<h2 id="生成唯一永久文章链接"><a href="#生成唯一永久文章链接" class="headerlink" title="生成唯一永久文章链接"></a>生成唯一永久文章链接</h2><p>+– <a href="mailto:&#x68;&#101;&#x78;&#x6f;&#x2d;&#97;&#98;&#98;&#x72;&#108;&#x69;&#110;&#107;&#x40;&#x32;&#46;&#50;&#x2e;&#49;">&#x68;&#101;&#x78;&#x6f;&#x2d;&#97;&#98;&#98;&#x72;&#108;&#x69;&#110;&#107;&#x40;&#x32;&#46;&#50;&#x2e;&#49;</a></p>
-<h2 id="git上传"><a href="#git上传" class="headerlink" title="git上传"></a>git上传</h2><p>+– <a href="mailto:&#x68;&#x65;&#120;&#111;&#x2d;&#x64;&#x65;&#x70;&#108;&#x6f;&#121;&#101;&#x72;&#x2d;&#103;&#x69;&#x74;&#x40;&#x33;&#x2e;&#48;&#x2e;&#x30;">&#x68;&#x65;&#120;&#111;&#x2d;&#x64;&#x65;&#x70;&#108;&#x6f;&#121;&#101;&#x72;&#x2d;&#103;&#x69;&#x74;&#x40;&#x33;&#x2e;&#48;&#x2e;&#x30;</a></p>
-<h2 id="rss"><a href="#rss" class="headerlink" title="rss"></a>rss</h2><p>+– <a href="mailto:&#104;&#x65;&#120;&#111;&#x2d;&#103;&#x65;&#x6e;&#101;&#x72;&#97;&#116;&#x6f;&#x72;&#x2d;&#102;&#101;&#x65;&#x64;&#64;&#51;&#46;&#x30;&#46;&#x30;">&#104;&#x65;&#120;&#111;&#x2d;&#103;&#x65;&#x6e;&#101;&#x72;&#97;&#116;&#x6f;&#x72;&#x2d;&#102;&#101;&#x65;&#x64;&#64;&#51;&#46;&#x30;&#46;&#x30;</a></p>
-<h2 id="官方置顶插件"><a href="#官方置顶插件" class="headerlink" title="官方置顶插件"></a>官方置顶插件</h2><p>+– <a href="mailto:&#104;&#x65;&#x78;&#x6f;&#45;&#x67;&#x65;&#110;&#101;&#114;&#97;&#x74;&#111;&#x72;&#45;&#x69;&#110;&#x64;&#x65;&#120;&#x40;&#50;&#46;&#x30;&#x2e;&#48;">&#104;&#x65;&#x78;&#x6f;&#45;&#x67;&#x65;&#110;&#101;&#114;&#97;&#x74;&#111;&#x72;&#45;&#x69;&#110;&#x64;&#x65;&#120;&#x40;&#50;&#46;&#x30;&#x2e;&#48;</a></p>
-<h2 id="第三方置顶插件，可隐藏文章"><a href="#第三方置顶插件，可隐藏文章" class="headerlink" title="第三方置顶插件，可隐藏文章"></a>第三方置顶插件，可隐藏文章</h2><p>npm install hexo-generator-index-custom –save</p>
-<h2 id="本地搜索插件"><a href="#本地搜索插件" class="headerlink" title="本地搜索插件"></a>本地搜索插件</h2><p>+– <a href="mailto:&#x68;&#x65;&#x78;&#111;&#x2d;&#103;&#101;&#110;&#101;&#x72;&#97;&#116;&#111;&#114;&#x2d;&#x73;&#101;&#x61;&#x72;&#99;&#104;&#x64;&#98;&#x40;&#x31;&#x2e;&#52;&#46;&#48;">&#x68;&#x65;&#x78;&#111;&#x2d;&#103;&#101;&#110;&#101;&#x72;&#97;&#116;&#111;&#114;&#x2d;&#x73;&#101;&#x61;&#x72;&#99;&#104;&#x64;&#98;&#x40;&#x31;&#x2e;&#52;&#46;&#48;</a></p>
-<h2 id="文章计数插件"><a href="#文章计数插件" class="headerlink" title="文章计数插件"></a>文章计数插件</h2><p>+– <a href="mailto:&#x68;&#x65;&#x78;&#x6f;&#45;&#119;&#x6f;&#x72;&#100;&#99;&#111;&#x75;&#110;&#x74;&#64;&#x36;&#x2e;&#x30;&#46;&#49;">&#x68;&#x65;&#x78;&#x6f;&#45;&#119;&#x6f;&#x72;&#100;&#99;&#111;&#x75;&#110;&#x74;&#64;&#x36;&#x2e;&#x30;&#46;&#49;</a></p>
-<h2 id="可视化编辑"><a href="#可视化编辑" class="headerlink" title="可视化编辑"></a>可视化编辑</h2><p>npm install –save hexo-admin</p>
+    <title>无需信用卡，注册甲骨文最新方法</title>
+    <url>/posts/10386.html</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>甲骨文的申请新渠道：OCI Arm Accelerator</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<span id="more"></span>
+<p>这是一个 365 天免费试用版（这里注意：365天后转为永久免费账号），可以任意开arm机器，审核大约需要5个工作日，大家可以碰碰运气，建议使用企业邮箱。<br><strong>以下内容翻译自官网：</strong><br>Arm Accelerator 与 Oracle 云免费套餐有何不同？<br>Oracle 云免费套餐允许您注册一个 Oracle 云帐户，该帐户提供许多始终免费的服务和免费试用以及 300 美元的免费信用额度，可用于所有符合条件的 OCI 服务长达 30 天。OCI 提供业界最慷慨的 Always Free Arm 资源（4 个 OCPU，24 GB 内存），供用户构建和运行基于 Arm 的工作负载。30 天免费试用和 300 美元的免费积分是开始您的 Arm 计划的绝佳方式。<br>Arm Accelerator 适用于那些想要加速其 Arm 开发的用户。与 30 天免费试用中提供的资源相比，它授予的 Arm 计算资源数量更多，而且持续时间更长。</p>
+<h1 id="注册流程"><a href="#注册流程" class="headerlink" title="注册流程"></a>注册流程</h1><ol>
+<li>进入地址：<a href="https://go.oracle.com/armaccelerator">https://go.oracle.com/armaccelerator</a><br>填写邮箱，选择国家</li>
+<li>确定以后到收件箱，点击邮件中链接继续下一步。<br>在这里需要如实填写，尤其是带*号的选项，如：你Arm开发项目详情，用英文填写对你对arm架构实例的那种渴望，你的使用场景，说明需求！这一项，非常重要，是作为审核通过的第一要素，自由发挥吧！</li>
+<li>接下来，提交，然后就是等待！希望能通过吧（据说通过的概率千分之一）</li>
+</ol>
+<blockquote>
+<p>最新消息：企业号热门地区也无法开arm实例，还是需要脚本抢；如果是要用arm实例，可选择比较冷门的区域；教育号则可以任意开arm机器！！</p>
+</blockquote>
+<p><strong>企业号的特点：</strong></p>
+<ol>
+<li>赠金400USD，30天内用完赠金，30天后或赠金使用完后自动转为永久免费账户。</li>
+<li>不是信用卡注册的，不用担心二次验证</li>
+<li>赠金配额可开30T硬盘，16C ARM，以及一台6C 96G的E3和一台6C 96G的E4和一台2C 32G的Intel。</li>
+<li>至于ARM是否需要抢，和普通永久免费的账号无异，您选择的区域如果ARM有货就可以手开，如果ARM无货就需要抢。</li>
+</ol>
+<p><strong>教育号&#x2F;学生号的特点：</strong></p>
+<ol>
+<li>赠金300USD，365天内用完赠金，365天后或赠金使用完后自动转为永久免费账户。</li>
+<li>不是信用卡注册的，不用担心二次验证</li>
+<li>赠金配额可开30T硬盘，250C ARM，以及E3&#x2F;E4配额为100C，Intel可以开裸金属实例。</li>
+<li>ARM任何地区（芝加哥新区除外）都可以手开，AMD和普通永久免费的账号无异，您选择的区域如果AMD有货就可以手开，如果AMD无货就需要抢。</li>
+</ol>
+<p>甲骨文云账号注册入口：<a href="https://signup.cloud.oracle.com/">https://signup.cloud.oracle.com/</a><br>教育号申请入口：<a href="https://academy.oracle.com/en/solutions-cloud-program.html">https://academy.oracle.com/en/solutions-cloud-program.html</a><br>企业号没有申请链接。<br>开发者入口：<a href="https://go.oracle.com/armaccelerator">https://go.oracle.com/armaccelerator</a></p>
 ]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>服务器</tag>
+        <tag>甲骨文</tag>
+      </tags>
   </entry>
   <entry>
     <title>破解压缩文件</title>
