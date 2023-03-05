@@ -6,7 +6,7 @@
   <link href="https://ganbi.top/atom.xml" rel="self"/>
   
   <link href="https://ganbi.top/"/>
-  <updated>2023-02-28T14:00:34.306Z</updated>
+  <updated>2023-03-05T13:58:49.037Z</updated>
   <id>https://ganbi.top/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hugo架构WebStack主题 一键导航模板</title>
+    <link href="https://ganbi.top/posts/34959.html"/>
+    <id>https://ganbi.top/posts/34959.html</id>
+    <published>2023-03-05T13:26:32.000Z</published>
+    <updated>2023-03-05T13:58:49.037Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+            &lt;i class=&quot;fa fa-quote-left&quot;&gt;&lt;/i&gt;
+            &lt;p&gt;🍭Hugo架构WebStack主题 一键导航模板🍭&lt;/p&gt;
+
+            &lt;i class=&quot;fa fa-quote-right&quot;&gt;&lt;/i&gt;
+          &lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="https://ganbi.top/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="网站程序" scheme="https://ganbi.top/tags/%E7%BD%91%E7%AB%99%E7%A8%8B%E5%BA%8F/"/>
+    
+    <category term="github" scheme="https://ganbi.top/tags/github/"/>
+    
+    <category term="golang" scheme="https://ganbi.top/tags/golang/"/>
+    
+    <category term="网址导航" scheme="https://ganbi.top/tags/%E7%BD%91%E5%9D%80%E5%AF%BC%E8%88%AA/"/>
+    
+    <category term="WebStack" scheme="https://ganbi.top/tags/WebStack/"/>
+    
+    <category term="Hugo" scheme="https://ganbi.top/tags/Hugo/"/>
+    
+  </entry>
   
   <entry>
     <title>无需信用卡，注册甲骨文最新方法</title>
